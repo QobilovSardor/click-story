@@ -86,6 +86,7 @@ a:focus {
 	background: linear-gradient(90deg, #BEFFE8 0%, #80E0FF 100%);
 	box-shadow: 0px 4px 10px #CEE0FF;
 	border-radius: 5px;
+	display: inline-block;
 }
 
 .btn-gradient:hover {
@@ -100,6 +101,24 @@ a:focus {
 	line-height: 24px;
 	color: #456DBB;
 	margin-bottom: 32px;
+}
+
+.title-text__link {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: right;
+	text-decoration-line: underline;
+	color: #456DBB;
+}
+
+.mt-64 {
+	margin-top: 64px;
+}
+
+.text-gray {
+	color: #333;
 }
 
 /* header start */
@@ -190,6 +209,20 @@ a:focus {
 /* search-sec edn */
 
 /* genres start */
+.genres-bg__blue {
+	background: #EBF2FF;
+	padding: 26px 0 20px;
+	margin-top: 8px;
+}
+
+.genres-bg__blue .title-text {
+	color: #333333;
+}
+
+.genres-box__home .genres-card {
+	border: none !important;
+}
+
 .genres .genres-box {
 	display: flex;
 	align-items: center;
@@ -233,7 +266,7 @@ a:focus {
 }
 
 .genres .cinema-big__box {
-	margin: 48px 0 64px 0;
+	margin: 32px 0 0 0;
 }
 
 .genres .cinema-box {
@@ -281,6 +314,7 @@ a:focus {
 	align-items: center;
 	justify-content: center;
 	gap: 18px;
+	margin-top: 34px;
 }
 
 .genres .cinema-card__pagination .prev-icon,
@@ -303,6 +337,33 @@ a:focus {
 }
 
 /* genres end */
+
+/* genres-two start */
+.genres-two{
+	margin-top: 64px;
+}
+.genres-two .genres-two__card img {
+	width: 100%;
+	object-fit: cover;
+	margin-bottom: 8px;
+}
+
+.genres-two .genres-two__card .genres-two__date {
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	color: #686868;
+}
+
+.genres-two .genres-two__card h4 {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #456DBB;
+	margin: 8px 0;
+}
+
+/* genres-two ebd */
 
 /* authors-sec start */
 .authors-sec {
@@ -571,6 +632,8 @@ ul {
 	.container-xl,
 	.container-xxl {
 		max-width: 1170px;
+		margin: 0 auto;
+		padding: 0;
 	}
 }
 
@@ -603,6 +666,9 @@ ul {
 	.footer .col-md-4 {
 		margin-bottom: 20px;
 	}
+	.genres-two .genres-two__card{
+		margin-bottom: 30px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -627,6 +693,10 @@ ul {
 
 @media (max-width: 576px) {
 	.row-cols-5>* {
+		width: 100%;
+	}
+
+	.search-sec form .input-box {
 		width: 100%;
 	}
 
