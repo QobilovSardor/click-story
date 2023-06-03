@@ -40,5 +40,7 @@ $(function () {
 		})
 	})
 
+	const modals = document.querySelectorAll('form');
+
 });
 

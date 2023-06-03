@@ -48,7 +48,12 @@ textarea:focus,
 select:focus {
 	outline: none !important;
 	-webkit-appearance: none;
-	box-shadow: none;
+	box-shadow: none !important;
+}
+
+button {
+	border: none;
+	background: none;
 }
 
 input:focus {
@@ -81,7 +86,7 @@ a:focus {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 17px;
-	color: #333333;
+	color: #333333 !important;
 	padding: 12px 18px;
 	background: linear-gradient(90deg, #BEFFE8 0%, #80E0FF 100%);
 	box-shadow: 0px 4px 10px #CEE0FF;
@@ -114,13 +119,49 @@ a:focus {
 }
 
 .mt-64 {
-	margin-top: 64px;
+	margin-top: 64px !important;
 }
 
 .text-gray {
 	color: #333;
 }
 
+.page-nav__link a {
+	font-size: 14px;
+	line-height: 17px;
+	color: #686868;
+}
+
+.page-nav__link .page-nav__link-icon {
+	margin: 0 10px;
+}
+.mb-24 {
+	margin-bottom: 24px;
+}
+
+.mt-64 {
+	margin-top: 64px;
+}
+
+.mb-64 {
+	margin-bottom: 64px;
+}
+
+.mb-34 {
+	margin-bottom: 34px;
+}
+
+.mt-24 {
+	margin-top: 24px;
+}
+
+.mb-32 {
+	margin-bottom: 32px;
+}
+
+.mt-32 {
+	margin-top: 32px;
+}
 /* header start */
 .header {
 	box-shadow: 0 12px 12px 0 #D7E4FF;
@@ -278,7 +319,11 @@ a:focus {
 	margin-bottom: 8px;
 }
 
-.genres .cinema-box h4 {
+.genres .cinema-box a:hover {
+	color: #456DBB;
+}
+
+.genres .cinema-box a {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 19px;
@@ -309,7 +354,7 @@ a:focus {
 	white-space: nowrap;
 }
 
-.genres .cinema-card__pagination {
+.cinema-card__pagination {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -317,19 +362,19 @@ a:focus {
 	margin-top: 34px;
 }
 
-.genres .cinema-card__pagination .prev-icon,
-.genres .cinema-card__pagination .next-icon {
+.cinema-card__pagination .prev-icon,
+.cinema-card__pagination .next-icon {
 	border: none;
 	background: none;
 	padding: 0;
 }
 
-.genres .cinema-card__pagination span.active {
+.cinema-card__pagination span.active {
 	font-weight: 700;
 	color: #456DBB;
 }
 
-.genres .cinema-card__pagination span {
+.cinema-card__pagination span {
 	font-size: 14px;
 	line-height: 17px;
 	color: #686868;
@@ -339,9 +384,10 @@ a:focus {
 /* genres end */
 
 /* genres-two start */
-.genres-two{
+.genres-two {
 	margin-top: 64px;
 }
+
 .genres-two .genres-two__card img {
 	width: 100%;
 	object-fit: cover;
@@ -353,9 +399,10 @@ a:focus {
 	font-size: 10px;
 	line-height: 12px;
 	color: #686868;
+	display: block;
 }
 
-.genres-two .genres-two__card h4 {
+.genres-two .genres-two__card a {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 19px;
@@ -615,6 +662,122 @@ ul {
 
 /* footer end */
 
+/* modal style start */
+.modal .modal-dialog {
+	max-width: 434px;
+}
+
+.modal .modal-reigistration {
+	max-width: 830px;
+}
+
+.modal .modal-content.h-407 {
+	height: 407px;
+}
+
+.modal .modal-content {
+	background: #FFFFFF;
+	box-shadow: 0px 4px 10px #CEE0FF;
+	border-radius: 5px;
+	border: 0;
+	padding: 32px;
+}
+
+.modal .modal-form .input-box {
+	gap: 8px;
+	display: flex;
+	justify-content: center;
+}
+
+.modal .modal-form .input-box input {
+	width: 48px;
+	height: 64px;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	color: #000000;
+}
+
+.modal .modal-form .input-box input::placeholder {
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	color: #000000;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.modal .btn-close {
+	background: none;
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	transition: all 0.3s linear;
+	transform-origin: center center;
+	width: 25px;
+	height: 25px;
+}
+
+.modal .btn-close:hover {
+	transform: rotate(90deg);
+}
+
+.modal .modal-title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: #456DBB;
+	margin-bottom: 32px;
+}
+
+.modal .modal-form label {
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+	display: block;
+	padding-bottom: 16px;
+}
+
+.modal .modal-form p {
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+}
+
+.modal .modal-form input {
+	border: 1px solid #D0D0D0;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+	padding: 16px;
+}
+
+.modal .modal-form input::placeholder {
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+}
+
+.modal .modal-form .forgot-password {
+	font-size: 16px;
+	line-height: 140%;
+	text-decoration-line: underline;
+	color: #456DBB;
+	width: 100%;
+	padding: 0;
+}
+
+/* modal style end */
+
 
 
 
@@ -666,7 +829,8 @@ ul {
 	.footer .col-md-4 {
 		margin-bottom: 20px;
 	}
-	.genres-two .genres-two__card{
+
+	.genres-two .genres-two__card {
 		margin-bottom: 30px;
 	}
 }
