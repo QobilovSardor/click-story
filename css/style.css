@@ -273,6 +273,7 @@ a:focus {
 	font-weight: 700;
 	font-size: 10px;
 	line-height: 12px;
+	white-space: nowrap;
 }
 
 .genres .cinema-card__pagination {
@@ -574,12 +575,16 @@ ul {
 }
 
 @media (max-width: 1200px) {
-	.header .navbar-nav{
+	.header .navbar-nav {
 		gap: 20px;
 	}
 }
 
 @media (max-width: 992px) {
+	.row-cols-5>* {
+		width: 33.33333333%;
+	}
+
 	.header .navbar-nav {
 		margin: 20px 0;
 	}
@@ -589,10 +594,11 @@ ul {
 		align-items: start !important;
 		justify-content: start !important;
 	}
-		.header .navbar-right .navbar-nav{
-			align-items: start !important;
-			order: -1;
-		}
+
+	.header .navbar-right .navbar-nav {
+		align-items: start !important;
+		order: -1;
+	}
 
 	.footer .col-md-4 {
 		margin-bottom: 20px;
@@ -600,9 +606,14 @@ ul {
 }
 
 @media (max-width: 768px) {
-	.authors-form__box{
+	.row-cols-5>* {
+		width: 50%;
+	}
+
+	.authors-form__box {
 		margin-top: 30px;
 	}
+
 	.footer .footer-bottom .text-end {
 		justify-content: start !important;
 		margin-top: 20px;
@@ -611,11 +622,15 @@ ul {
 	.footer .footer-bottom .col-md-3 {
 		margin-bottom: 20px;
 	}
-	
+
 }
 
 @media (max-width: 576px) {
-	.authors-sec .author-box{
+	.row-cols-5>* {
+		width: 100%;
+	}
+
+	.authors-sec .author-box {
 		flex-direction: column;
 	}
 }
