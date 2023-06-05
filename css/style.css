@@ -487,7 +487,8 @@ a:focus {
 
 .read-more,
 .read-more-two,
-.read-more-three {
+.read-more-three,
+.load-more {
 	font-size: 16px;
 	line-height: 140%;
 	color: #456DBB;
@@ -893,8 +894,8 @@ a:focus {
 }
 
 .contents-sec .table-contents__top h4,
-.contents-sec .reviews-box h4,
-.view-history .reviews-box h4 {
+.reviews-box h4,
+.reviews-box h4 {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 140%;
@@ -908,15 +909,28 @@ a:focus {
 	display: block;
 }
 
-.contents-sec .reviews-box p,
-.view-history .reviews-box {
+.reviews-box p {
 	font-size: 16px;
 	line-height: 140%;
 	color: #333333;
 }
 
-.contents-sec .reviews-box .reviews-box__top,
-.view-history .reviews-box .reviews-box__top {
+.reviews-box a {
+	border-bottom: 1px solid #456DBB;
+	font-size: 16px;
+	line-height: 140%;
+	color: #456DBB;
+}
+
+.reviews-box .box {
+	background: #EBF2FF;
+	padding: 16px;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.reviews-box .reviews-box__top,
+.reviews-box .reviews-box__top {
 	gap: 8px;
 }
 
@@ -968,7 +982,47 @@ a:focus {
 
 /* view-history end */
 
+/* notification-sec start */
+.notification-sec .nav-tabs .nav-link {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #686868;
+	position: relative;
+	border: none;
+	text-align: center;
+	padding: 20px 40px;
+}
 
+.notification-sec .nav-tabs .nav-link:hover {
+	border-color: transparent;
+}
+
+.notification-sec .nav-tabs .nav-link span {
+	font-size: 14px;
+	line-height: 17px;
+	color: #686868;
+}
+
+.notification-sec .nav-tabs {
+	border-bottom: 1px solid #686868;
+}
+
+.notification-sec .nav-tabs .nav-link.active {
+	border: inherit !important;
+	color: #456DBB;
+}
+
+.notification-sec .nav-tabs .nav-link.active::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	bottom: -2.5px;
+	left: 0;
+	border: 2px solid #456DBB;
+}
+
+/* notification-sec end */
 
 
 

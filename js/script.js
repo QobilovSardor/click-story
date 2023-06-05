@@ -2,6 +2,7 @@ $(function () {
 
 	$('.hide-block').slideUp();
 	$('.hide-block-two').slideUp();
+	$('.hide-block-notification').slideUp();
 	$('.read-more').on("click", function () {
 		$('.hide-block').slideToggle();
 
@@ -19,6 +20,16 @@ $(function () {
 			$(this).text("Скрывать");
 		}
 	});
+	$('.load-more').each(function (index, element) {
+		$(element).on("click", function () {
+			$('.hide-block-notification').slideToggle();
+			if ($(this).text() == "Скрывать") {
+				$(this).text("Загрузить еще");
+			} else {
+				$(this).text("Скрывать");
+			}
+		})
+	})
 
 	const selects = document.querySelectorAll('.select-menu');
 
