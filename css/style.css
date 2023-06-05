@@ -333,8 +333,51 @@ a:focus {
 	margin-bottom: 8px;
 }
 
+.genres .cinema-box img:hover~.tooltip-box {
+	visibility: visible;
+}
+
 .genres .cinema-box a:hover {
 	color: #456DBB;
+}
+
+.tooltip-box {
+	background: #FFFFFF;
+	box-shadow: 0px 0px 15px #CEE0FF;
+	border-radius: 5px;
+	width: 500px;
+	position: absolute;
+	z-index: 10;
+	padding: 32px;
+	visibility: hidden;
+	top: 100%;
+	left: 0;
+}
+
+.tooltip-box .tooltip-info {
+	color: #686868 !important;
+}
+
+.tooltip-box .icon-big__box {
+	gap: 16px;
+	width: 100%;
+	margin-top: 16px;
+}
+
+.tooltip-box .icon-box {
+	gap: 8px;
+}
+
+.tooltip-box .icon-box span {
+	font-size: 16px;
+	line-height: 19px;
+	color: #333333;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.tooltip-box .icon-box img {
+	margin: 0;
 }
 
 .genres .cinema-box a {
