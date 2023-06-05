@@ -43,7 +43,6 @@ h6 {
 	line-height: 1.2;
 }
 
-button:focus,
 textarea:focus,
 select:focus {
 	outline: none !important;
@@ -894,7 +893,8 @@ a:focus {
 }
 
 .contents-sec .table-contents__top h4,
-.contents-sec .reviews-box h4 {
+.contents-sec .reviews-box h4,
+.view-history .reviews-box h4 {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 140%;
@@ -908,20 +908,65 @@ a:focus {
 	display: block;
 }
 
-.contents-sec .reviews-box p {
+.contents-sec .reviews-box p,
+.view-history .reviews-box {
 	font-size: 16px;
 	line-height: 140%;
 	color: #333333;
 }
-.contents-sec .reviews-box .reviews-box__top{
+
+.contents-sec .reviews-box .reviews-box__top,
+.view-history .reviews-box .reviews-box__top {
 	gap: 8px;
 }
 
 /* contents-sec end */
 
+/* view-history start */
+.view-history .view-history__top-info {
+	margin: 117px 0 25px 0;
+}
 
+.view-history .view-history__top-info p {
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+}
 
+.view-history .history-info__big-box {
+	background: #EBF2FF;
+	border-radius: 5px;
+	padding: 24px;
+}
 
+.view-history .history-info__box {
+	margin-bottom: 24px;
+}
+
+.view-history .history-info__box:last-child {
+	margin-bottom: 0;
+}
+
+.view-history .history-info {
+	height: 350px;
+	overflow-y: scroll;
+}
+
+.view-history .title-xs {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+	margin-bottom: 8px;
+}
+
+.view-history .paragrph-xs {
+	font-size: 16px;
+	line-height: 19px;
+	color: #333;
+}
+
+/* view-history end */
 
 
 
@@ -1006,6 +1051,7 @@ ul {
 .modal-634 {
 	max-width: 643px !important;
 }
+
 .modal .modal-dialog {
 	max-width: 434px;
 }
@@ -1093,6 +1139,7 @@ input[type=number]::-webkit-outer-spin-button {
 	line-height: 140%;
 	color: #333333;
 }
+
 .modal .modal-form input,
 .modal .modal-form textarea {
 	border: 1px solid #D0D0D0;
@@ -1103,11 +1150,13 @@ input[type=number]::-webkit-outer-spin-button {
 	color: #333333;
 	padding: 16px;
 }
+
 .modal .modal-form textarea {
 	resize: none;
 	height: 120px;
 	margin-top: 16px;
 }
+
 .modal .modal-form input::placeholder,
 .modal .modal-form textarea::placeholder {
 	font-size: 14px;
