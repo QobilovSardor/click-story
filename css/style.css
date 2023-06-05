@@ -172,6 +172,10 @@ a:focus {
 	margin-top: 32px;
 }
 
+.show {
+	display: block !important;
+}
+
 /* header start */
 .header {
 	box-shadow: 0 12px 12px 0 #D7E4FF;
@@ -666,7 +670,108 @@ a:focus {
 	border-radius: 5px;
 	text-align: center;
 }
+
 /* news-sec end */
+
+/* poll-sec start */
+.poll-sec .collection {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+}
+
+.poll-sec .collection h4 {
+	margin-bottom: 22px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+}
+
+.poll-sec .collection .collection-nav {
+	list-style: disc !important;
+	margin-left: 22px;
+}
+
+.poll-sec .vote-box .vote-box__list.active {
+	border-color: #456DBB;
+}
+
+.poll-sec .vote-box .vote-box__list.active>.check-icon {
+	display: block !important;
+}
+
+.poll-sec .vote-box .vote-box__list {
+	border: 1px solid #D0D0D0;
+	border-radius: 5px;
+	padding: 0 16px;
+	width: 370px;
+	cursor: pointer;
+	height: 50px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-bottom: 8px;
+}
+
+.poll-sec .vote-box__title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #000000;
+	margin-bottom: 24px;
+}
+
+.poll-sec .vote-box .vote-box__list:nth-last-child(1) {
+	margin-bottom: 0;
+}
+
+.poll-sec .results-list {
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+	position: relative;
+	width: 370px;
+	border: 1px solid #D0D0D0;
+	border-radius: 5px;
+	padding: 14px 16px;
+	z-index: 1;
+	margin-bottom: 8px;
+}
+
+.poll-sec .results-list::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: linear-gradient(90deg, #BEFFE8 0%, #80E0FF 100%);
+	border-radius: 5px;
+	z-index: -1;
+}
+
+.poll-sec .results-list:nth-child(2)::before {
+	width: 65%;
+}
+
+.poll-sec .results-list:nth-child(3)::before {
+	width: 30%;
+}
+
+.poll-sec .results-list:nth-child(4)::before {
+	width: 10%;
+}
+
+.poll-sec .poll-sec__right {
+	background: #F8F8FA;
+	border: 1px solid #D0D0D0;
+	border-radius: 5px;
+	height: 344px;
+}
+
+/* poll-sec end */
 
 
 /* footer start */

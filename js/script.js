@@ -40,7 +40,31 @@ $(function () {
 		})
 	})
 
-	const modals = document.querySelectorAll('form');
+	$('.results').slideUp()
+	$('.vote-box__list').each(function (index, element) {
+		$(element).on('click', function () {
+			$('.vote-box__list').each(function (i, e) {
+				if (e = $(this)) {
+					$(e).removeClass('active')
+				}
+			})
+			$(this).toggleClass('active')
+
+			$('.results-list').each(function (i, e) {
+				if (i === index)  {
+					$(e).css({
+						fontWeight: 700
+					})
+				} else {
+					$(e).css({
+						fontWeight: 400
+					})
+				}
+			})
+
+			$('.results').slideDown();
+		})
+	});
 
 });
 
