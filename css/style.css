@@ -108,6 +108,13 @@ a:focus {
 	margin-bottom: 32px;
 }
 
+.title-sm {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: #456DBB;
+}
+
 .title-text__link {
 	font-family: 'Inter';
 	font-weight: 700;
@@ -394,13 +401,13 @@ a:focus {
 	margin: 8px 0;
 }
 
-.genres .cinema-box .cinema-box__btns {
+.cinema-box__btns {
 	display: flex;
 	align-items: center;
 	gap: 4px;
 }
 
-.genres .cinema-box .cinema-box__btns span {
+.cinema-box__btns span {
 	padding: 8px;
 	background: #456DBB;
 	border-radius: 5px;
@@ -479,7 +486,9 @@ a:focus {
 	margin-top: 64px;
 }
 
-.authors-sec .read-more {
+.read-more,
+.read-more-two,
+.read-more-three {
 	font-size: 16px;
 	line-height: 140%;
 	color: #456DBB;
@@ -531,11 +540,6 @@ a:focus {
 	line-height: 140%;
 	color: #333333;
 }
-
-
-
-
-
 
 .select-menu {
 	width: 100%;
@@ -816,6 +820,132 @@ a:focus {
 
 /* poll-sec end */
 
+/* contents-sec start */
+.contents-sec .contents-sec__box {
+	background: #EBF2FF;
+	border-radius: 5px;
+	padding: 24px;
+	position: relative;
+}
+
+.contents-sec .dots-icon {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+	cursor: pointer;
+}
+
+.contents-sec .copy-link {
+	position: absolute;
+	top: 110%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #fff;
+	box-shadow: 0px 0px 15px #CEE0FF;
+	border-radius: 5px;
+	padding: 16px;
+	white-space: nowrap;
+}
+
+.contents-sec .contents-sec__box p {
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+	margin: 8px 0;
+}
+
+.icon-info {
+	gap: 18px;
+	margin: 24px 0;
+}
+
+.contents-sec .contents-sec__box h4 {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+}
+
+.contents-sec .contents-sec__box span {
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+	display: inline-block;
+}
+
+.contents-sec .user-box {
+	gap: 8px;
+}
+
+.contents-sec .table-contents {
+	background: #EBF2FF;
+	border-radius: 5px;
+	padding: 16px;
+	margin-bottom: 8px;
+}
+
+.contents-sec .table-contents:nth-last-child(2) {
+	margin-bottom: 0;
+}
+
+.contents-sec .table-contents__top {
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+.contents-sec .table-contents__top h4,
+.contents-sec .reviews-box h4 {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #000000;
+}
+
+.contents-sec .table-contents__top span {
+	font-size: 16px;
+	line-height: 140%;
+	color: #686868;
+	display: block;
+}
+
+.contents-sec .reviews-box p {
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+}
+.contents-sec .reviews-box .reviews-box__top{
+	gap: 8px;
+}
+
+/* contents-sec end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer start */
 .footer {
@@ -873,6 +1003,9 @@ ul {
 /* footer end */
 
 /* modal style start */
+.modal-634 {
+	max-width: 643px !important;
+}
 .modal .modal-dialog {
 	max-width: 434px;
 }
@@ -960,8 +1093,8 @@ input[type=number]::-webkit-outer-spin-button {
 	line-height: 140%;
 	color: #333333;
 }
-
-.modal .modal-form input {
+.modal .modal-form input,
+.modal .modal-form textarea {
 	border: 1px solid #D0D0D0;
 	border-radius: 5px;
 	width: 100%;
@@ -970,8 +1103,13 @@ input[type=number]::-webkit-outer-spin-button {
 	color: #333333;
 	padding: 16px;
 }
-
-.modal .modal-form input::placeholder {
+.modal .modal-form textarea {
+	resize: none;
+	height: 120px;
+	margin-top: 16px;
+}
+.modal .modal-form input::placeholder,
+.modal .modal-form textarea::placeholder {
 	font-size: 14px;
 	line-height: 17px;
 	color: #333333;

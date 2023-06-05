@@ -1,6 +1,7 @@
 $(function () {
 
 	$('.hide-block').slideUp();
+	$('.hide-block-two').slideUp();
 	$('.read-more').on("click", function () {
 		$('.hide-block').slideToggle();
 
@@ -10,6 +11,14 @@ $(function () {
 			$(this).text("Скрывать");
 		}
 	})
+	$('.read-more-three').on("click", function () {
+		$('.hide-block-two').slideToggle();
+		if ($(this).text() == "Скрывать") {
+			$(this).text("Показать больше рецензий");
+		} else {
+			$(this).text("Скрывать");
+		}
+	});
 
 	const selects = document.querySelectorAll('.select-menu');
 
@@ -51,7 +60,7 @@ $(function () {
 			$(this).toggleClass('active')
 
 			$('.results-list').each(function (i, e) {
-				if (i === index)  {
+				if (i === index) {
 					$(e).css({
 						fontWeight: 700
 					})
@@ -65,6 +74,14 @@ $(function () {
 			$('.results').slideDown();
 		})
 	});
+
+	$('.dots-icon').on('click', function () {
+		$('.copy-link').addClass('show');
+		setTimeout(function () {
+			$('.copy-link').removeClass('show');
+		}, 1000);
+	});
+
 
 });
 
