@@ -20,15 +20,17 @@ $(function () {
 			$(this).text("Скрывать");
 		}
 	});
-	$('.load-more').each(function (index, element) {
-		$(element).on("click", function () {
-			$('.hide-block-notification').slideToggle();
+	$('.tab-pane').each(function (i, e) {
+		let btn = e.querySelector('.load-more');
+		let hideBlock = e.querySelectorAll('.hide-block-notification');
+		$(btn).on("click", function () {
+			$(hideBlock).slideToggle();
 			if ($(this).text() == "Скрывать") {
 				$(this).text("Загрузить еще");
 			} else {
 				$(this).text("Скрывать");
 			}
-		})
+		});
 	})
 
 	const selects = document.querySelectorAll('.select-menu');
