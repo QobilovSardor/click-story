@@ -228,23 +228,65 @@
 
 		<!-- main start -->
 		<main>
-
 			<section class="user-sec">
 				<div class="container">
-					<div class="user-bg">
-						<div class="user-dots dots-icon">
-							<svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
-									fill="#fff" />
-							</svg>
-							<div class="copy-link d-none">
-								<p>Скопировать ссылку</p>
+					<div class="user-bg position-relative">
+						<div class="user-dots">
+							<button class="change-btn">
+								<svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+										fill="#fff" />
+								</svg>
+							</button>
+							<div class="position-relative">
+								<div class="bg-changer">
+									<p class="bg-changer__info">Обновить фон</p>
+									<p class="bg-changer__info open-select__achievements">Избранные достижения</p>
+									<p class="bg-changer__info">Поделиться ссылкой</p>
+								</div>
+								<div class="select-achievements">
+									<h4 class="select-achievements__title">Выбрать избранные достижения</h4>
+									<button class="select-achievements__close">
+										<img src="images/icons/close-icon.svg" alt="" width="16px" height="16px">
+									</button>
+									<p class="mt-32 mb-32">Эти достижения будут отображаться
+										на странице вашего профиля.</p>
+									<div class="d-flex gap-3 justify-content-center">
+										<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+										<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+										<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+									</div>
+									<div class="check-icon__box">
+										<div class="scroll-box d-flex flex-wrap gap-3">
+											<img src="images/icons/bg-check-icon.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/bg-check-icon.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/bg-check-icon.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+											<img src="images/icons/check-icon2.svg" alt="" width="70px" height="70px">
+										</div>
+									</div>
+									<a class="w-100 btn-gradient text-center" href="#!">Разместить</a>
+								</div>
 							</div>
 						</div>
 						<div class="row align-items-end">
 							<div class="col-lg-6 user-sec__left">
-								<img class="user-icon" src="images/icons/user-icon.svg" alt="user-icon">
+								<img class="user-icon" src="images/icons/avatar-icon.svg" alt="user-icon">
 								<h4 class="user-name my-3">Andy Crow</h4>
 								<div class="d-flex align-items-center analysis-box">
 									<div class="position-relative subscribers-info info-box">
@@ -349,7 +391,7 @@
 													<img src="images/icons/prize-icon.svg" alt="">
 													<p>25</p>
 												</div>
-												
+
 												<div class="subscribers-user__box d-flex align-items-center gap-2">
 													<img src="images/user-img.png" alt="">
 													<p>Ян</p>
@@ -466,13 +508,22 @@
 
 					<div class="user-sec__tabs">
 						<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-							<li class="nav-item" role="presentation">
+							<li class="nav-item2" role="presentation">
 								<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
 									type="button" role="tab" aria-controls="pills-home" aria-selected="true">Истории</button>
 							</li>
-							<li class="nav-item" role="presentation">
+							<li class="nav-item2" role="presentation">
 								<button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-									type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Об авторе</button>
+									type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Черновики (3)</button>
+							</li>
+							<li class="nav-item2" role="presentation">
+								<button class="nav-link " id="pills-characters-tab" data-bs-toggle="pill"
+									data-bs-target="#pills-characters" type="button" role="tab" aria-controls="pills-characters"
+									aria-selected="false">Мои персонажи</button>
+							</li>
+							<li class="nav-item2" role="presentation">
+								<button class="nav-link " id="pills-author-tab" data-bs-toggle="pill" data-bs-target="#pills-author"
+									type="button" role="tab" aria-controls="pills-author" aria-selected="false">Об авторе</button>
 							</li>
 						</ul>
 						<div class="tab-content" id="pills-tabContent">
@@ -487,14 +538,17 @@
 										</div>
 									</div>
 									<div class="col-lg-7">
-										<div class="top-box d-flex align-items-center gap-2">
+										<div class="top-box d-flex align-items-center justify-content-between">
 											<h2 class="title-sm">Твой новый мир</h2>
-											<img src="images/icons/house-icon.svg" alt="house-icon">
+											<div class="d-flex gap-3">
+												<button class="top-box__btn" data-bs-toggle="modal"
+													data-bs-target="#exampleModalPromotion">Продвигать</button>
+												<button class="top-box__btn">Редактировать</button>
+											</div>
 										</div>
 										<div class="cinema-box__btns my-2">
 											<span>Фэнтэзи</span>
-											<span>Тег</span>
-											<span>Тег</span>
+											<span>Сказка</span>
 										</div>
 										<p class="mb-2">Есть над чем задуматься: предприниматели в сети интернет, инициированные
 											исключительно синтетически, своевременно
@@ -522,9 +576,8 @@
 											</div>
 											<div class="d-flex align-items-center gap-2">
 												<img src="images/icons/clock-icon.svg" alt="clock-icon">
-												<span>15 мин.</span>
+												<span>8 мин.</span>
 											</div>
-											<span>В процессе</span>
 											<a class="btn-gradient" href="#!">Смотреть историю</a>
 										</div>
 									</div>
@@ -537,18 +590,25 @@
 										</div>
 									</div>
 									<div class="col-lg-7 mt-24">
-										<div class="top-box d-flex align-items-center gap-2">
+										<div class="top-box d-flex align-items-center justify-content-between">
 											<h2 class="title-sm">Страшная сказка на ночь</h2>
+											<div class="d-flex gap-3">
+												<button class="top-box__btn" data-bs-toggle="modal"
+													data-bs-target="#exampleModalQuartz">Продвигать</button>
+												<button class="top-box__btn">Редактировать</button>
+											</div>
 										</div>
 										<div class="cinema-box__btns my-2">
 											<span>Фэнтэзи</span>
-											<span>Тег</span>
-											<span>Тег</span>
+											<span>Сказка</span>
 										</div>
-										<p class="mb-2">Высокий уровень вовлечения представителей целевой аудитории является четким
-											доказательством простого факта: сложившаяся
-											структура организации обеспечивает широкому кругу (специалистов) участие в формировании
-											глубокомысленных рассуждений.</p>
+										<p class="mb-2">Есть над чем задуматься: предприниматели в сети интернет, инициированные
+											исключительно синтетически, своевременно
+											верифицированы. Безусловно, синтетическое тестирование говорит о возможностях экономической
+											целесообразности принимаемых
+											решений. Есть над чем задуматься: предприниматели в сети интернет, инициированные исключительно
+											синтетически, объективно
+											рассмотрены соответствующими инстанциями.</p>
 										<div class="d-flex align-items-center icon-info m-0">
 											<div class="d-flex align-items-center gap-2">
 												<img src="images/icons/heart-icon.svg" alt="heart-icon">
@@ -568,9 +628,8 @@
 											</div>
 											<div class="d-flex align-items-center gap-2">
 												<img src="images/icons/clock-icon.svg" alt="clock-icon">
-												<span>15 мин.</span>
+												<span>8 мин.</span>
 											</div>
-											<span class="text-blue">Завершено</span>
 											<a class="btn-gradient" href="#!">Смотреть историю</a>
 										</div>
 									</div>
@@ -586,8 +645,135 @@
 										<div class="about-us">
 											<span>О себе</span>
 											<div class="about-us__box">
-												<span>Всем привет! Меня зовут Андрей. Я обожаю фантастику и фэнтэзи и люблю сочинять различные истории, которые крутятся у
-												меня в голове. Буду рад вашей обратной связи по моему творчеству!</span>
+												<span>Всем привет! Меня зовут Андрей. Я обожаю фантастику и фэнтэзи и люблю сочинять различные
+													истории, которые крутятся у
+													меня в голове. Буду рад вашей обратной связи по моему творчеству!</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="pills-characters" role="tabpanel" aria-labelledby="pills-characters-tab">
+								<div class="row">
+									<div class="col-lg-5">
+										<div class="position-relative">
+											<img class="w-100" src="images/tab-fan-img1.png" alt="">
+											<div class="cinema-age">
+												<span>18+</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-7">
+										<div class="top-box d-flex align-items-center justify-content-between">
+											<h2 class="title-sm">Твой новый мир</h2>
+											<div class="d-flex gap-3">
+												<button class="top-box__btn" data-bs-toggle="modal"
+													data-bs-target="#exampleModalPromotion">Продвигать</button>
+												<button class="top-box__btn">Редактировать</button>
+											</div>
+										</div>
+										<div class="cinema-box__btns my-2">
+											<span>Фэнтэзи</span>
+											<span>Сказка</span>
+										</div>
+										<p class="mb-2">Есть над чем задуматься: предприниматели в сети интернет, инициированные
+											исключительно синтетически, своевременно
+											верифицированы. Безусловно, синтетическое тестирование говорит о возможностях экономической
+											целесообразности принимаемых
+											решений. Есть над чем задуматься: предприниматели в сети интернет, инициированные исключительно
+											синтетически, объективно
+											рассмотрены соответствующими инстанциями.</p>
+										<div class="d-flex align-items-center icon-info m-0">
+											<div class="d-flex align-items-center gap-2">
+												<img src="images/icons/heart-icon.svg" alt="heart-icon">
+												<span>10</span>
+											</div>
+											<div class="d-flex align-items-center gap-2">
+												<img src="images/icons/message-icon.svg" alt="message-icon">
+												<span>15</span>
+											</div>
+											<div class="d-flex align-items-center gap-2">
+												<img src="images/icons/save-icon.svg" alt="save-icon">
+												<span>25</span>
+											</div>
+											<div class="d-flex align-items-center gap-2">
+												<img src="images/icons/eae-icon.svg" alt="eae-icon">
+												<span>25</span>
+											</div>
+											<div class="d-flex align-items-center gap-2">
+												<img src="images/icons/clock-icon.svg" alt="clock-icon">
+												<span>8 мин.</span>
+											</div>
+											<a class="btn-gradient" href="#!">Смотреть историю</a>
+										</div>
+									</div>
+									<div class="col-lg-5 mt-24">
+										<div class="position-relative">
+											<img class="w-100" src="images/tab-fan-img1.png" alt="">
+											<div class="cinema-age">
+												<span>18+</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-7 mt-24">
+										<div class="top-box d-flex align-items-center justify-content-between">
+											<h2 class="title-sm">Страшная сказка на ночь</h2>
+											<div class="d-flex gap-3">
+												<button class="top-box__btn" data-bs-toggle="modal"
+													data-bs-target="#exampleModalQuartz">Продвигать</button>
+												<button class="top-box__btn">Редактировать</button>
+											</div>
+										</div>
+										<div class="cinema-box__btns my-2">
+											<span>Фэнтэзи</span>
+											<span>Сказка</span>
+										</div>
+										<p class="mb-2">Есть над чем задуматься: предприниматели в сети интернет, инициированные
+											исключительно синтетически, своевременно
+											верифицированы. Безусловно, синтетическое тестирование говорит о возможностях экономической
+											целесообразности принимаемых
+											решений. Есть над чем задуматься: предприниматели в сети интернет, инициированные исключительно
+											синтетически, объективно
+											рассмотрены соответствующими инстанциями.</p>
+										<div class="d-flex align-items-center icon-info m-0">
+											<div class="d-flex align-items-center gap-2">
+												<img src="images/icons/heart-icon.svg" alt="heart-icon">
+												<span>10</span>
+											</div>
+											<div class="d-flex align-items-center gap-2">
+												<img src="images/icons/message-icon.svg" alt="message-icon">
+												<span>15</span>
+											</div>
+											<div class="d-flex align-items-center gap-2">
+												<img src="images/icons/save-icon.svg" alt="save-icon">
+												<span>25</span>
+											</div>
+											<div class="d-flex align-items-center gap-2">
+												<img src="images/icons/eae-icon.svg" alt="eae-icon">
+												<span>25</span>
+											</div>
+											<div class="d-flex align-items-center gap-2">
+												<img src="images/icons/clock-icon.svg" alt="clock-icon">
+												<span>8 мин.</span>
+											</div>
+											<a class="btn-gradient" href="#!">Смотреть историю</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="pills-author" role="tabpanel" aria-labelledby="pills-author-tab">
+								<div class="row">
+									<div class="col-lg-6">
+										<h3 class="title-xs">На сайте</h3>
+										<p>с 14 декабря 2023</p>
+									</div>
+									<div class="col-lg-6">
+										<div class="about-us">
+											<span>О себе</span>
+											<div class="about-us__box">
+												<span>Всем привет! Меня зовут Андрей. Я обожаю фантастику и фэнтэзи и люблю сочинять различные
+													истории, которые крутятся у
+													меня в голове. Буду рад вашей обратной связи по моему творчеству!</span>
 											</div>
 										</div>
 									</div>
@@ -598,11 +784,122 @@
 					</div>
 				</div>
 			</section>
-
 		</main>
 		<!-- main end -->
 
 		<!-- modal start -->
+		<div class="modal fade" id="exampleModalPromotion" tabindex="-1" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content position-relative">
+					<div class="modal-header justify-content-center p-0 border-0">
+						<h5 class="modal-title" id="exampleModalLabel">Продвижение</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+							<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+							</svg>
+						</button>
+					</div>
+					<div class="modal-body p-0">
+						<div class="d-flex align-items-center justify-content-between crystal-box">
+							<div>
+								<p>1 день</p>
+								<div class="d-flex gap-2 my-1">
+									<img src="images/icons/crystal-icon.svg" alt="">
+									<h5>390</h5>
+								</div>
+							</div>
+							<button class="btn-gradient" data-bs-toggle="modal"
+								data-bs-target="#exampleModalPromotion2">Продвинуть</button>
+						</div>
+						<div class="d-flex align-items-center justify-content-between crystal-box">
+							<div>
+								<p>3 дня</p>
+								<div class="d-flex gap-2 my-1">
+									<img src="images/icons/crystal-icon.svg" alt="">
+									<h5>970</h5>
+								</div>
+								<span>200 кварцев выгоды</span>
+							</div>
+							<button class="btn-gradient" data-bs-toggle="modal"
+								data-bs-target="#exampleModalQuartz">Продвинуть</button>
+						</div>
+						<div class="d-flex align-items-center justify-content-between crystal-box">
+							<div>
+								<p>6 дней</p>
+								<div class="d-flex gap-2 my-1">
+									<img src="images/icons/crystal-icon.svg" alt="">
+									<h5>2 000</h5>
+								</div>
+								<span>340 кварцев выгоды</span>
+							</div>
+							<button class="btn-gradient" data-bs-toggle="modal"
+								data-bs-target="#exampleModalPromotion3">Продвинуть</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="exampleModalQuartz" tabindex="-1" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content position-relative">
+					<div class="modal-header justify-content-center p-0 border-0">
+						<h5 class="modal-title text-black" id="exampleModalLabel">У вас не хватает кварцев</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+							<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+							</svg>
+						</button>
+					</div>
+					<div class="modal-body p-0 text-center">
+						<button class="btn-gradient">Пополнить кошель</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="exampleModalPromotion2" tabindex="-1" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content position-relative">
+					<div class="modal-header justify-content-center p-0 border-0">
+						<h5 class="modal-title" id="exampleModalLabel">Продвижение</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+							<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+							</svg>
+						</button>
+					</div>
+					<div class="modal-body p-0 text-center">
+						<p>Успешно :)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="exampleModalPromotion3" tabindex="-1" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content position-relative">
+					<div class="modal-header justify-content-center p-0 border-0">
+						<h5 class="modal-title" id="exampleModalLabel">Продвижение</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+							<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+							</svg>
+						</button>
+					</div>
+					<div class="modal-body p-0 text-center">
+						<p>Упс, у вас недостаточно кварцев… <br>
+							<a class="modal-link pt-2 d-inline-block" href="#!">Пополнить кошель</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- modal end -->
 
 		<footer class="footer">
