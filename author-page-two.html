@@ -286,7 +286,24 @@
 						</div>
 						<div class="row align-items-end">
 							<div class="col-lg-6 user-sec__left">
-								<img class="user-icon" src="images/icons/avatar-icon.svg" alt="user-icon">
+
+								<div class="profile-pic-wrapper">
+									<div class="pic-holder">
+										<!-- uploaded pic shown here -->
+										<label for="newProfilePhoto" class="upload-file-block">
+											<div class="text-center">
+												<div class="mb-2">
+													<i class="fa fa-camera fa-2x"></i>
+												</div>
+												<div class="text-uppercase position-relative">
+													<Input class="uploadProfileInput" type="file" name="profile_pic" id="newProfilePhoto"
+														accept="image/*" style="opacity: 0;" />
+													<img id="profilePic" class="user-icon pic" src="images/icons/avatar-icon.svg" alt="user-icon">
+												</div>
+											</div>
+										</label>
+									</div>
+								</div>
 								<h4 class="user-name my-3">Andy Crow</h4>
 								<div class="d-flex align-items-center analysis-box">
 									<div class="position-relative subscribers-info info-box">
@@ -497,11 +514,7 @@
 											d="M21.92 12.5002C21.8538 12.4602 21.799 12.4037 21.761 12.3362C21.723 12.2688 21.703 12.1927 21.703 12.1152C21.703 12.0378 21.723 11.9617 21.761 11.8943C21.799 11.8268 21.8538 11.7703 21.92 11.7302C22.2243 11.5113 22.4806 11.2325 22.6732 10.9109C22.8658 10.5894 22.9907 10.2318 23.04 9.86023C23.04 9.23167 22.7903 8.62885 22.3459 8.18439C21.9014 7.73993 21.2986 7.49023 20.67 7.49023H20.42C20.17 7.56023 20.08 7.89023 20.22 8.22023C20.7612 9.43341 21.099 10.7274 21.22 12.0502C21.22 12.0502 21.22 12.1302 21.22 12.1702C21.2015 13.646 20.813 15.0935 20.09 16.3802L19.96 16.5802C19.2367 17.5928 18.3673 18.4926 17.38 19.2502C17.3123 19.2979 17.2562 19.3602 17.2159 19.4326C17.1756 19.505 17.1522 19.5855 17.1474 19.6682C17.1426 19.7508 17.1565 19.8335 17.1882 19.9101C17.2198 19.9866 17.2683 20.0551 17.33 20.1102C17.7491 20.4994 18.2894 20.7325 18.86 20.7702C19.1713 20.7702 19.4795 20.7089 19.767 20.5898C20.0545 20.4707 20.3158 20.2962 20.5359 20.0761C20.756 19.856 20.9305 19.5947 21.0496 19.3072C21.1687 19.0197 21.23 18.7115 21.23 18.4002C21.226 17.9836 21.1009 17.5771 20.87 17.2302C20.66 16.9302 20.55 16.7002 20.61 16.7102H20.68C21.2982 16.6972 21.8867 16.4431 22.3202 16.0022C22.7536 15.5613 22.9976 14.9685 23 14.3502C22.9546 13.9848 22.8355 13.6324 22.6498 13.3144C22.4642 12.9964 22.2159 12.7194 21.92 12.5002Z"
 											fill="#fff" />
 									</svg>
-
 								</div>
-							</div>
-							<div class="col-lg-6 user-sec__right text-end">
-								<a class="btn-gradient" href="#!">Подписаться</a>
 							</div>
 						</div>
 					</div>
@@ -635,128 +648,156 @@
 									</div>
 								</div>
 							</div>
-							<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-								<div class="row">
-									<div class="col-lg-6">
-										<h3 class="title-xs">На сайте</h3>
-										<p>с 14 декабря 2023</p>
+							<div class="tab-pane fade genres" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+								<h2 class="title-sm mt-32 mb-32">Не опубликовано</h2>
+								<div class="row row-cols-5 cinema-big__box" style="margin-left: -1rem;">
+									<div class="col">
+										<div class="cinema-box">
+											<div class="position-relative">
+												<img src="images/anime-img1.png" alt="">
+												<div class="cinema-box__close-btn">
+													<div class="position-relative">
+														<img src="images/icons/close-icon.svg" alt="">
+														<div class="tooltip-mini">
+															<p>Вы не можете удалить персонажа,
+																так как он участвует в истории.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a class="text-black">Звездная Амико</a>
+										</div>
 									</div>
-									<div class="col-lg-6">
-										<div class="about-us">
-											<span>О себе</span>
-											<div class="about-us__box">
-												<span>Всем привет! Меня зовут Андрей. Я обожаю фантастику и фэнтэзи и люблю сочинять различные
-													истории, которые крутятся у
-													меня в голове. Буду рад вашей обратной связи по моему творчеству!</span>
+									<div class="col">
+										<div class="cinema-box">
+											<div class="position-relative">
+												<img src="images/anime-img2.png" alt="">
+												<div class="cinema-box__close-btn">
+													<div class="position-relative">
+														<img src="images/icons/close-icon.svg" alt="">
+														<div class="tooltip-mini">
+															<p>Вы не можете удалить персонажа,
+																так как он участвует в истории.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a class="text-black">Грусть Анны</a>
+										</div>
+									</div>
+								</div>
+
+								<h2 class="title-sm mt-32 mb-32">Отклонено</h2>
+								<div class="row row-cols-5 cinema-big__box" style="margin-left: -1rem;">
+									<div class="col">
+										<div class="cinema-box">
+											<div class="position-relative">
+												<img src="images/anime-img3.png" alt="">
+												<div class="cinema-box__close-btn">
+													<div class="position-relative">
+														<img src="images/icons/close-icon.svg" alt="">
+														<div class="tooltip-mini">
+															<p>Вы не можете удалить персонажа,
+																так как он участвует в истории.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a class="text-black">1000 и 1 желание</a>
+											<div class="d-flex align-items-start gap-2 mt-1">
+												<img class="danger-img" src="images/icons/red-close.svg" alt="" width="20px" height="20px">
+												<span class="danger-text">Отклонено. Причина: Неуместный контент</span>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="tab-pane fade" id="pills-characters" role="tabpanel" aria-labelledby="pills-characters-tab">
-								<div class="row">
-									<div class="col-lg-5">
-										<div class="position-relative">
-											<img class="w-100" src="images/tab-fan-img1.png" alt="">
-											<div class="cinema-age">
-												<span>18+</span>
+							<div class="tab-pane fade genres" id="pills-characters" role="tabpanel"
+								aria-labelledby="pills-characters-tab">
+								<div class="row row-cols-5 cinema-big__box" style="margin-left: -1rem;">
+									<div class="col-lg-12 mb-24 cinema-box__hide-btn d-flex align-items-center">
+										<h2 class="title-sm">Женские <span>(1)</span></h2>
+										<img src="images/icons/top-icon.svg" alt="">
+									</div>
+									<div class="col top-col">
+										<div class="cinema-box text-center h-100">
+											<div class="position-relative h-100">
+												<div class="bg-aqua h-100 d-flex align-items-center justify-content-center flex-column">
+													<img src="images/anime-img4.png" alt="">
+												</div>
+												<div class="cinema-box__close-btn">
+													<div class="position-relative">
+														<img src="images/icons/close-icon.svg" alt="">
+														<div class="tooltip-mini">
+															<p>Вы не можете удалить персонажа,
+																так как он участвует в истории.</p>
+														</div>
+													</div>
+												</div>
 											</div>
+											<a class="text-black mt-2">Жанин</a>
 										</div>
 									</div>
-									<div class="col-lg-7">
-										<div class="top-box d-flex align-items-center justify-content-between">
-											<h2 class="title-sm">Твой новый мир</h2>
-											<div class="d-flex gap-3">
-												<button class="top-box__btn" data-bs-toggle="modal"
-													data-bs-target="#exampleModalPromotion">Продвигать</button>
-												<button class="top-box__btn">Редактировать</button>
+									<div class="col top-col">
+										<div class="cinema-box w-100 h-100 text-center">
+											<div class="bg-aqua w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+												<img src="images/icons/plus-icon.svg" alt="" width="40px" height="40px">
 											</div>
-										</div>
-										<div class="cinema-box__btns my-2">
-											<span>Фэнтэзи</span>
-											<span>Сказка</span>
-										</div>
-										<p class="mb-2">Есть над чем задуматься: предприниматели в сети интернет, инициированные
-											исключительно синтетически, своевременно
-											верифицированы. Безусловно, синтетическое тестирование говорит о возможностях экономической
-											целесообразности принимаемых
-											решений. Есть над чем задуматься: предприниматели в сети интернет, инициированные исключительно
-											синтетически, объективно
-											рассмотрены соответствующими инстанциями.</p>
-										<div class="d-flex align-items-center icon-info m-0">
-											<div class="d-flex align-items-center gap-2">
-												<img src="images/icons/heart-icon.svg" alt="heart-icon">
-												<span>10</span>
-											</div>
-											<div class="d-flex align-items-center gap-2">
-												<img src="images/icons/message-icon.svg" alt="message-icon">
-												<span>15</span>
-											</div>
-											<div class="d-flex align-items-center gap-2">
-												<img src="images/icons/save-icon.svg" alt="save-icon">
-												<span>25</span>
-											</div>
-											<div class="d-flex align-items-center gap-2">
-												<img src="images/icons/eae-icon.svg" alt="eae-icon">
-												<span>25</span>
-											</div>
-											<div class="d-flex align-items-center gap-2">
-												<img src="images/icons/clock-icon.svg" alt="clock-icon">
-												<span>8 мин.</span>
-											</div>
-											<a class="btn-gradient" href="#!">Смотреть историю</a>
+											<a class="mt-2">Создать персонажа</a>
 										</div>
 									</div>
-									<div class="col-lg-5 mt-24">
-										<div class="position-relative">
-											<img class="w-100" src="images/tab-fan-img1.png" alt="">
-											<div class="cinema-age">
-												<span>18+</span>
+								</div>
+
+
+								<div class="row row-cols-5 cinema-big__box" style="margin-left: -1rem;">
+									<div class="col-lg-12 mb-24 cinema-box__hide-btn d-flex align-items-center mt-64">
+										<h2 class="title-sm">Мужские <span>(2)</span></h2>
+										<img src="images/icons/top-icon.svg" alt="">
+									</div>
+									<div class="col top-col">
+										<div class="cinema-box text-center h-100">
+											<div class="position-relative h-100">
+												<div class="bg-aqua h-100 d-flex align-items-center justify-content-end flex-column pb-0">
+													<img class="mb-0" src="images/anime-img5.png" alt="">
+												</div>
+												<div class="cinema-box__close-btn">
+													<div class="position-relative">
+														<img src="images/icons/close-icon.svg" alt="">
+														<div class="tooltip-mini">
+															<p>Вы не можете удалить персонажа,
+																так как он участвует в истории.</p>
+														</div>
+													</div>
+												</div>
 											</div>
+											<a class="text-black mt-2">Ларриэль</a>
 										</div>
 									</div>
-									<div class="col-lg-7 mt-24">
-										<div class="top-box d-flex align-items-center justify-content-between">
-											<h2 class="title-sm">Страшная сказка на ночь</h2>
-											<div class="d-flex gap-3">
-												<button class="top-box__btn" data-bs-toggle="modal"
-													data-bs-target="#exampleModalQuartz">Продвигать</button>
-												<button class="top-box__btn">Редактировать</button>
+									<div class="col top-col">
+										<div class="cinema-box text-center h-100">
+											<div class="position-relative h-100">
+												<div class="bg-aqua h-100 d-flex align-items-center justify-content-end flex-column">
+													<img src="images/anime-img6.png" alt="">
+												</div>
+												<div class="cinema-box__close-btn">
+													<div class="position-relative">
+														<img src="images/icons/close-icon.svg" alt="">
+														<div class="tooltip-mini">
+															<p>Вы не можете удалить персонажа,
+																так как он участвует в истории.</p>
+														</div>
+													</div>
+												</div>
 											</div>
+											<a class="text-black mt-2">Антон</a>
 										</div>
-										<div class="cinema-box__btns my-2">
-											<span>Фэнтэзи</span>
-											<span>Сказка</span>
-										</div>
-										<p class="mb-2">Есть над чем задуматься: предприниматели в сети интернет, инициированные
-											исключительно синтетически, своевременно
-											верифицированы. Безусловно, синтетическое тестирование говорит о возможностях экономической
-											целесообразности принимаемых
-											решений. Есть над чем задуматься: предприниматели в сети интернет, инициированные исключительно
-											синтетически, объективно
-											рассмотрены соответствующими инстанциями.</p>
-										<div class="d-flex align-items-center icon-info m-0">
-											<div class="d-flex align-items-center gap-2">
-												<img src="images/icons/heart-icon.svg" alt="heart-icon">
-												<span>10</span>
+									</div>
+									<div class="col top-col">
+										<div class="cinema-box w-100 h-100 text-center">
+											<div class="bg-aqua w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+												<img src="images/icons/plus-icon.svg" alt="" width="40px" height="40px">
 											</div>
-											<div class="d-flex align-items-center gap-2">
-												<img src="images/icons/message-icon.svg" alt="message-icon">
-												<span>15</span>
-											</div>
-											<div class="d-flex align-items-center gap-2">
-												<img src="images/icons/save-icon.svg" alt="save-icon">
-												<span>25</span>
-											</div>
-											<div class="d-flex align-items-center gap-2">
-												<img src="images/icons/eae-icon.svg" alt="eae-icon">
-												<span>25</span>
-											</div>
-											<div class="d-flex align-items-center gap-2">
-												<img src="images/icons/clock-icon.svg" alt="clock-icon">
-												<span>8 мин.</span>
-											</div>
-											<a class="btn-gradient" href="#!">Смотреть историю</a>
+											<a class="mt-2">Создать персонажа</a>
 										</div>
 									</div>
 								</div>

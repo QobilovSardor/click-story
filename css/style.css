@@ -339,8 +339,35 @@ a:focus {
 	margin-bottom: 8px;
 }
 
+.genres .cinema-box .bg-aqua {
+	background: #EBF2FF;
+	border-radius: 5px;
+	padding: 13px 30px;
+}
+
 .genres .cinema-box img:hover~.tooltip-box {
 	visibility: visible;
+}
+
+.cinema-box__close-btn:hover .tooltip-mini {
+	visibility: visible;
+}
+
+.tooltip-mini {
+	position: absolute;
+	top: 120%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #FFFFFF;
+	box-shadow: 0px 0px 15px #CEE0FF;
+	border-radius: 10px;
+	padding: 18px 17px;
+	font-size: 16px;
+	line-height: 140%;
+	color: #000000;
+	width: 309px;
+	visibility: hidden;
+	z-index: 10;
 }
 
 .genres .cinema-box a:hover {
@@ -410,6 +437,7 @@ a:focus {
 	font-size: 16px;
 	line-height: 19px;
 	color: #456DBB;
+	display: inline-block;
 }
 
 .genres .cinema-box p {
@@ -423,6 +451,27 @@ a:focus {
 	display: flex;
 	align-items: center;
 	gap: 4px;
+}
+
+.cinema-box__hide-btn {
+	gap: 13px;
+	margin-top: 32px;
+	cursor: pointer;
+}
+
+.cinema-box__hide-btn .title-sm span {
+	font-size: 14px;
+	line-height: 16.94px;
+	color: #686868;
+	font-weight: 400;
+}
+
+.cinema-box__hide-btn img {
+	transition: all 0.2s linear;
+}
+
+.cinema-box__hide-btn.rotate>img {
+	transform: rotate(180deg);
 }
 
 .cinema-box__btns span {
@@ -461,6 +510,19 @@ a:focus {
 	line-height: 17px;
 	color: #686868;
 	cursor: pointer;
+}
+
+.cinema-box .danger-text {
+	font-size: 14px;
+	line-height: 17px;
+	color: #FF0000;
+	display: inline-block;
+}
+
+.cinema-box .danger-img {
+	width: 20px !important;
+	height: 20px;
+	margin-bottom: 0 !important;
 }
 
 /* genres end */
@@ -588,7 +650,9 @@ a:focus {
 	line-height: 140%;
 	color: #0D1E25;
 }
-
+.select-menu .options-list__number{
+	max-height: 346px !important;
+}
 .select-menu>.options-list {
 	position: absolute;
 	width: 100%;
@@ -1087,6 +1151,7 @@ a:focus {
 .user-sec .user-sec__left .user-icon {
 	height: 100px;
 	width: 100px;
+	border-radius: 50%;
 }
 
 .user-sec .user-sec__left h4 {
@@ -1308,7 +1373,49 @@ a:focus {
 	color: #000000;
 }
 
+.uploadProfileInput {
+	position: absolute;
+}
 
+/* settings-sec start */
+.settings-sec .settings-form {
+	margin-bottom: 24px;
+}
+
+.settings-sec .settings-form:last-child {
+	margin-bottom: 0;
+}
+
+.settings-sec .settings-form label {
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+	display: block;
+	margin-bottom: 16px;
+}
+
+.settings-sec .settings-form input {
+	border: 1px solid #D0D0D0;
+	border-radius: 5px;
+	font-size: 14px;
+	line-height: 17px;
+	color: #333;
+	padding: 16px;
+	width: 100%;
+}
+
+.settings-sec .settings-form input::placeholder {
+	font-size: 14px;
+	line-height: 17px;
+	color: #686868;
+}
+.settings-sec .select-box .select-menu .select{
+	width: 113px;
+}
+.settings-sec .select-box span{
+	color: #686868;
+}
+/* settings-sec end */
 
 
 
