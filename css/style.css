@@ -960,6 +960,7 @@ a:focus {
 .icon-info {
 	gap: 18px;
 	margin: 24px 0;
+	flex-wrap: wrap;
 }
 
 .contents-sec .contents-sec__box h4 {
@@ -2113,6 +2114,19 @@ input[type=number]::-webkit-outer-spin-button {
 	.tooltip-mini {
 		left: -500%;
 	}
+
+	.user-sec .subscriptions-box {
+		left: -175%;
+	}
+
+	.user-sec .subscriptions-box .scroll-box,
+	.user-sec .subscribers-box .scroll-box {
+		width: 300px;
+	}
+
+	.copy-link {
+		left: -280%;
+	}
 }
 
 @media (max-width: 576px) {
@@ -2150,6 +2164,7 @@ input[type=number]::-webkit-outer-spin-button {
 	.user-sec .top-col {
 		margin-top: 50px;
 	}
+
 	.genres .cinema-box .bg-aqua img {
 		width: auto !important;
 	}
@@ -2196,5 +2211,27 @@ input[type=number]::-webkit-outer-spin-button {
 
 	.user-sec .analysis-box span {
 		font-size: 14px;
+	}
+
+	.user-sec .subscribers-box {
+		left: -20px;
+	}
+
+	.user-sec .subscriptions-box {
+		left: -123px;
+	}
+
+	.user-sec .subscriptions-box .scroll-box,
+	.user-sec .subscribers-box .scroll-box {
+		width: 280px;
+	}
+
+	.user-sec .subscribers-box .scroll-box {
+		height: 420px;
+	}
+
+	.user-sec .subscribers-box,
+	.user-sec .subscriptions-box {
+		padding: 25px;
 	}
 }
