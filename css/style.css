@@ -2025,6 +2025,12 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 }
 
+@media (max-width: 1400px) {
+	.copy-link {
+		left: -150%;
+	}
+}
+
 @media (max-width: 1200px) {
 	.header .navbar-nav {
 		gap: 20px;
@@ -2065,6 +2071,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 	.contents-sec .contents-sec__box .title-text {
 		margin-top: 20px !important;
+	}
+		.contents-sec .dots-icon{
+		right: 7px;
 	}
 }
 
@@ -2245,5 +2254,8 @@ input[type=number]::-webkit-outer-spin-button {
 	.user-sec .subscribers-box,
 	.user-sec .subscriptions-box {
 		padding: 25px;
+	}
+	.copy-link {
+		padding: 10px;
 	}
 }
