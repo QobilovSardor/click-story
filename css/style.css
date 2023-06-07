@@ -2062,6 +2062,10 @@ input[type=number]::-webkit-outer-spin-button {
 	.user-sec .tab-pane .col-lg-7.mt-24 {
 		margin-top: 0;
 	}
+
+	.contents-sec .contents-sec__box .title-text {
+		margin-top: 20px !important;
+	}
 }
 
 @media (max-width: 820px) {
@@ -2195,6 +2199,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 	.select-achievements .check-icon__box .scroll-box {
 		gap: 10px !important;
+	}
+
+	.contents-sec .contents-sec .contents-sec__box {
+		padding: 20px;
+	}
+
+	.modal .modal-content {
+		padding: 25px;
 	}
 }
 
