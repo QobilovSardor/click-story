@@ -6,7 +6,6 @@ $(function () {
 	$('.hide-box').slideUp(0);
 	$('.bg-changer').slideUp(0);
 	$('.select-achievements').slideUp(0);
-
 	$('.read-more').on("click", function () {
 		$('.hide-block').slideToggle();
 

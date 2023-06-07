@@ -650,9 +650,11 @@ a:focus {
 	line-height: 140%;
 	color: #0D1E25;
 }
-.select-menu .options-list__number{
+
+.select-menu .options-list__number {
 	max-height: 346px !important;
 }
+
 .select-menu>.options-list {
 	position: absolute;
 	width: 100%;
@@ -1378,15 +1380,15 @@ a:focus {
 }
 
 /* settings-sec start */
-.settings-sec .settings-form {
+.settings-form {
 	margin-bottom: 24px;
 }
 
-.settings-sec .settings-form:last-child {
+.settings-form:last-child {
 	margin-bottom: 0;
 }
 
-.settings-sec .settings-form label {
+.settings-form label {
 	font-size: 16px;
 	line-height: 140%;
 	color: #333333;
@@ -1394,7 +1396,8 @@ a:focus {
 	margin-bottom: 16px;
 }
 
-.settings-sec .settings-form input {
+.settings-form input,
+.settings-form textarea {
 	border: 1px solid #D0D0D0;
 	border-radius: 5px;
 	font-size: 14px;
@@ -1404,16 +1407,66 @@ a:focus {
 	width: 100%;
 }
 
-.settings-sec .settings-form input::placeholder {
+.settings-form textarea {
+	height: 117px;
+	resize: none;
+}
+
+.settings-form input::placeholder {
 	font-size: 14px;
 	line-height: 17px;
 	color: #686868;
 }
-.settings-sec .select-box .select-menu .select{
+
+.select-box .select-menu .select {
 	width: 113px;
 }
-.settings-sec .select-box span{
+
+.select-box span {
 	color: #686868;
+}
+
+.upload-img__box .upload-img__name {
+	font-size: 14px;
+	line-height: 17px;
+	color: #686868;
+}
+
+.upload-img__box .upload-img {
+	border: 2px dashed #456DBB;
+	border-radius: 5px;
+	display: block;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	gap: 13px;
+	padding: 16px;
+	margin: 18px 0 24px;
+	cursor: pointer;
+}
+
+.user-btn .user-btn__info {
+	position: absolute;
+	right: 0;
+	top: 130%;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 15px #CEE0FF;
+	border-radius: 5px;
+	padding: 16px;
+	width: 178px;
+	z-index: 100;
+}
+
+.user-btn .user-btn__info a {
+	margin-bottom: 24px;
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+	display: block;
+	text-align: left;
+}
+.user-btn .user-btn__info a:last-child{
+	margin-bottom: 0;
 }
 /* settings-sec end */
 
