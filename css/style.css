@@ -2031,16 +2031,16 @@ input[type=number]::-webkit-outer-spin-button {
 	.copy-link {
 		left: -150%;
 	}
+
+	.tooltip-box {
+		width: 350px;
+		padding: 20px;
+	}
 }
 
 @media (max-width: 1200px) {
 	.header .navbar-nav {
 		gap: 20px;
-	}
-
-	.tooltip-box {
-		width: 350px;
-		padding: 20px;
 	}
 }
 
