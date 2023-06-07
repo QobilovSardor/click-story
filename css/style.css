@@ -1451,7 +1451,12 @@ a:focus {
 	margin: 18px 0 24px;
 	cursor: pointer;
 }
-
+.user-btn:hover .user-btn__info{
+	visibility: visible;
+}
+.user-btn .user-btn__info:hover{
+	visibility: visible;
+}
 .user-btn .user-btn__info {
 	position: absolute;
 	right: 0;
@@ -1462,6 +1467,8 @@ a:focus {
 	padding: 16px;
 	width: 178px;
 	z-index: 100;
+	visibility: hidden;
+	transition: all 0.1s linear;
 }
 
 .user-btn .user-btn__info a {
