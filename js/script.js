@@ -6,9 +6,9 @@ $(function () {
 	$('.hide-box').slideUp(0);
 	$('.bg-changer').slideUp(0);
 	$('.select-achievements').slideUp(0);
+	$('.cart-info').slideUp(0);
 	$('.read-more').on("click", function () {
 		$('.hide-block').slideToggle();
-
 		if ($(this).text() == "Скрывать") {
 			$(this).text("Показать еще");
 		} else {
@@ -95,7 +95,7 @@ $(function () {
 		let btn = e.querySelector('.cinema-box__hide-btn');
 		let topCol = e.querySelectorAll('.top-col');
 		console.log(btn);
-		$(btn).on("click", function() {
+		$(btn).on("click", function () {
 			$(topCol).slideToggle();
 			$(this).toggleClass('rotate')
 		})
@@ -108,6 +108,31 @@ $(function () {
 			$(this).text("Отключить");
 		}
 	});
+
+	$('.check-box').on('click', function () {
+		$(this).toggleClass('active');
+	});
+	$('.cart-box').each(function (i, e) {
+		let btn = e.querySelector('.dots-btn');
+		let cartInfo = e.querySelector('.cart-info')
+		$(btn).on('click', function () {
+			$(cartInfo).slideToggle();
+		});
+	})
+
+	$('.subscribe-btn').on('click', function () {
+		if ($(this).text() == 'Отменить подписку') {
+			$(this).text('Подписаться')
+		} else {
+			$(this).text('Отменить подписку')
+		}
+		if ($('.crystal-number__price').text() == 'Активна') {
+			$('.crystal-number__price').text('390 ₽/мес.')
+		} else{
+			$('.crystal-number__price').text('Активна')
+		}
+	});
+
 
 	const selects = document.querySelectorAll('.select-menu');
 

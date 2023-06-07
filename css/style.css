@@ -339,6 +339,13 @@ a:focus {
 	margin-bottom: 8px;
 }
 
+.genres .cinema-box .bg-aqua-two {
+	background: #456DBB;
+	border-radius: 5px;
+	height: 170px !important;
+	width: 100%;
+}
+
 .genres .cinema-box .bg-aqua {
 	background: #EBF2FF;
 	border-radius: 5px;
@@ -1465,14 +1472,282 @@ a:focus {
 	display: block;
 	text-align: left;
 }
-.user-btn .user-btn__info a:last-child{
+
+.user-btn .user-btn__info a:last-child {
 	margin-bottom: 0;
 }
+
 /* settings-sec end */
 
+/* personal-area sec */
+.personal-area .blue-box {
+	background: #EBF2FF;
+	border-radius: 5px;
+	padding: 24px;
+}
 
+.personal-area .blue-box .crystal-number {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	color: #333333;
+}
 
+.personal-area .blue-box p {
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+}
 
+.personal-area .blue-box span {
+	font-size: 14px;
+	line-height: 17px;
+	color: #686868;
+	display: inline-block;
+}
+
+.personal-area .blue-box h5 {
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+}
+
+.personal-area .subscribers-list li {
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+	margin-bottom: 8px;
+}
+
+.personal-area .subscribers-list li:last-child {
+	margin-bottom: 0;
+}
+
+.personal-area .blue-box .check-box {
+	background: #FFFFFF;
+	width: 50px;
+	height: 24px;
+	padding: 2px;
+	border-radius: 26px;
+	transition: all 0.3s linear;
+}
+
+.personal-area .check-box .circle-box {
+	background: #D0D0D0;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	transition: all 0.3s linear;
+}
+
+.personal-area .check-box.active {
+	background: #456DBB;
+}
+
+.personal-area .check-box.active .circle-box {
+	margin: 0 0 0 auto;
+	background: linear-gradient(90deg, #BEFFE8 0%, #80E0FF 100%);
+}
+
+.personal-area .cart-box {
+	background: linear-gradient(90deg, #BEFFE8 0%, #80E0FF 100%);
+	box-shadow: 0px 4px 10px #CEE0FF;
+	border-radius: 5px;
+	width: 100px;
+	padding: 4px;
+}
+
+.personal-area .cart-box .opcatiy-box {
+	opacity: 0.5;
+}
+
+.personal-area .cart-box .opcatiy-box.active.active {
+	opacity: 1;
+}
+
+.personal-area .plus-cart__box {
+	background: #EBF2FF;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	box-shadow: none;
+}
+
+.personal-area .carts-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	color: #333333;
+	margin-bottom: 16px;
+}
+
+.personal-area .cart-box span {
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+	display: inline-block;
+	white-space: nowrap;
+	padding: 6px 0 0 6px;
+}
+
+.personal-area .cart-info {
+	position: absolute;
+	width: 180px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 15px #CEE0FF;
+	border-radius: 10px;
+	padding: 18px 17px;
+	right: -100%;
+	top: 120%;
+	z-index: 10;
+	opacity: 1 !important;
+}
+
+.personal-area .cart-info p {
+	font-size: 16px;
+	line-height: 140%;
+	color: #000000;
+	text-align: left;
+	margin-bottom: 23px;
+}
+
+.personal-area .cart-info p:last-child {
+	margin-bottom: 0;
+}
+
+.personal-area .cod-box input {
+	width: 216px;
+	font-size: 14px;
+	line-height: 17px;
+	color: #686868;
+	border: 1px solid #D0D0D0;
+	border-radius: 5px;
+	padding: 16px;
+}
+
+.personal-area .cod-box input::placeholder {
+	font-size: 14px;
+	line-height: 17px;
+	color: #686868;
+}
+
+.personal-area .nav-tabs {
+	border-bottom: 1px solid #686868;
+}
+
+.personal-area .nav-tabs .nav-link {
+	font-size: 16px;
+	line-height: 140%;
+	color: #686868;
+	width: 33.33333%;
+	font-weight: 400;
+	position: relative;
+}
+
+.personal-area .nav-tabs .nav-link {
+	border: none;
+	border-bottom: 1px solid #686868;
+	padding: 0 0 24px 0;
+}
+
+.personal-area .nav-tabs .nav-link.active::before {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	width: 100%;
+	border: 2px solid #456DBB;
+	left: 0;
+}
+
+.personal-area .nav-tabs .nav-link.active {
+	font-weight: 700;
+	color: #456DBB;
+}
+
+.personal-area .purchases-box {
+	padding: 15px;
+	text-align: center;
+}
+
+.personal-area .opacity-box {
+	opacity: 0.5;
+}
+
+.personal-area .opacity-box.open {
+	opacity: 1;
+}
+
+.personal-area .purchases-box .crystal-box__number {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #456DBB;
+}
+
+.personal-area .purchases-box .purchases-box__name {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	color: #333333;
+	margin-top: 8px;
+}
+
+.personal-area .purchases-box .progres-bar .progres {
+	background: linear-gradient(90deg, #BEFFE8 0%, #80E0FF 100%);
+	border-radius: 7px;
+	width: 100%;
+	height: 100%;
+}
+
+.personal-area .purchases-box .progres-bar .progres.three {
+	width: 30%;
+}
+
+.personal-area .purchases-box .progres-bar {
+	width: 140px;
+	height: 5px;
+	background: #EBF2FF;
+	border-radius: 7px;
+}
+
+.personal-area .purchases-box .crystal-box {
+	margin: 17px 0;
+}
+
+.personal-area .block-icon {
+	position: absolute;
+	top: 16px;
+	right: 25px;
+}
+
+.personal-area .purchases-box:hover .purchases-tooltip {
+	visibility: visible;
+}
+
+.personal-area .purchases-tooltip {
+	width: 370px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 15px #CEE0FF;
+	border-radius: 5px;
+	text-align: left;
+	position: absolute;
+	z-index: 10;
+	padding: 16px;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	visibility: hidden;
+}
+
+.personal-area .purchases-tooltip p {
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+}
 
 
 
