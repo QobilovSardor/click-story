@@ -2072,8 +2072,13 @@ input[type=number]::-webkit-outer-spin-button {
 	.contents-sec .contents-sec__box .title-text {
 		margin-top: 20px !important;
 	}
-		.contents-sec .dots-icon{
+
+	.contents-sec .dots-icon {
 		right: 7px;
+	}
+
+	.user-btn .user-btn__info {
+		left: 0;
 	}
 }
 
@@ -2255,10 +2260,12 @@ input[type=number]::-webkit-outer-spin-button {
 	.user-sec .subscriptions-box {
 		padding: 25px;
 	}
+
 	.copy-link {
 		padding: 10px;
 	}
-		.genres .cinema-big__box{
-			margin-top: 10px;
-		}
+
+	.genres .cinema-big__box {
+		margin-top: 10px;
+	}
 }
