@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
-	<title>Personal Cabinet</title>
+	<title>Click Story</title>
 </head>
 
 <body>
@@ -15,7 +15,13 @@
 		<!-- header start -->
 		<header class="header">
 			<nav class="navbar navbar-expand-lg">
-				<div class="container align-items-center">
+				<div class="container">
+					<div class="header-bg__one">
+						<img src="images/header-bg1.svg" alt="">
+					</div>
+					<div class="header-bg__two">
+						<img src="images/header-bg2.svg" alt="">
+					</div>
 					<a class="navbar-brand" href="index.html">
 						<svg width="154" height="18" viewBox="0 0 154 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g opacity="0.4">
@@ -231,6 +237,14 @@
 			<section class="user-sec">
 				<div class="container">
 					<div class="user-bg position-relative">
+						<div id="preview-image" class="big-img">
+							<div id="placeholder">
+								<div id="upload-area">
+									<img src="images/user-bg.png" alt="">
+								</div>
+							</div>
+						</div>
+
 						<div class="user-dots">
 							<button class="change-btn">
 								<svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -241,7 +255,12 @@
 							</button>
 							<div class="position-relative">
 								<div class="bg-changer">
-									<p class="bg-changer__info">Обновить фон</p>
+									<div class="bg-changer__info change-bg-btn">
+										<label for="inputImage" id="inputLabel">Обновить фон</label>
+										<input type="file" id="inputImage" />
+									</div>
+
+
 									<p class="bg-changer__info open-select__achievements">Избранные достижения</p>
 									<p class="bg-changer__info">Поделиться ссылкой</p>
 								</div>
@@ -284,6 +303,7 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="row align-items-end">
 							<div class="col-lg-6 user-sec__left">
 
@@ -828,121 +848,6 @@
 		</main>
 		<!-- main end -->
 
-		<!-- modal start -->
-		<div class="modal fade" id="exampleModalPromotion" tabindex="-1" aria-labelledby="exampleModalLabel"
-			aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content position-relative">
-					<div class="modal-header justify-content-center p-0 border-0">
-						<h5 class="modal-title" id="exampleModalLabel">Продвижение</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-							<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-								<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-							</svg>
-						</button>
-					</div>
-					<div class="modal-body p-0">
-						<div class="d-flex align-items-center justify-content-between crystal-box">
-							<div>
-								<p>1 день</p>
-								<div class="d-flex gap-2 my-1">
-									<img src="images/icons/crystal-icon.svg" alt="">
-									<h5>390</h5>
-								</div>
-							</div>
-							<button class="btn-gradient" data-bs-toggle="modal"
-								data-bs-target="#exampleModalPromotion2">Продвинуть</button>
-						</div>
-						<div class="d-flex align-items-center justify-content-between crystal-box">
-							<div>
-								<p>3 дня</p>
-								<div class="d-flex gap-2 my-1">
-									<img src="images/icons/crystal-icon.svg" alt="">
-									<h5>970</h5>
-								</div>
-								<span>200 кварцев выгоды</span>
-							</div>
-							<button class="btn-gradient" data-bs-toggle="modal"
-								data-bs-target="#exampleModalQuartz">Продвинуть</button>
-						</div>
-						<div class="d-flex align-items-center justify-content-between crystal-box">
-							<div>
-								<p>6 дней</p>
-								<div class="d-flex gap-2 my-1">
-									<img src="images/icons/crystal-icon.svg" alt="">
-									<h5>2 000</h5>
-								</div>
-								<span>340 кварцев выгоды</span>
-							</div>
-							<button class="btn-gradient" data-bs-toggle="modal"
-								data-bs-target="#exampleModalPromotion3">Продвинуть</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="modal fade" id="exampleModalQuartz" tabindex="-1" aria-labelledby="exampleModalLabel"
-			aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content position-relative">
-					<div class="modal-header justify-content-center p-0 border-0">
-						<h5 class="modal-title text-black" id="exampleModalLabel">У вас не хватает кварцев</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-							<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-								<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-							</svg>
-						</button>
-					</div>
-					<div class="modal-body p-0 text-center">
-						<button class="btn-gradient">Пополнить кошель</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="modal fade" id="exampleModalPromotion2" tabindex="-1" aria-labelledby="exampleModalLabel"
-			aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content position-relative">
-					<div class="modal-header justify-content-center p-0 border-0">
-						<h5 class="modal-title" id="exampleModalLabel">Продвижение</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-							<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-								<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-							</svg>
-						</button>
-					</div>
-					<div class="modal-body p-0 text-center">
-						<p>Успешно :)</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="modal fade" id="exampleModalPromotion3" tabindex="-1" aria-labelledby="exampleModalLabel"
-			aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content position-relative">
-					<div class="modal-header justify-content-center p-0 border-0">
-						<h5 class="modal-title" id="exampleModalLabel">Продвижение</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-							<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-								<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-							</svg>
-						</button>
-					</div>
-					<div class="modal-body p-0 text-center">
-						<p>Упс, у вас недостаточно кварцев… <br>
-							<a class="modal-link pt-2 d-inline-block" href="#!">Пополнить кошель</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- modal end -->
-
 		<footer class="footer">
 			<div class="container">
 				<div class="row">
@@ -1111,9 +1016,150 @@
 		</footer>
 	</div>
 
+	<!-- modal start -->
+	<div class="modal fade" id="exampleModalPromotion" tabindex="-1" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content position-relative">
+				<div class="modal-header justify-content-center p-0 border-0">
+					<h5 class="modal-title" id="exampleModalLabel">Продвижение</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+							stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body p-0">
+					<div class="d-flex align-items-center justify-content-between crystal-box">
+						<div>
+							<p>1 день</p>
+							<div class="d-flex gap-2 my-1">
+								<img src="images/icons/crystal-icon.svg" alt="">
+								<h5>390</h5>
+							</div>
+						</div>
+						<button class="btn-gradient" data-bs-toggle="modal"
+							data-bs-target="#exampleModalPromotion2">Продвинуть</button>
+					</div>
+					<div class="d-flex align-items-center justify-content-between crystal-box">
+						<div>
+							<p>3 дня</p>
+							<div class="d-flex gap-2 my-1">
+								<img src="images/icons/crystal-icon.svg" alt="">
+								<h5>970</h5>
+							</div>
+							<span>200 кварцев выгоды</span>
+						</div>
+						<button class="btn-gradient" data-bs-toggle="modal"
+							data-bs-target="#exampleModalQuartz">Продвинуть</button>
+					</div>
+					<div class="d-flex align-items-center justify-content-between crystal-box">
+						<div>
+							<p>6 дней</p>
+							<div class="d-flex gap-2 my-1">
+								<img src="images/icons/crystal-icon.svg" alt="">
+								<h5>2 000</h5>
+							</div>
+							<span>340 кварцев выгоды</span>
+						</div>
+						<button class="btn-gradient" data-bs-toggle="modal"
+							data-bs-target="#exampleModalPromotion3">Продвинуть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="exampleModalQuartz" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content position-relative">
+				<div class="modal-header justify-content-center p-0 border-0">
+					<h5 class="modal-title text-black" id="exampleModalLabel">У вас не хватает кварцев</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+							stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body p-0 text-center">
+					<button class="btn-gradient">Пополнить кошель</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="exampleModalPromotion2" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content position-relative">
+				<div class="modal-header justify-content-center p-0 border-0">
+					<h5 class="modal-title" id="exampleModalLabel">Продвижение</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+							stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body p-0 text-center">
+					<p>Успешно :)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="exampleModalPromotion3" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content position-relative">
+				<div class="modal-header justify-content-center p-0 border-0">
+					<h5 class="modal-title" id="exampleModalLabel">Продвижение</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+							stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body p-0 text-center">
+					<p>Упс, у вас недостаточно кварцев… <br>
+						<a class="modal-link pt-2 d-inline-block" href="#!">Пополнить кошель</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal end -->
+
+	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="libs/bootstrap5/bootstrap.min.js"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+
+	<script>
+		const inputImage = document.getElementById("inputImage");
+		const previewArea = document.getElementById("preview-image");
+		const placeholder = document.getElementById("placeholder");
+		// detect upload
+		inputImage.addEventListener("change", () => {
+			const reader = new FileReader();
+
+			reader.readAsDataURL(inputImage.files[0]);
+
+			reader.onload = (e) => {
+				const img = document.createElement("img");
+				img.src = e.target.result;
+				img.classList.add("img");
+
+				placeholder.style.display = "none";
+				previewArea.append(img);
+			};
+		});
+	</script>
 </body>
 
 </html>

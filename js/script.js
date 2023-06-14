@@ -1,5 +1,96 @@
 $(function () {
 
+	var grid = $(".grid");
+	var filterCheckboxes1 = $(".filters .categories input[type=checkbox]");
+	var filterCheckboxes2 = $(".filters .services input[type=checkbox]");
+	var filterCheckboxes3 = $(".filters .types input[type=checkbox]");
+	var search = $(".filters .search input");
+	var qsRegex;
+	var buttonFilter1;
+	var buttonFilter2;
+	var buttonFilter3;
+
+	grid.isotope({
+		itemSelector: ".grid-item",
+		filter: function () {
+			var searchResult = qsRegex ? $(this).text().match(qsRegex) : true;
+			var buttonResult1 = buttonFilter1 ? $(this).is(buttonFilter1) : true;
+			var buttonResult2 = buttonFilter2 ? $(this).is(buttonFilter2) : true;
+			var buttonResult3 = buttonFilter3 ? $(this).is(buttonFilter3) : true;
+
+			return searchResult && buttonResult1 && buttonResult2 && buttonResult3;
+		}
+	});
+
+	// use value of search field to filter
+	var quicksearch = search.keyup(
+		debounce(function () {
+			qsRegex = new RegExp(quicksearch.val(), "gi");
+			grid.isotope();
+		}, 200)
+	);
+
+	// debounce so filtering doesn't happen every millisecond
+	function debounce(fn, threshold) {
+		var timeout;
+		return function debounced() {
+			if (timeout) {
+				clearTimeout(timeout);
+			}
+			function delayed() {
+				fn();
+				timeout = null;
+			}
+			timeout = setTimeout(delayed, threshold || 100);
+		};
+	}
+
+	// checkboxes 1 filteration
+	filterCheckboxes1.change(function () {
+		var filters = [];
+		filterCheckboxes1.filter(":checked").each(function () {
+			filters.push(this.value);
+		});
+		filters = filters.join(", "); //OR
+		// filters = filters.join(''); //AND
+		buttonFilter1 = filters;
+		grid.isotope();
+	});
+
+	// checkboxes 2 filteration
+	filterCheckboxes2.change(function () {
+		var filters = [];
+		filterCheckboxes2.filter(":checked").each(function () {
+			filters.push(this.value);
+		});
+		filters = filters.join(", ");
+		buttonFilter2 = filters;
+		grid.isotope();
+	});
+
+	// checkboxes 3 filteration
+	filterCheckboxes3.change(function () {
+		var filters = [];
+		filterCheckboxes3.filter(":checked").each(function () {
+			filters.push(this.value);
+		});
+		filters = filters.join(", ");
+		buttonFilter3 = filters;
+		grid.isotope();
+	});
+
+	
+
+	// stickiy header
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1) {
+			$('header').addClass("sticky");
+		}
+		else {
+			$('header').removeClass("sticky");
+		}
+	});
+
 	$('.hide-block').slideUp(0);
 	$('.hide-block-two').slideUp(0);
 	$('.hide-block-notification').slideUp(0);
@@ -222,5 +313,23 @@ $(document).on("change", ".uploadProfileInput", function () {
 			$(wrapper).find('role="alert"').remove();
 		}, 3000);
 	}
+
+
+
+
+
+	// =================================================================
+});
+jQuery(document).ready(function () {
+	jQuery('#datepicker').datepicker({
+		format: 'dd-mm-yyyy',
+		startDate: '+1d'
+	});
+});
+jQuery(document).ready(function () {
+	jQuery('#datepicker2').datepicker({
+		format: 'dd-mm-yyyy',
+		startDate: '+1d'
+	});
 });
 

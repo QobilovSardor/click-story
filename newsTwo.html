@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
-	<title>Personal Cabinet</title>
+	<title>Click Story</title>
 </head>
 
 <body>
@@ -16,6 +16,12 @@
 		<header class="header">
 			<nav class="navbar navbar-expand-lg">
 				<div class="container align-items-center">
+					<div class="header-bg__one">
+						<img src="images/header-bg1.svg" alt="">
+					</div>
+					<div class="header-bg__two">
+						<img src="images/header-bg2.svg" alt="">
+					</div>
 					<a class="navbar-brand" href="#!">
 						<svg width="154" height="18" viewBox="0 0 154 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g opacity="0.4">
@@ -296,50 +302,6 @@
 		</main>
 		<!-- main end -->
 
-		<!-- modal start -->
-		<div class="modal fade" id="exampleModalNewsSec1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content position-relative">
-					<div class="modal-header justify-content-center p-0 border-0">
-						<h5 class="modal-title text-black m-0" id="exampleModalLabel">У вас не хватает кварцев</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-							<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-								<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-							</svg>
-						</button>
-					</div>
-					<div class="modal-body p-0">
-						<div class="modal-form">
-							<button class="btn-gradient w-100 text-center mt-32">Пополнить кошель</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="modal fade" id="exampleModalNewsSec2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content position-relative">
-					<div class="modal-header justify-content-center p-0 border-0">
-						<h5 class="modal-title text-black m-0" id="exampleModalLabel">Хотите купить?</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-							<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-								stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-								<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-							</svg>
-						</button>
-					</div>
-					<div class="modal-body p-0">
-						<div class="modal-form d-flex gap-4 justify-content-center">
-							<button class="btn-gradient text-center mt-32">Да</button>
-							<button class="btn-gradient text-center mt-32">Нет</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- modal end -->
-
 		<footer class="footer">
 			<div class="container">
 				<div class="row">
@@ -508,9 +470,56 @@
 		</footer>
 	</div>
 
+	<!-- modal start -->
+	<div class="modal fade" id="exampleModalNewsSec1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content position-relative">
+				<div class="modal-header justify-content-center p-0 border-0">
+					<h5 class="modal-title text-black m-0" id="exampleModalLabel">У вас не хватает кварцев</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+							stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body p-0">
+					<div class="modal-form">
+						<button class="btn-gradient w-100 text-center mt-32">Пополнить кошель</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="exampleModalNewsSec2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content position-relative">
+				<div class="modal-header justify-content-center p-0 border-0">
+					<h5 class="modal-title text-black m-0" id="exampleModalLabel">Хотите купить?</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+							stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body p-0">
+					<div class="modal-form d-flex gap-4 justify-content-center">
+						<button class="btn-gradient text-center mt-32">Да</button>
+						<button class="btn-gradient text-center mt-32">Нет</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal end -->
+
+	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="libs/bootstrap5/bootstrap.min.js"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
 </body>
 
 </html>
