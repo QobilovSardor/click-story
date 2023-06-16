@@ -106,7 +106,7 @@
 								</linearGradient>
 							</defs>
 						</svg>
-
+		
 					</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -161,8 +161,7 @@
 											<path d="M16.0701 6.59203L11.4306 21.851L10.9504 19.5586L13.6043 2.71143L16.0701 6.59203Z"
 												fill="#87E8FD" />
 											<path d="M20.9558 0L16.0702 6.59184L13.6045 2.71124L16.9706 0.347171L20.9558 0Z" fill="#D4F9E4" />
-											<path
-												d="M16.0703 6.59184L21.7008 9.28545L24.5002 8.69691L20.9558 0L17.8304 2.49522L16.0703 6.59184Z"
+											<path d="M16.0703 6.59184L21.7008 9.28545L24.5002 8.69691L20.9558 0L17.8304 2.49522L16.0703 6.59184Z"
 												fill="#A9FFE5" />
 											<path d="M20.9558 0L24.5002 8.69691L24.1709 5.98016L20.9558 0Z" fill="#0074B6" />
 											<path d="M21.7008 9.28545L20.9558 0L24.5002 8.69691L21.7008 9.28545Z" fill="#87E8FD" />
@@ -226,106 +225,66 @@
 							</ul>
 						</div>
 					</div>
-
+		
 				</div>
 			</nav>
 		</header>
 
 		<main>
 
-			<section class="admin-sec">
+			<section class="create-news">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-12 title-box">
-							<h2 class="title-md">Админка</h2>
-							<div class="title-box__right">
-								<input placeholder="01.12.2023" type="text" name="checkIn" id="datepicker" value="" class="calendar">
-								<span class="line"></span>
-								<input placeholder="01.12.2023" type="text" name="checkIn" id="datepicker2" value="" class="calendar">
-								<a class="btn-gradient" href="#!">Скачать таблицу</a>
-							</div>
+						<div class="title mt-64">
+							<h1 class="title-md">Создание новости</h1>
+							<h2 class="title-text mt-64 mb-24">Разместить новость</h2>
 						</div>
 
-						<div class="col-lg-12">
-							<div class="online-users">
-								<img src="images/icons/user-icon2.svg" alt="" width="16px" height="21px">
-								<p><span>1024</span> онлайн</p>
-							</div>
+						<div class="col-lg-6">
+							<form class="create-news__form">
+								<label>Заголовок</label>
+								<input type="text" name="text" placeholder="Текст">
+								<label class="mt-24">Описание</label>
+								<textarea placeholder="Текст"></textarea>
+
+								<button type="button" class="link-btn" data-bs-toggle="modal" data-bs-target="#exampleModal5">Прикрепить
+									опрос</button>
+								<button type="button" class="btn-gradient">Опубликовать</button>
+							</form>
 						</div>
-
-						<div class="user-sec__tabs">
-							<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-								<li class="nav-item" role="presentation">
-									<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-										type="button" role="tab" aria-controls="pills-home" aria-selected="true">Новости</button>
-								</li>
-								<li class="nav-item" role="presentation">
-									<button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-										type="button" role="tab" aria-controls="pills-profile" aria-selected="false">На будущее</button>
-								</li>
-							</ul>
-							<div class="tab-content" id="pills-tabContent">
-								<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-									<h2 class="title-sm">Новости</h2>
-									<div class="tab-content__bx">
-										<span class="date-sm">18.05.2023</span>
-										<p>Персонажу «Вася» добавлен костюм единорога</p>
-										<div class="tab-links__box d-flex align-items-center">
-											<a href="#!">Редактировать</a>
-											<a href="#!">Удалить</a>
-										</div>
-									</div>
-
-									<div class="tab-content__bx">
-										<span class="date-sm">18.05.2023</span>
-										<p>Персонажу «Вася» добавлен костюм единорога</p>
-										<div class="tab-links__box d-flex align-items-center">
-											<a href="#!">Редактировать</a>
-											<a href="#!">Удалить</a>
-										</div>
-									</div>
-									<div class="tab-content__bx">
-										<span class="date-sm">18.05.2023</span>
-										<p>Персонажу «Вася» добавлен костюм единорога</p>
-										<div class="tab-links__box d-flex align-items-center">
-											<a href="#!">Редактировать</a>
-											<a href="#!">Удалить</a>
-										</div>
-									</div>
-								</div>
-								<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-									<h2 class="title-sm">Новости</h2>
-									<div class="tab-content__bx">
-										<span class="date-sm">18.05.2023</span>
-										<p>Персонажу «Вася» добавлен костюм единорога</p>
-										<div class="tab-links__box d-flex align-items-center">
-											<a href="#!">Редактировать</a>
-											<a href="#!">Удалить</a>
-										</div>
-									</div>
-									
-									<div class="tab-content__bx">
-										<span class="date-sm">18.05.2023</span>
-										<p>Персонажу «Вася» добавлен костюм единорога</p>
-										<div class="tab-links__box d-flex align-items-center">
-											<a href="#!">Редактировать</a>
-											<a href="#!">Удалить</a>
-										</div>
-									</div>
-									<div class="tab-content__bx">
-										<span class="date-sm">18.05.2023</span>
-										<p>Персонажу «Вася» добавлен костюм единорога</p>
-										<div class="tab-links__box d-flex align-items-center">
-											<a href="#!">Редактировать</a>
-											<a href="#!">Удалить</a>
-										</div>
-									</div>
+						<div class="col-lg-6">
+							<div class="upload-img-box-two">
+								<div class="upload-img">
+									<img src="images/icons/plus-icon.svg" alt="" width="18px" height="18px">
+									<p>Добавить картинку</p>
+									<span class="upload-img__size">670×344</span>
 								</div>
 							</div>
+
+							<div class="clothes-card">
+								<div class="clothes-card__box">
+									<div class="d-flex align-items-center clothes-card__title">
+										<p>Костюм
+											единорога</p>
+										<img src="images/icons/block-close-icon.svg" alt="" width="20px" height="20px">
+									</div>
+									<div class="clothes-card__img"></div>
+								</div>
+								<div class="clothes-card__box">
+									<div class="d-flex align-items-center clothes-card__title">
+										<p>Костюм
+											единорога</p>
+										<img src="images/icons/block-close-icon.svg" alt="" width="20px" height="20px">
+									</div>
+									<div class="clothes-card__img"></div>
+								</div>
+							</div>
+							<button class="link-btn" data-bs-toggle="modal" data-bs-target="#attachProduct">Прикрепить товар</button>
 						</div>
 					</div>
 				</div>
 			</section>
+
 		</main>
 
 		<footer class="footer">
@@ -496,9 +455,340 @@
 		</footer>
 	</div>
 
+
+	<!-- modal start -->
+	<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content position-relative">
+				<div class="modal-header justify-content-center p-0 border-0">
+					<h5 class="modal-title" id="exampleModalLabel">Создать опрос</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+							stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body p-0">
+					<div class="modal-form">
+						<label>Вопрос</label>
+						<input class="mb-24" type="text" name="text" placeholder="Текст">
+						<label>Варианты ответа</label>
+						<input type="text" name="text" placeholder="Вариант">
+						<input class="mt-24" type="text" name="text" placeholder="Вариант">
+						<button class="link-btn mt-24 mb-32">Добавить вариант</button>
+						<button class="btn-gradient w-100">Разместить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="attachProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content position-relative">
+				<div class="modal-header flex-column justify-content-center p-0 border-0">
+					<h5 class="modal-title" id="exampleModalLabel">Прикрепить товар</h5>
+					<div class="search-box">
+						<input type="search" placeholder="Найти">
+						<img src="images/icons/search-icon.svg" alt="search-icon">
+					</div>
+					<div class="filter-card">
+						<div class="filter-card__box">
+							<p>Бандл</p>
+						</div>
+						<div class="filter-card__box">
+							<p>Персонаж</p>
+						</div>
+						<div class="filter-card__box">
+							<p>Фон</p>
+						</div>
+						<div class="filter-card__box">
+							<p>Прическа</p>
+						</div>
+						<div class="filter-card__box active">
+							<p>Костюм</p>
+						</div>
+						<div class="filter-card__box">
+							<p>Лицо</p>
+						</div>
+						<div class="filter-card__box">
+							<p>Цвет кожи</p>
+						</div>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+							stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							<path stroke="#456DBB" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body p-0">
+					<div class="attach-product__big-box">
+						<div class="attach-product">
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+							<div class="attach-product__box">
+								<div class="attach-product__img">
+									<img src="images/dress.png" alt="dress">
+									<img class="block-icon" src="images/icons/block-icon.svg" alt="">
+								</div>
+								<p>100 кварцев</p>
+							</div>
+						</div>
+					</div>
+					<button class="btn-gradient w-100">Разместить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal end -->
+
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="libs/bootstrap5/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/isotope.pkgd.min.js"></script>
 

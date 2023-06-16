@@ -2530,23 +2530,234 @@ input[type=number]::-webkit-outer-spin-button {
 	margin-right: 8px;
 	transition: all 0.1s linear;
 }
-.admin-sec .tab-links__box a:hover{
+
+.admin-sec .tab-links__box a:hover {
 	border-bottom-color: transparent;
 }
-.admin-sec .tab-links__box a:last-child{
+
+.admin-sec .tab-links__box a:last-child {
 	margin-right: 0;
 }
 
+.create-news .create-news__form label {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+	display: block;
+	margin-bottom: 16px;
+}
 
+.create-news .create-news__form input,
+.create-news .create-news__form textarea {
+	width: 100%;
+	border: 1px solid #D0D0D0;
+	border-radius: 5px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	padding: 16px;
+	color: #333333;
+}
 
+.create-news .create-news__form textarea {
+	height: 117px;
+	resize: none;
+}
 
+.create-news .create-news__form input::placeholder,
+.create-news .create-news__form textarea::placeholder {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+}
 
+.create-news .create-news__form .link-btn {
+	margin: 24px 0 32px 0;
+}
 
+.link-btn {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #456DBB;
+	border-bottom: 1px dashed #456DBB;
+	display: block;
+	padding: 0;
+}
 
+.create-news .upload-img-box-two {
+	background: #EBF2FF;
+	border: 2px dashed #456DBB;
+	border-radius: 5px;
+	height: 292px;
+	margin-top: 38px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	cursor: pointer;
+}
 
+.create-news .upload-img-box-two p {
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+	margin: 14px 0 8px 0;
+}
 
+.create-news .upload-img__size {
+	font-size: 16px;
+	line-height: 140%;
+	color: #686868;
+	display: block;
+}
 
+.create-news .clothes-card {
+	display: flex;
+	gap: 8px;
+	margin: 24px 0;
+}
 
+.create-news .clothes-card__img {
+	width: 69px;
+	height: 95px;
+	background: #EBF2FF;
+	border-radius: 5px;
+	margin-top: 8px;
+}
+
+.create-news .clothes-card__title img {
+	cursor: pointer;
+}
+
+.create-news .clothes-card__title p {
+	font-size: 14px;
+	line-height: 17px;
+	color: #686868;
+	max-width: 73px;
+	margin-right: 10px;
+}
+
+#attachProduct .modal-dialog {
+	max-width: 847px;
+}
+
+.attach-product__big-box {
+	background: #EBF2FF;
+	width: 100%;
+	background: #EBF2FF;
+	border-radius: 5px;
+	margin: 32px 0;
+	padding: 24px;
+}
+
+.attach-product {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	height: 322px;
+	overflow-y: scroll;
+}
+
+.attach-product .attach-product__img {
+	position: relative;
+	padding: 8px;
+}
+
+.attach-product .attach-product__box {
+	width: 70px;
+}
+
+.modal .search-box {
+	width: 370px;
+	height: 49px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.modal .search-box img {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 16px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	display: none;
+}
+
+.modal .search-box input {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+	padding: 16px;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #D0D0D0;
+	border-radius: 5px;
+
+}
+
+.attach-product .search-box input::placeholder {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+}
+
+.attach-product .attach-product__img .block-icon {
+	position: absolute;
+	top: 3px;
+	right: 8px;
+}
+
+.attach-product .attach-product__box p {
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	text-align: center;
+	color: #456DBB;
+}
+
+.modal .filter-card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px;
+}
+
+.modal .filter-card .filter-card__box:hover {
+	color: #fff;
+	background: #456DBB;
+}
+
+.modal .filter-card .filter-card__box {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+	cursor: pointer;
+	border-radius: 5px;
+	background: #EBF2FF;
+	padding: 13px 14px;
+	margin-top: 32px;
+}
+
+.modal .filter-card .filter-card__box.active {
+	font-weight: 700;
+	color: #fff;
+	background: #456DBB;
+}
 
 /* ================================================================================================== */
 

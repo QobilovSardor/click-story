@@ -320,16 +320,20 @@ $(document).on("change", ".uploadProfileInput", function () {
 
 	// =================================================================
 });
-jQuery(document).ready(function () {
-	jQuery('#datepicker').datepicker({
-		format: 'dd-mm-yyyy',
-		startDate: '+1d'
+try {
+	jQuery(document).ready(function () {
+		jQuery('#datepicker').datepicker({
+			format: 'dd-mm-yyyy',
+			startDate: '+1d'
+		});
 	});
-});
-jQuery(document).ready(function () {
-	jQuery('#datepicker2').datepicker({
-		format: 'dd-mm-yyyy',
-		startDate: '+1d'
+	jQuery(document).ready(function () {
+		jQuery('#datepicker2').datepicker({
+			format: 'dd-mm-yyyy',
+			startDate: '+1d'
+		});
 	});
-});
+} catch (error) {
+	// console.log(error);
+}
 
