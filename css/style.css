@@ -1303,6 +1303,7 @@ a:focus {
 	position: relative;
 	border-radius: 10px;
 	margin: 63px 0 32px 0;
+	background-image: url(../images/user-bg.png);
 }
 
 .big-img img {
@@ -1447,7 +1448,7 @@ a:focus {
 	color: #456DBB;
 }
 
-.user-sec .nav-pills .nav-link {
+.user-sec__tabs .nav-pills .nav-link {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 140%;
@@ -1458,11 +1459,12 @@ a:focus {
 	padding: 0 0 24px 0;
 }
 
-.user-sec .nav-pills .nav-link.active {
+.user-sec__tabs .nav-pills .nav-link.active {
 	color: #456DBB;
+	font-weight: 700;
 }
 
-.user-sec .nav-pills .nav-link.active::before {
+.user-sec__tabs .nav-pills .nav-link.active::before {
 	content: "";
 	position: absolute;
 	bottom: -2px;
@@ -1472,19 +1474,19 @@ a:focus {
 
 }
 
-.user-sec .nav-pills {
+.user-sec__tabs .nav-pills {
 	border-bottom: 1px solid #686868;
 }
 
-.user-sec .nav-pills .col-lg-6 {
+.user-sec__tabs .nav-pills .col-lg-6 {
 	padding: 0;
 }
 
-.user-sec .nav-pills .nav-item {
+.user-sec__tabs .nav-pills .nav-item {
 	width: 50%;
 }
 
-.user-sec .nav-pills .nav-item2 {
+.user-sec__tabs .nav-pills .nav-item2 {
 	width: 25%;
 }
 
@@ -2337,6 +2339,9 @@ input[type=number]::-webkit-outer-spin-button {
 	font-size: 14px;
 	line-height: 17px;
 	color: #333333;
+	background-image: url(../images/icons/date-icon.svg);
+	background-repeat: no-repeat;
+	background-position: 85% center;
 }
 
 .admin-sec .title-box__right input::placeholder {
@@ -2486,9 +2491,63 @@ input[type=number]::-webkit-outer-spin-button {
 	line-height: 140%;
 	color: #000;
 }
-.admin-sec .online-users p > span{
+
+.admin-sec .online-users p>span {
 	color: #456DBB;
 }
+
+.admin-sec .user-sec__tabs {
+	margin-top: 64px;
+}
+
+.admin-sec .tab-content {
+	margin-top: 32px;
+}
+
+.admin-sec .tab-content .date-sm {
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	color: #686868;
+	margin-top: 24px;
+	display: inline-block;
+}
+
+.admin-sec .tab-content__bx p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+	margin: 8px 0;
+}
+
+.admin-sec .tab-links__box a {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #456DBB;
+	border-bottom: 1px solid #456DBB;
+	margin-right: 8px;
+	transition: all 0.1s linear;
+}
+.admin-sec .tab-links__box a:hover{
+	border-bottom-color: transparent;
+}
+.admin-sec .tab-links__box a:last-child{
+	margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* ================================================================================================== */
 
 
