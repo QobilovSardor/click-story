@@ -376,6 +376,15 @@ const suitsSwiper = new Swiper('.suits-swiper', {
 	},
 });
 
+const hairstyleSwiper = new Swiper('.hairstyle-swiper', {
+	slidesPerView: 6,
+	spaceBetween: 8,
+	loop: true,
+	navigation: {
+		nextEl: '.next3',
+		prevEl: '.prev3',
+	},
+});
 $('.suits-box.open').on('click', function () {
 	$(this).toggleClass('active');
 })
