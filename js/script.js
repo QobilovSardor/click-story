@@ -79,7 +79,7 @@ $(function () {
 		grid.isotope();
 	});
 
-	
+
 
 	// stickiy header
 	$(window).scroll(function () {
@@ -219,7 +219,7 @@ $(function () {
 		}
 		if ($('.crystal-number__price').text() == 'Активна') {
 			$('.crystal-number__price').text('390 ₽/мес.')
-		} else{
+		} else {
 			$('.crystal-number__price').text('Активна')
 		}
 	});
@@ -254,6 +254,43 @@ $(function () {
 		})
 	})
 
+	$(".change-bg-text").on("click", function () {
+		var text = $(this).text().replace(/\n/g, "").replace(/\s/g, '');
+		if (text === "Опубликоватьисторию") {
+			$(this).text("Снять с публикации");
+		} else if (text === "Снятьспубликации") {
+			$(this).text("Опубликовать историю");
+		}
+	})
+	$('.create-chapter__card').slideUp();
+	$('.create-chapter').on('click', function () {
+		$('.create-chapter__card').slideToggle();
+	})
+	$('.click-box').slideUp();
+	$('.add-img__box').each(function (idx, el) {
+		let clickBox = el.querySelector('.click-box');
+		let showBox = el.querySelector('.show-box');
+		$(showBox).on('click', function () {
+			$(clickBox).slideToggle();
+		})
+	})
+	$(document).mouseup(function (e) {
+		var div = $(".click-box");
+		if (!div.is(e.target)
+			&& div.has(e.target).length === 0) {
+			div.css({
+				"display" : "none",
+			});
+		}
+	});
+	jQuery('#datepicker').datepicker({
+		format: 'dd-mm-yyyy',
+		startDate: '+1d'
+	});
+	jQuery('#datepicker2').datepicker({
+		format: 'dd-mm-yyyy',
+		startDate: '+1d'
+	});
 });
 
 
@@ -314,26 +351,41 @@ $(document).on("change", ".uploadProfileInput", function () {
 		}, 3000);
 	}
 
-
-
-
-
 	// =================================================================
-});
-try {
-	jQuery(document).ready(function () {
-		jQuery('#datepicker').datepicker({
-			format: 'dd-mm-yyyy',
-			startDate: '+1d'
-		});
-	});
-	jQuery(document).ready(function () {
-		jQuery('#datepicker2').datepicker({
-			format: 'dd-mm-yyyy',
-			startDate: '+1d'
-		});
-	});
-} catch (error) {
-	// console.log(error);
-}
 
+	
+});
+
+const emotionSwiper = new Swiper('.emotion-swiper', {
+	slidesPerView: 6,
+	spaceBetween: 8,
+	loop: true,
+	navigation: {
+		nextEl: '.next1',
+		prevEl: '.prev1',
+	},
+});
+
+const suitsSwiper = new Swiper('.suits-swiper', {
+	slidesPerView: 6,
+	spaceBetween: 8,
+	loop: true,
+	navigation: {
+		nextEl: '.next2',
+		prevEl: '.prev2',
+	},
+});
+
+$('.suits-box.open').on('click', function () {
+	$(this).toggleClass('active');
+})
+
+// // $('.text-box').slideUp();
+// $('.open-box').each(function (idx, el) {
+// 	let textBox = el.querySelector('.text-box');
+// 	$(textBox).slideUp();
+// 	let openBoxBtn = el.querySelector('.open-box-btn');
+// 	$(openBoxBtn).on('click', function() {
+// 		$(textBox).slideToggle();
+// 	})
+// })
