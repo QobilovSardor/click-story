@@ -2969,7 +2969,7 @@ filter-card__box {
 }
 
 .editor-sec .editor-sec__bg {
-	background: #EBF2FF;
+	background-color: #EBF2FF;
 	border: 1px solid #D0D0D0;
 	border-radius: 5px;
 	padding: 24px 24px 68px 24px;
@@ -3568,6 +3568,21 @@ filter-card__box {
 }
 .card-character-two .btn-gradient.width{
 	width: 304px !important;
+}
+.editor-sec__bg-two {
+	background-image: url(../images/gallery6.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 0 !important;
+}
+.editor-sec__bg-two .upload-img .big-img2{
+	/* width: 815px; */
+	height: 538px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-top: 72px;
 }
 /* ================================================================================================== */
 

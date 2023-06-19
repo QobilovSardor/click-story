@@ -234,7 +234,7 @@
 
 		<main>
 
-			<section class="editor-sec editor-finished">
+			<section class="editor-sec">
 				<div class="container">
 					<div class="title mt-64 mb-24">
 						<h1 class="title-md">Название истории</h1>
@@ -244,7 +244,7 @@
 							<p>Глава 1: Название главы</p>
 							<div class="d-flex align-items-center gap-3">
 								<p>Крупный план</p>
-								<div class="check-box">
+								<div class="check-box active">
 									<div class="circle-box"></div>
 								</div>
 							</div>
@@ -254,22 +254,14 @@
 							</div>
 						</div>
 						<div class="col-lg-12">
-							<div class="editor-sec__bg position-relative">
+							<div class="editor-sec__bg editor-sec__bg-two">
 								<div class="d-flex align-items-center gap-2 add-bg" data-bs-toggle="modal"
 									data-bs-target="#chooseBbackground">
 									<img src="images/icons/roundet-plus.svg" alt="" width="20px" height="20px">
 									<p>Добавить фон</p>
 								</div>
 								<div class="row justify-content-center">
-									<div class="col-lg-4">
-										<div class="upload-img" data-bs-toggle="modal"
-												data-bs-target="#cardCharacter">
-											<img src="images/icons/roundet-plus.svg" alt="">
-											<p class="upload-img__text">Добавить
-												персонажа</p>
-										</div>
-									</div>
-									<div class="col-lg-4">
+									<div class="col-lg-12">
 										<div class="upload-img cursor p-0 bg-transparent">
 											<div class="upload-img__icons d-flex align-items-center justify-content-between">
 												<div class="open-box">
@@ -291,7 +283,8 @@
 													</div>
 												</div>
 											</div>
-											<img class="big-img" src="images/modal-angel-img-big.png" alt="">
+											<img class="big-img2" src="images/angel2.png" alt="" data-bs-toggle="modal"
+												data-bs-target="#cardCharacter">
 										</div>
 									</div>
 									<div class="transparent-bg">
@@ -299,70 +292,62 @@
 										<p>Текст |</p>
 									</div>
 								</div>
-								<div class="upload-img__mini d-flex flex-column justify-content-center align-items-center text-center">
-									<div class="add-bg">
-										<img src="images/icons/roundet-plus.svg" alt="" width="20px" height="20px">
-										<p>Добавить
-										говорящего
-										персонажа</p>
-									</div>
-								</div>
 							</div>
 						</div>
 						<div class="col-lg-12">
-								<div class="add-img">
-									<div class="add-img__box">
-										<div class="show-box">
-											<div class="add-img__box-bottom">
-												<p>1</p>
-											</div>
-										</div>
-										<div class="click-box">
-											<p>Дублировать</p>
-											<p>Удалить</p>
+							<div class="add-img">
+								<div class="add-img__box">
+									<div class="show-box">
+										<div class="add-img__box-bottom">
+											<p>1</p>
 										</div>
 									</div>
-									<div class="add-img__box">
-										<div class="show-box">
-											<div class="add-img__box-bottom">
-												<p>2</p>
-											</div>
-										</div>
-										<div class="click-box">
-											<p>Дублировать</p>
-											<p>Удалить</p>
-										</div>
+									<div class="click-box">
+										<p>Дублировать</p>
+										<p>Удалить</p>
 									</div>
-									<div class="add-img__box">
-										<div class="show-box">
-											<div class="add-img__box-bottom">
-												<p>3</p>
-											</div>
-										</div>
-										<div class="click-box">
-											<p>Дублировать</p>
-											<p>Удалить</p>
-										</div>
-									</div>
-									<div class="add-img__box">
-										<div class="show-box">
-											<div class="add-img__box-bottom">
-												<p>4</p>
-											</div>
-										</div>
-										<div class="click-box">
-											<p>Дублировать</p>
-											<p>Удалить</p>
-										</div>
-									</div>
-									<button class="plus-add-img__box">
-										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M9 9V5H11V9H15V11H11V15H9V11H5V9H9ZM10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20ZM10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z"
-												fill="#FFFFFF" />
-										</svg>
-									</button>
 								</div>
+								<div class="add-img__box">
+									<div class="show-box">
+										<div class="add-img__box-bottom">
+											<p>2</p>
+										</div>
+									</div>
+									<div class="click-box">
+										<p>Дублировать</p>
+										<p>Удалить</p>
+									</div>
+								</div>
+								<div class="add-img__box">
+									<div class="show-box">
+										<div class="add-img__box-bottom">
+											<p>3</p>
+										</div>
+									</div>
+									<div class="click-box">
+										<p>Дублировать</p>
+										<p>Удалить</p>
+									</div>
+								</div>
+								<div class="add-img__box">
+									<div class="show-box">
+										<div class="add-img__box-bottom">
+											<p>4</p>
+										</div>
+									</div>
+									<div class="click-box">
+										<p>Дублировать</p>
+										<p>Удалить</p>
+									</div>
+								</div>
+								<button class="plus-add-img__box">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M9 9V5H11V9H15V11H11V15H9V11H5V9H9ZM10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20ZM10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z"
+											fill="#FFFFFF" />
+									</svg>
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -544,7 +529,7 @@
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content position-relative">
 				<div class="modal-header mx-auto p-0 border-0">
-					<h5 class="modal-title mb-24" id="exampleModalLabel">Настройка персонажа Марина</h5>
+					<h5 class="modal-title mb-24" id="exampleModalLabel">Настройка персонажа</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
 						<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
 							stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -555,414 +540,153 @@
 				<div class="modal-body p-0">
 					<div class="card-character mb-24">
 						<div class="card-character__box">
-							<ul class="nav nav-tabs" id="myTab" role="tablist">
-								<li class="nav-item" role="presentation">
-									<button class="nav-link active" id="hairstyle-tab" data-bs-toggle="tab" data-bs-target="#hairstyle" type="button" role="tab"
-										aria-controls="hairstyle" aria-selected="true">Прическа</button>
-								</li>
-								<li class="nav-item" role="presentation">
-									<button class="nav-link" id="profile2-tab" data-bs-toggle="tab" data-bs-target="#profile2" type="button" role="tab"
-										aria-controls="profile2" aria-selected="false">Цвет волос</button>
-								</li>
-							</ul>
-							<div class="tab-content" id="myTabContent">
-								<div class="tab-pane fade show active" id="hairstyle" role="tabpanel" aria-labelledby="hairstyle-tab">
-									<div class="card-character__info">
-										<div class="position-relative">
-											<div class="swiper hairstyle-swiper">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/icons/hair.svg" alt="">
-															<div class="suits-box__icon">
-																<img src="images/icons/block.svg" alt="">
-															</div>
-														</div>
-														<div class="suits-box__info">
-															<p class="disabled">В коллекции</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/icons/hair.svg" alt="">
-															<div class="suits-box__icon">
-																<img src="images/icons/block.svg" alt="">
-															</div>
-														</div>
-														<div class="suits-box__info">
-															<p class="disabled">В коллекции</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/icons/hair.svg" alt="">
-															<div class="suits-box__icon">
-																<img src="images/icons/block.svg" alt="">
-															</div>
-														</div>
-														<div class="suits-box__info">
-															<p class="disabled">В коллекции</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/icons/hair.svg" alt="">
-															<div class="suits-box__icon">
-																<img src="images/icons/block.svg" alt="">
-															</div>
-														</div>
-														<div class="suits-box__info">
-															<p>100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/icons/hair.svg" alt="">
-															<div class="suits-box__icon">
-																<img src="images/icons/block.svg" alt="">
-															</div>
-														</div>
-														<div class="suits-box__info">
-															<p>100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/icons/hair.svg" alt="">
-															<div class="suits-box__icon">
-																<img src="images/icons/block.svg" alt="">
-															</div>
-														</div>
-														<div class="suits-box__info">
-															<p>100 кварцев</p>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="swiper-button-prev prev3"></div>
-											<div class="swiper-button-next next3"></div>
-										</div>
-									</div>
-								</div>
-								<div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile2-tab">
-									<div class="card-character__info">
-										<div class="position-relative">
-											<div class="swiper hairstyle-swiper">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<div class="suits-box color-brown">
-														</div>
-														<div class="suits-box__info">
-															<p class="disabled">100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box color-yellow">
-														</div>
-														<div class="suits-box__info">
-															<p class="disabled">100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box color-orange">
-														</div>
-														<div class="suits-box__info">
-															<p class="disabled">100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box color-red">
-														</div>
-														<div class="suits-box__info">
-															<p class="disabled">100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box color-purple">
-														</div>
-														<div class="suits-box__info">
-															<p>100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box color-blue">
-														</div>
-														<div class="suits-box__info">
-															<p>100 кварцев</p>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="swiper-button-prev prev3"></div>
-											<div class="swiper-button-next next3"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<ul class="nav nav-tabs" id="myTab2" role="tablist">
-								<li class="nav-item" role="presentation">
-									<button class="nav-link active" id="face-tab" data-bs-toggle="tab" data-bs-target="#face" type="button" role="tab"
-										aria-controls="face" aria-selected="true">Лицо</button>
-								</li>
-								<li class="nav-item" role="presentation">
-									<button class="nav-link" id="emoje-tab" data-bs-toggle="tab" data-bs-target="#emoje" type="button" role="tab"
-										aria-controls="emoje" aria-selected="false">Цвет кожи</button>
-								</li>
-							</ul>
-							<div class="tab-content" id="myTabContent2">
-								<div class="tab-pane fade show active" id="face" role="tabpanel" aria-labelledby="face-tab">
-									<div class="card-character__info">
-										<div class="position-relative">
-											<div class="swiper emotion-swiper">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/icons/emotion1.svg" alt="" width="36px" height="36px">
-															<div class="suits-box__icon">
-																<img src="images/icons/block.svg" alt="">
-															</div>
-														</div>
-														<div class="suits-box__info">
-															<p>100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/icons/emotion2.svg" alt="" width="36px" height="36px">
-															<div class="suits-box__icon">
-																<img src="images/icons/block.svg" alt="">
-															</div>
-														</div>
-														<div class="suits-box__info">
-															<p>100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/icons/emotion3.svg" alt="" width="36px" height="36px">
-															<div class="suits-box__icon">
-																<img src="images/icons/block.svg" alt="">
-															</div>
-														</div>
-														<div class="suits-box__info">
-															<p>100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/icons/emotion4.svg" alt="" width="36px" height="36px">
-															<div class="suits-box__icon">
-																<img src="images/icons/block.svg" alt="">
-															</div>
-														</div>
-														<div class="suits-box__info">
-															<p>100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/icons/emotion5.svg" alt="" width="36px" height="36px">
-															<div class="suits-box__icon">
-																<img src="images/icons/block.svg" alt="">
-															</div>
-														</div>
-														<div class="suits-box__info">
-															<p>100 кварцев</p>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="swiper-button-prev prev1"></div>
-											<div class="swiper-button-next next1"></div>
-										</div>
-									</div>
-								</div>
-								<div class="tab-pane fade" id="emoje" role="tabpanel" aria-labelledby="emoje-tab">
-									<div class="card-character__info">
-										<div class="position-relative">
-											<div class="swiper emotion-swiper">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<div class="suits-box color-one">
-														</div>
-														<div class="suits-box__info">
-															<p class="disabled">100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box color-two">
-														</div>
-														<div class="suits-box__info">
-															<p class="disabled">100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box color-three">
-														</div>
-														<div class="suits-box__info">
-															<p class="disabled">100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box color-four">
-														</div>
-														<div class="suits-box__info">
-															<p class="disabled">100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box color-five">
-														</div>
-														<div class="suits-box__info">
-															<p>100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box color-six">
-														</div>
-														<div class="suits-box__info">
-															<p>100 кварцев</p>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="swiper-button-prev prev1"></div>
-											<div class="swiper-button-next next1"></div>
-										</div>
-									</div>
-								</div>
-							</div>
+							<div class="card-character__info">
+								<h4>Эмоции</h4>
 
-							<ul class="nav nav-tabs" id="myTab" role="tablist">
-								<li class="nav-item" role="presentation">
-									<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
-										aria-controls="home" aria-selected="true">Прическа</button>
-								</li>
-								<li class="nav-item" role="presentation">
-									<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
-										aria-controls="profile" aria-selected="false">Цвет волос</button>
-								</li>
-							</ul>
-							<div class="tab-content" id="myTabContent">
-								<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-									<div class="card-character__info">
-										<div class="position-relative">
-											<div class="swiper suits-swiper">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<div class="suits-box open">
-															<img class="dress-img" src="images/dress.png" alt="">
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/dress.png" alt="">
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/dress.png" alt="">
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/dress.png" alt="">
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/dress.png" alt="">
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/dress.png" alt="">
-														</div>
+								<div class="position-relative">
+									<div class="swiper emotion-swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="suits-box">
+													<img class="dress-img" src="images/icons/emotion1-2.svg" alt="" width="36px" height="36px">
+													<div class="suits-box__icon">
+														<img src="images/icons/block.svg" alt="">
 													</div>
 												</div>
+												<div class="suits-box__info">
+													<p>100 кварцев</p>
+												</div>
 											</div>
-											<div class="swiper-button-prev prev2"></div>
-											<div class="swiper-button-next next2"></div>
+											<div class="swiper-slide">
+												<div class="suits-box">
+													<img class="dress-img" src="images/icons/emotion1-3.svg" alt="" width="36px" height="36px">
+													<div class="suits-box__icon">
+														<img src="images/icons/block.svg" alt="">
+													</div>
+												</div>
+												<div class="suits-box__info">
+													<p>100 кварцев</p>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="suits-box">
+													<img class="dress-img" src="images/icons/emotion1-4.svg" alt="" width="36px" height="36px">
+													<div class="suits-box__icon">
+														<img src="images/icons/block.svg" alt="">
+													</div>
+												</div>
+												<div class="suits-box__info">
+													<p>100 кварцев</p>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="suits-box">
+													<img class="dress-img" src="images/icons/emotion1-5.svg" alt="" width="36px" height="36px">
+													<div class="suits-box__icon">
+														<img src="images/icons/block.svg" alt="">
+													</div>
+												</div>
+												<div class="suits-box__info">
+													<p>100 кварцев</p>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="suits-box">
+													<img class="dress-img" src="images/icons/emotion1-6.svg" alt="" width="36px" height="36px">
+													<div class="suits-box__icon">
+														<img src="images/icons/block.svg" alt="">
+													</div>
+												</div>
+												<div class="suits-box__info">
+													<p>100 кварцев</p>
+												</div>
+											</div>
 										</div>
 									</div>
+									<div class="swiper-button-prev prev1"></div>
+									<div class="swiper-button-next next1"></div>
 								</div>
-								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-									<div class="card-character__info">
-										<div class="position-relative">
-											<div class="swiper suits-swiper">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide">
-														<div class="suits-box open">
-															<img class="dress-img" src="images/dress.png" alt="">
-														</div>
-														<div class="suits-box__info">
-															<p class="disabled">В коллекции</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/dress.png" alt="">
-														</div>
-														<div class="suits-box__info">
-															<p class="disabled">100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/dress.png" alt="">
-														</div>
-														<div class="suits-box__info">
-															<p class="disabled">100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/dress.png" alt="">
-															<div class="suits-box__icon">
-																<img src="images/icons/block.svg" alt="">
-															</div>
-														</div>
-														<div class="suits-box__info">
-															<p>100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/dress.png" alt="">
-															<div class="suits-box__icon">
-																<img src="images/icons/block.svg" alt="">
-															</div>
-														</div>
-														<div class="suits-box__info">
-															<p>100 кварцев</p>
-														</div>
-													</div>
-													<div class="swiper-slide">
-														<div class="suits-box">
-															<img class="dress-img" src="images/dress.png" alt="">
-															<div class="suits-box__icon">
-																<img src="images/icons/block.svg" alt="">
-															</div>
-														</div>
-														<div class="suits-box__info">
-															<p>100 кварцев</p>
-														</div>
-													</div>
+
+								<h4 class="mt-24">Костюмы</h4>
+								<div class="position-relative">
+									<div class="swiper suits-swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="suits-box open">
+													<img class="dress-img" src="images/dress.png" alt="">
+												</div>
+												<div class="suits-box__info">
+													<p class="disabled">В коллекции</p>
 												</div>
 											</div>
-											<div class="swiper-button-prev prev2"></div>
-											<div class="swiper-button-next next2"></div>
+											<div class="swiper-slide">
+												<div class="suits-box">
+													<img class="dress-img" src="images/dress.png" alt="">
+													<div class="suits-box__icon">
+														<img src="images/icons/block.svg" alt="">
+													</div>
+												</div>
+												<div class="suits-box__info">
+													<p>100 кварцев</p>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="suits-box">
+													<img class="dress-img" src="images/dress.png" alt="">
+													<div class="suits-box__icon">
+														<img src="images/icons/block.svg" alt="">
+													</div>
+												</div>
+												<div class="suits-box__info">
+													<p>100 кварцев</p>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="suits-box">
+													<img class="dress-img" src="images/dress.png" alt="">
+													<div class="suits-box__icon">
+														<img src="images/icons/block.svg" alt="">
+													</div>
+												</div>
+												<div class="suits-box__info">
+													<p>100 кварцев</p>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="suits-box">
+													<img class="dress-img" src="images/dress.png" alt="">
+													<div class="suits-box__icon">
+														<img src="images/icons/block.svg" alt="">
+													</div>
+												</div>
+												<div class="suits-box__info">
+													<p>100 кварцев</p>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="suits-box">
+													<img class="dress-img" src="images/dress.png" alt="">
+													<div class="suits-box__icon">
+														<img src="images/icons/block.svg" alt="">
+													</div>
+												</div>
+												<div class="suits-box__info">
+													<p>100 кварцев</p>
+												</div>
+											</div>
 										</div>
 									</div>
+									<div class="swiper-button-prev prev2"></div>
+									<div class="swiper-button-next next2"></div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="modal-footer flex-column text-center p-0 border-0 mt-0">
-						<p class="m-0">Все дополнительные визуальные элементы доступны по подписке.
+						<p>Все дополнительные визуальные элементы доступны по подписке.
 							<a href="#!">Оформить подписку</a>
 						</p>
-						<a href="#!" class="btn-gradient width text-center mt-24 mb-0 mx-0">Готово</a>
+						<a href="#!" class="btn-gradient w-100 text-center mt-24">Готово</a>
 					</div>
 				</div>
 			</div>
