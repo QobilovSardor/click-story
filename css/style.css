@@ -2992,7 +2992,9 @@ filter-card__box {
 .editor-sec .upload-img.cursor {
 	cursor: initial;
 }
-
+.editor-sec .upload-img .big-img-two{
+	transform: translateX(-50%) matrix(1, 0, 0, 1, 0, 0) !important;
+}
 .editor-sec .upload-img .big-img {
 	transform: translateX(-50%) matrix(-1, 0, 0, 1, 0, 0);
 	position: absolute;
@@ -3031,13 +3033,14 @@ filter-card__box {
 	font-size: 16px;
 	line-height: 140%;
 	color: #333333;
-	padding-bottom: 24px;
+	margin-bottom: 24px;
 	white-space: nowrap;
 	text-align: left;
+	cursor: pointer;
 }
 
 .text-box p:last-child {
-	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 .editor-sec .transparent-bg {
@@ -3123,6 +3126,13 @@ filter-card__box {
 
 .editor-sec .add-bg {
 	cursor: pointer;
+}
+
+.editor-sec .add-bg p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #456DBB;
 }
 
 .editor-sec .add-img .click-box {
@@ -3560,23 +3570,27 @@ filter-card__box {
 	bottom: 0;
 	left: 53px;
 }
-.editor-finished  .transparent-bg{
+
+.editor-finished .transparent-bg {
 	padding-left: 292px;
 }
-.upload-img__mini p{
+
+.upload-img__mini p {
 	padding-top: 10px;
 }
-.card-character-two .btn-gradient.width{
+
+.card-character-two .btn-gradient.width {
 	width: 304px !important;
 }
+
 .editor-sec__bg-two {
 	background-image: url(../images/gallery6.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-bottom: 0 !important;
 }
-.editor-sec__bg-two .upload-img .big-img2{
-	/* width: 815px; */
+
+.editor-sec__bg-two .upload-img .big-img2 {
 	height: 538px;
 	position: absolute;
 	bottom: 0;
@@ -3584,6 +3598,11 @@ filter-card__box {
 	transform: translateX(-50%);
 	padding-top: 72px;
 }
+
+.editor-sec__bg-two.pb {
+	padding-bottom: 57px !important;
+}
+
 /* ================================================================================================== */
 
 
