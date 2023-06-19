@@ -2763,6 +2763,37 @@ filter-card__box {
 	background: #456DBB;
 }
 
+.making-history .genres-text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #686868;
+}
+
+.warning-box {
+	gap: 18px;
+	background: #FFF5C4;
+	border-radius: 5px;
+	padding: 16px;
+	margin-bottom: 32px;
+}
+
+.warning-box p {
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+}
+
+.warning-box p a {
+	color: #456DBB;
+	border-bottom: 1px solid #456DBB;
+}
+
+.making-history .btn-gradient.disabled {
+	background: #D0D0D0;
+	color: #666 !important;
+}
+
 .making-history .upload-img__three {
 	width: 100%;
 	height: 242px;
@@ -2944,6 +2975,23 @@ filter-card__box {
 	color: #333333;
 }
 
+.editor-sec__bg .block-icon {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+}
+
+.add-img__box .block-icon {
+	position: absolute;
+	top: 0;
+	right: 3px;
+}
+
+.editor-sec .btn-gradient.disabled {
+	background: #D0D0D0;
+	color: #686868 !important;
+}
+
 .editor-sec .editor-sec__top .check-box {
 	background: #E8E8E8;
 	border-radius: 26px;
@@ -2992,9 +3040,11 @@ filter-card__box {
 .editor-sec .upload-img.cursor {
 	cursor: initial;
 }
-.editor-sec .upload-img .big-img-two{
+
+.editor-sec .upload-img .big-img-two {
 	transform: translateX(-50%) matrix(1, 0, 0, 1, 0, 0) !important;
 }
+
 .editor-sec .upload-img .big-img {
 	transform: translateX(-50%) matrix(-1, 0, 0, 1, 0, 0);
 	position: absolute;
@@ -3322,7 +3372,8 @@ filter-card__box {
 	height: 100px;
 }
 
-#cardCharacter .modal-dialog {
+#cardCharacter .modal-dialog,
+#cardCharacter2 .modal-dialog {
 	max-width: 1000px;
 }
 
@@ -3330,13 +3381,15 @@ filter-card__box {
 	max-width: 620px !important;
 }
 
-#cardCharacter .card-character {
+#cardCharacter .card-character,
+#cardCharacter2 .card-character {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-#cardCharacter .card-character .card-character__img {
+#cardCharacter .card-character .card-character__img,
+#cardCharacter .card-character2 .card-character__img {
 	background: #EBF2FF;
 	border-radius: 5px;
 	width: 388px;
@@ -3347,7 +3400,8 @@ filter-card__box {
 	align-items: center;
 }
 
-#cardCharacter .card-character__box {
+#cardCharacter .card-character__box,
+#cardCharacter2 .card-character__box {
 	max-width: 525px;
 }
 
@@ -3355,12 +3409,14 @@ filter-card__box {
 	max-width: 100% !important;
 }
 
-#cardCharacter .card-character__img img {
+#cardCharacter .card-character__img img,
+#cardCharacter2 .card-character__img img {
 	width: 269.1px;
 	height: 484.84px;
 }
 
-#cardCharacter .card-character__info h4 {
+#cardCharacter .card-character__info h4,
+#cardCharacter2 .card-character__info h4 {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 22px;
@@ -3370,18 +3426,23 @@ filter-card__box {
 
 #cardCharacter .emotion-swiper,
 #cardCharacter .suits-swiper,
-#cardCharacter .hairstyle-swiper {
+#cardCharacter .hairstyle-swiper,
+#cardCharacter2 .emotion-swiper,
+#cardCharacter2 .suits-swiper,
+#cardCharacter2 .hairstyle-swiper {
 	margin: 0 32px;
 }
 
-#cardCharacter .card-character__info p {
+#cardCharacter .card-character__info p,
+#cardCharacter2 .card-character__info p {
 	font-size: 16px;
 	line-height: 140%;
 	color: #333333;
 	margin-bottom: 32px;
 }
 
-#cardCharacter .card-emoji {
+#cardCharacter .card-emoji,
+#cardCharacter2 .card-emoji {
 	background: #EBF2FF;
 	border-radius: 5px;
 	padding: 6px 11px;
@@ -3391,25 +3452,36 @@ filter-card__box {
 #cardCharacter .swiper-button-prev,
 #cardCharacter .swiper-rtl .swiper-button-next,
 #cardCharacter .swiper-button-prev2,
-#cardCharacter .swiper-rtl .swiper-button-next2 {
+#cardCharacter .swiper-rtl .swiper-button-next2,
+#cardCharacter2 .swiper-button-prev,
+#cardCharacter2 .swiper-rtl .swiper-button-next,
+#cardCharacter2 .swiper-button-prev2,
+#cardCharacter2 .swiper-rtl .swiper-button-next2 {
 	left: -10px;
 }
 
 #cardCharacter .swiper-button-next,
 #cardCharacter .swiper-rtl .swiper-button-prev,
 #cardCharacter .swiper-button-next2,
-#cardCharacter .swiper-rtl .swiper-button-prev2 {
+#cardCharacter .swiper-rtl .swiper-button-prev2 ,
+#cardCharacter2 .swiper-button-next,
+#cardCharacter2 .swiper-rtl .swiper-button-prev,
+#cardCharacter2 .swiper-button-next2,
+#cardCharacter2 .swiper-rtl .swiper-button-prev2{
 	right: -10px;
 }
 
 #cardCharacter .swiper-button-next:after,
-.swiper-button-prev:after {
+.swiper-button-prev:after ,
+#cardCharacter2 .swiper-button-next:after,
+.swiper-button-prev:after{
 	font-size: 15px;
 	color: #000;
 	font-weight: bold;
 }
 
-#cardCharacter .suits-box {
+#cardCharacter .suits-box,
+#cardCharacter2 .suits-box {
 	background: #EBF2FF;
 	border-radius: 5px;
 	text-align: center;
@@ -3421,59 +3493,73 @@ filter-card__box {
 	align-items: center;
 }
 
-#cardCharacter .suits-box.color-brown {
+#cardCharacter .suits-box.color-brown,
+#cardCharacter2 .suits-box.color-brown {
 	background: #8F6745;
 }
 
-#cardCharacter .suits-box.color-yellow {
+#cardCharacter .suits-box.color-yellow,
+#cardCharacter2 .suits-box.color-yellow {
 	background: #FFDD65;
 }
 
-#cardCharacter .suits-box.color-orange {
+#cardCharacter .suits-box.color-orange,
+#cardCharacter2 .suits-box.color-orange {
 	background: #FF8F33;
 }
 
-#cardCharacter .suits-box.color-red {
+#cardCharacter .suits-box.color-red,
+#cardCharacter2 .suits-box.color-red {
 	background: #E04444;
 }
 
-#cardCharacter .suits-box.color-purple {
+#cardCharacter .suits-box.color-purple,
+#cardCharacter2 .suits-box.color-purple {
 	background: #9847FF;
 }
 
-#cardCharacter .suits-box.color-blue {
+#cardCharacter .suits-box.color-blue,
+#cardCharacter2 .suits-box.color-blue {
 	background: #0263C5;
 }
 
-#cardCharacter .suits-box.color-one {
+#cardCharacter .suits-box.color-one,
+#cardCharacter2 .suits-box.color-one {
 	background: #FFF4EB;
 }
 
-#cardCharacter .suits-box.color-two {
+#cardCharacter .suits-box.color-two,
+#cardCharacter2 .suits-box.color-two {
 	background: #FEDCC1;
 }
 
-#cardCharacter .suits-box.color-three {
+#cardCharacter .suits-box.color-three,
+#cardCharacter2 .suits-box.color-three {
 	background: #E9A873;
 }
 
-#cardCharacter .suits-box.color-four {
+#cardCharacter .suits-box.color-four,
+#cardCharacter2 .suits-box.color-four {
 	background: #624A34;
 }
 
-#cardCharacter .suits-box.color-five {
+#cardCharacter .suits-box.color-five,
+#cardCharacter2 .suits-box.color-five {
 	background: #377ECF;
 }
 
-#cardCharacter .suits-box.color-six {
+#cardCharacter .suits-box.color-six,
+#cardCharacter2 .suits-box.color-six {
 	background: #A9FFCE;
 }
 
-#cardCharacter .suits-box img {
+#cardCharacter .suits-box img,
+#cardCharacter2 .suits-box img {
 	width: 100%;
 }
 
-#cardCharacter .suits-box__info {
+#cardCharacter .suits-box__info ,
+#cardCharacter2 .suits-box__info{
 	background: #EBF2FF;
 	border-radius: 5px;
 	padding: 4px 3px;
@@ -3481,7 +3567,8 @@ filter-card__box {
 	margin-top: 4px;
 }
 
-#cardCharacter .suits-box__info p {
+#cardCharacter .suits-box__info p,
+#cardCharacter2 .suits-box__info p {
 	font-weight: 700;
 	font-size: 10px;
 	line-height: 12px;
@@ -3490,16 +3577,19 @@ filter-card__box {
 	margin-bottom: 0;
 }
 
-#cardCharacter .suits-box__info .disabled {
+#cardCharacter .suits-box__info .disabled,
+#cardCharacter2 .suits-box__info .disabled {
 	color: #686868;
 }
 
-#cardCharacter .suits-box {
+#cardCharacter .suits-box,
+#cardCharacter2 .suits-box {
 	position: relative;
 	transition: all 0.3s linear;
 }
 
-#cardCharacter .suits-box__icon {
+#cardCharacter .suits-box__icon,
+#cardCharacter2 .suits-box__icon {
 	position: absolute;
 	top: 5px;
 	right: 7px;
@@ -3507,12 +3597,14 @@ filter-card__box {
 	height: 21px;
 }
 
-#cardCharacter .modal-footer {
+#cardCharacter .modal-footer,
+#cardCharacter2 .modal-footer {
 	justify-content: space-between;
 	margin-top: 10px;
 }
 
-#cardCharacter .modal-footer p {
+#cardCharacter .modal-footer p,
+#cardCharacter2 .modal-footer p {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 140%;
@@ -3520,12 +3612,14 @@ filter-card__box {
 	max-width: 533px;
 }
 
-#cardCharacter .modal-footer p a {
+#cardCharacter .modal-footer p a,
+#cardCharacter2 .modal-footer p a {
 	color: #456DBB;
 	border-bottom: 1px solid #456DBB;
 }
 
-#cardCharacter .suits-box.open.active {
+#cardCharacter .suits-box.open.active,
+#cardCharacter2 .suits-box.open.active {
 	transform: scale(4.5);
 	transition: all 0.3s linear;
 }
