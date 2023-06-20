@@ -3293,11 +3293,17 @@ filter-card__box {
 	gap: 23px;
 }
 
-#chooseCharacter .modal-dialog {
+#chooseCharacter2 .modal-dialog {
+	max-width: 588px !important;
+}
+
+#chooseCharacter .modal-dialog,
+#chooseCharacter2 .modal-dialog {
 	max-width: 1136px;
 }
 
-#chooseCharacter .gender-box button {
+#chooseCharacter .gender-box button,
+#chooseCharacter2 .gender-box button {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
@@ -3307,22 +3313,31 @@ filter-card__box {
 	height: 49px;
 }
 
-#chooseCharacter .gender-box button:hover {
+#chooseCharacter .gender-box button:hover,
+#chooseCharacter2 .gender-box button:hover {
 	background: #456DBB;
 	color: #fff;
 }
 
-#chooseCharacter .gender-box button.active {
+#chooseCharacter .gender-box button.active,
+#chooseCharacter2 .gender-box button.active {
 	font-weight: 700;
 	background: #456DBB;
 	color: #fff;
 }
 
-#chooseCharacter .character-cards .character-card__img.orange-box {
+#chooseCharacter .character-cards .character-card__img.orange-box,
+#chooseCharacter2 .character-cards .character-card__img.orange-box {
 	background: #AB9B9C;
 }
 
-#chooseCharacter .character-cards .character-card__img {
+#chooseCharacter2 .character-card__img-big {
+	background: #EBF2FF;
+	border-radius: 5px;
+}
+
+#chooseCharacter .character-cards .character-card__img,
+#chooseCharacter2 .character-cards .character-card__img {
 	width: 100px;
 	height: 138px;
 	background: #EBF2FF;
@@ -3337,37 +3352,44 @@ filter-card__box {
 	cursor: pointer;
 }
 
-#chooseCharacter .character-cards .character-card__img img {
+#chooseCharacter .character-cards .character-card__img img,
+#chooseCharacter2 .character-cards .character-card__img img {
 	width: 100%;
 }
 
-#chooseCharacter .modal-body h4 {
+#chooseCharacter .modal-body h4,
+#chooseCharacter2 .modal-body h4 {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 140%;
 	color: #333333;
 }
 
-#chooseCharacter .character-cards .character-card__img.active img {
+#chooseCharacter .character-cards .character-card__img.active img,
+#chooseCharacter2 .character-cards .character-card__img.active img {
 	opacity: 0.5;
 }
 
-#chooseCharacter .character-cards .character-card__img.active .check-icon {
+#chooseCharacter .character-cards .character-card__img.active .check-icon,
+#chooseCharacter2 .character-cards .character-card__img.active .check-icon {
 	display: block;
 }
 
-#chooseCharacter .check-icon {
+#chooseCharacter .check-icon,
+#chooseCharacter2 .check-icon {
 	position: absolute;
 	display: none;
 	top: 6px;
 	right: 6px;
 }
 
-#chooseCharacter .check-icon img {
+#chooseCharacter .check-icon img,
+#chooseCharacter2 .check-icon img {
 	opacity: 1 !important;
 }
 
-#chooseCharacter .w-h {
+#chooseCharacter .w-h,
+#chooseCharacter2 .w-h {
 	width: 100px !important;
 	height: 100px;
 }
@@ -3429,8 +3451,17 @@ filter-card__box {
 #cardCharacter .hairstyle-swiper,
 #cardCharacter2 .emotion-swiper,
 #cardCharacter2 .suits-swiper,
-#cardCharacter2 .hairstyle-swiper {
+#cardCharacter2 .hairstyle-swiper,
+#chooseCharacter2 .emotion-swiper {
 	margin: 0 32px;
+}
+#chooseCharacter2 .btn-box {
+	text-align: right;
+	margin-top: 32px;
+}
+#chooseCharacter2 .btn-box .btn-gradient{
+	width: 170px;
+	text-align: center;
 }
 
 #cardCharacter .card-character__info p,
@@ -3442,7 +3473,8 @@ filter-card__box {
 }
 
 #cardCharacter .card-emoji,
-#cardCharacter2 .card-emoji {
+#cardCharacter2 .card-emoji,
+#chooseCharacter2 .card-emoji {
 	background: #EBF2FF;
 	border-radius: 5px;
 	padding: 6px 11px;
@@ -3456,32 +3488,43 @@ filter-card__box {
 #cardCharacter2 .swiper-button-prev,
 #cardCharacter2 .swiper-rtl .swiper-button-next,
 #cardCharacter2 .swiper-button-prev2,
-#cardCharacter2 .swiper-rtl .swiper-button-next2 {
+#cardCharacter2 .swiper-rtl .swiper-button-next2,
+#chooseCharacter2 .swiper-button-prev,
+#chooseCharacter2 .swiper-rtl .swiper-button-next,
+#chooseCharacter2 .swiper-button-prev2,
+#chooseCharacter2 .swiper-rtl .swiper-button-next2 {
 	left: -10px;
 }
 
 #cardCharacter .swiper-button-next,
 #cardCharacter .swiper-rtl .swiper-button-prev,
 #cardCharacter .swiper-button-next2,
-#cardCharacter .swiper-rtl .swiper-button-prev2 ,
+#cardCharacter .swiper-rtl .swiper-button-prev2,
 #cardCharacter2 .swiper-button-next,
 #cardCharacter2 .swiper-rtl .swiper-button-prev,
 #cardCharacter2 .swiper-button-next2,
-#cardCharacter2 .swiper-rtl .swiper-button-prev2{
+#cardCharacter2 .swiper-rtl .swiper-button-prev2,
+#chooseCharacter2 .swiper-button-next,
+#chooseCharacter2 .swiper-rtl .swiper-button-prev,
+#chooseCharacter2 .swiper-button-next2,
+#chooseCharacter2 .swiper-rtl .swiper-button-prev2 {
 	right: -10px;
 }
 
 #cardCharacter .swiper-button-next:after,
-.swiper-button-prev:after ,
+.swiper-button-prev:after,
 #cardCharacter2 .swiper-button-next:after,
-.swiper-button-prev:after{
+.swiper-button-prev:after,
+#chooseCharacter2 .swiper-button-next:after,
+.swiper-button-prev:after {
 	font-size: 15px;
 	color: #000;
 	font-weight: bold;
 }
 
 #cardCharacter .suits-box,
-#cardCharacter2 .suits-box {
+#cardCharacter2 .suits-box,
+#chooseCharacter2 .suits-box {
 	background: #EBF2FF;
 	border-radius: 5px;
 	text-align: center;
@@ -3558,8 +3601,8 @@ filter-card__box {
 	width: 100%;
 }
 
-#cardCharacter .suits-box__info ,
-#cardCharacter2 .suits-box__info{
+#cardCharacter .suits-box__info,
+#cardCharacter2 .suits-box__info {
 	background: #EBF2FF;
 	border-radius: 5px;
 	padding: 4px 3px;
