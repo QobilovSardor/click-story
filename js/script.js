@@ -519,9 +519,13 @@ try {
 $('.accordion-itemm').each(function (idx, el) {
 	let accordionContent = el.querySelector('.accordion-content');
 	let accordionHeader = el.querySelector('.accordion-header-box');
+	if ($(this).hasClass('disabled')) {
+		$(accordionContent).slideUp();
+		$(accordionHeader).toggleClass('active');
+	}
 	$(accordionHeader).on('click', function () {
 		$(accordionContent).slideToggle();
-		$(this).toggleClass('active')
+		$(this).toggleClass('active');
 	})
 })
 

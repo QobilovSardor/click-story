@@ -2918,7 +2918,8 @@ filter-card__box {
 
 
 .making-history .form-group input,
-.catalog-bg-sec .form-group input {
+.catalog-bg-sec .form-group input,
+.directory-faces .form-group input {
 	padding: 0;
 	height: initial;
 	width: initial;
@@ -2928,13 +2929,15 @@ filter-card__box {
 }
 
 .making-history .form-group label,
-.catalog-bg-sec .form-group label {
+.catalog-bg-sec .form-group label,
+.directory-faces .form-group label {
 	position: relative;
 	cursor: pointer;
 }
 
 .making-history .form-group label:before,
-.catalog-bg-sec .form-group label:before {
+.catalog-bg-sec .form-group label:before,
+.directory-faces .form-group label:before {
 	content: '';
 	-webkit-appearance: none;
 	background-color: transparent;
@@ -2959,7 +2962,8 @@ filter-card__box {
 }
 
 .making-history .form-group input:checked+label:after,
-.catalog-bg-sec .form-group input:checked+label:after {
+.catalog-bg-sec .form-group input:checked+label:after,
+.directory-faces .form-group input:checked+label:after {
 	content: '';
 	display: block;
 	position: absolute;
@@ -3912,7 +3916,8 @@ filter-card__box {
 	color: #686868;
 }
 
-.character-creation .accordion-header-box {
+.character-creation .accordion-header-box,
+.directory-faces .accordion-header-box {
 	display: flex;
 	align-items: center;
 	gap: 8px;
@@ -3921,14 +3926,15 @@ filter-card__box {
 	width: fit-content;
 }
 
-.character-creation .accordion-header-box img {
+.character-creation .accordion-header-box img,
+.directory-faces .accordion-header-box img {
 	transition: all 0.3s linear;
 }
 
-.character-creation .accordion-header-box.active img {
+.character-creation .accordion-header-box.active img,
+.directory-faces .accordion-header-box.active img {
 	transform: rotate(180deg);
 }
-
 .character-creation .accordion-box .swiper {
 	margin: 0 32px;
 }
@@ -4078,7 +4084,8 @@ filter-card__box {
 	margin: 32px 0 64px 0;
 }
 
-.catalog-bg-sec .geners .geners-box {
+.catalog-bg-sec .geners .geners-box,
+.directory-faces .geners-box {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
@@ -4091,7 +4098,9 @@ filter-card__box {
 }
 
 .catalog-bg-sec .geners .geners-box.active,
-.catalog-bg-sec .geners .geners-box:hover {
+.catalog-bg-sec .geners .geners-box:hover,
+.directory-faces .geners .geners-box.active,
+.directory-faces .geners .geners-box:hover {
 	background: #456DBB;
 	color: #fff;
 	border-color: #456DBB;
@@ -4133,24 +4142,74 @@ filter-card__box {
 	margin: 8px 0;
 }
 
-.catalog-bg-sec .crystal-box {
+.catalog-bg-sec .crystal-box,
+.directory-faces .crystal-box {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 8px;
 }
 
-.catalog-bg-sec .crystal-box span {
+.catalog-bg-sec .crystal-box span,
+.directory-faces .crystal-box span {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 140%;
 	color: #456DBB;
 }
 
-.catalog-bg-sec .crystal-box img {
+.catalog-bg-sec .crystal-box img,
+.directory-faces .crystal-box img {
 	width: 24px;
 	height: 24px;
 	margin-right: 8px;
+}
+
+.directory-faces .geners {
+	margin-right: 30px;
+}
+
+.directory-faces .blue-box {
+	width: 170px;
+	height: 170px;
+	background: #EBF2FF;
+	border-radius: 5px;
+	position: relative;
+}
+
+.directory-faces .accordion-header {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	color: #333333;
+}
+
+.directory-faces .blue-box .block-img {
+	position: absolute;
+	top: 17px;
+	right: 19px;
+}
+
+.directory-faces .blue-box__info {
+	text-align: center;
+}
+
+.directory-faces .blue-box__info p {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+	margin: 8px 0;
+}
+
+.directory-faces .blue-box__info span {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #686868;
+}
+.directory-faces .subscription-box{
+	margin-top: 32px;
 }
 
 /* ================================================================================================== */
