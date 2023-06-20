@@ -279,7 +279,7 @@ $(function () {
 		if (!div.is(e.target)
 			&& div.has(e.target).length === 0) {
 			div.css({
-				"display" : "none",
+				"display": "none",
 			});
 		}
 	});
@@ -352,49 +352,179 @@ $(document).on("change", ".uploadProfileInput", function () {
 	}
 
 	// =================================================================
+});
+
+try {
+	const emotionSwiper = new Swiper('.emotion-swiper', {
+		slidesPerView: 6,
+		spaceBetween: 8,
+		loop: true,
+		navigation: {
+			nextEl: '.next1',
+			prevEl: '.prev1',
+		},
+	});
+} catch (error) {
+	
+}
+
+try {
+	const suitsSwiper = new Swiper('.suits-swiper', {
+		slidesPerView: 6,
+		spaceBetween: 8,
+		loop: true,
+		navigation: {
+			nextEl: '.next2',
+			prevEl: '.prev2',
+		},
+	});
+} catch (error) {
+	
+}
+
+try {
+	const hairstyleSwiper = new Swiper('.hairstyle-swiper', {
+		slidesPerView: 6,
+		spaceBetween: 8,
+		loop: true,
+		navigation: {
+			nextEl: '.next3',
+			prevEl: '.prev3',
+		},
+	});
+} catch (error) {
+	
+}
+
+try {
+	const boxSwiper = new Swiper('.box-swiper', {
+		slidesPerView: 9,
+		spaceBetween: 8,
+		loop: true,
+		navigation: {
+			nextEl: '.next1',
+			prevEl: '.prev1',
+		},
+	});
+	const boxSwiper3 = new Swiper('.box-swiper3', {
+		slidesPerView: 9,
+		spaceBetween: 8,
+		loop: true,
+		navigation: {
+			nextEl: '.next3',
+			prevEl: '.prev3',
+		},
+	});
+	const boxSwiper4 = new Swiper('.box-swiper4', {
+		slidesPerView: 9,
+		spaceBetween: 8,
+		navigation: {
+			nextEl: '.next4',
+			prevEl: '.prev4',
+		},
+		grid: {
+			rows: 2,
+			fill: true,
+		},
+		speed: 300,
+	});
+	const boxSwiper5 = new Swiper('.box-swiper5', {
+		slidesPerView: 9,
+		spaceBetween: 8,
+		navigation: {
+			nextEl: '.next5',
+			prevEl: '.prev5',
+		},
+		grid: {
+			rows: 2,
+			fill: true,
+		},
+		speed: 300,
+	});
+	const boxSwiper6 = new Swiper('.box-swiper6', {
+		slidesPerView: 9,
+		spaceBetween: 8,
+		navigation: {
+			nextEl: '.next6',
+			prevEl: '.prev6',
+		},
+		grid: {
+			rows: 2,
+			fill: true,
+		},
+		speed: 300,
+	});
+	const modalSwiper = new Swiper('.modal-swiper', {
+		slidesPerView: 5,
+		spaceBetween: 9,
+		navigation: {
+			nextEl: '.next7',
+			prevEl: '.prev7',
+		},
+		grid: {
+			rows: 2,
+			fill: true,
+		},
+		speed: 300,
+	});
+	const modalSwiper2 = new Swiper('.modal-swiper2', {
+		slidesPerView: 5,
+		spaceBetween: 9,
+		navigation: {
+			nextEl: '.next7',
+			prevEl: '.prev7',
+		},
+		loop: true,
+		speed: 300,
+	});
+	const modalSwiper3 = new Swiper('.modal-swiper3', {
+		slidesPerView: 5,
+		spaceBetween: 9,
+		navigation: {
+			nextEl: '.next1',
+			prevEl: '.prev1',
+		},
+		loop: true,
+		speed: 300,
+	});
+	const modalSwiper4 = new Swiper('.modal-swiper4', {
+		slidesPerView: 2,
+		spaceBetween: 9,
+		navigation: {
+			nextEl: '.next2',
+			prevEl: '.prev2',
+		},
+		loop: true,
+		speed: 300,
+	});
+	
+	const boxSwiper2 = new Swiper('.box-swiper2', {
+		slidesPerView: 9,
+		spaceBetween: 8,
+		navigation: {
+			nextEl: '.next2',
+			prevEl: '.prev2',
+		},
+		grid: {
+			rows: 2,
+			fill: true,
+		},
+		speed: 300,
+	});
 
 	
-});
+} catch (error) {
+	console.log(error);
+}
+$('.accordion-itemm').each(function (idx, el) {
+	let accordionContent = el.querySelector('.accordion-content');
+	let accordionHeader = el.querySelector('.accordion-header-box');
+	$(accordionHeader).on('click', function () {
+		$(accordionContent).slideToggle();
+		$(this).toggleClass('active')
+	})
+})
 
-const emotionSwiper = new Swiper('.emotion-swiper', {
-	slidesPerView: 6,
-	spaceBetween: 8,
-	loop: true,
-	navigation: {
-		nextEl: '.next1',
-		prevEl: '.prev1',
-	},
-});
-
-const suitsSwiper = new Swiper('.suits-swiper', {
-	slidesPerView: 6,
-	spaceBetween: 8,
-	loop: true,
-	navigation: {
-		nextEl: '.next2',
-		prevEl: '.prev2',
-	},
-});
-
-const hairstyleSwiper = new Swiper('.hairstyle-swiper', {
-	slidesPerView: 6,
-	spaceBetween: 8,
-	loop: true,
-	navigation: {
-		nextEl: '.next3',
-		prevEl: '.prev3',
-	},
-});
 $('.suits-box.open').on('click', function () {
 	$(this).toggleClass('active');
 })
-
-// // $('.text-box').slideUp();
-// $('.open-box').each(function (idx, el) {
-// 	let textBox = el.querySelector('.text-box');
-// 	$(textBox).slideUp();
-// 	let openBoxBtn = el.querySelector('.open-box-btn');
-// 	$(openBoxBtn).on('click', function() {
-// 		$(textBox).slideToggle();
-// 	})
-// })

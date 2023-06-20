@@ -3455,11 +3455,13 @@ filter-card__box {
 #chooseCharacter2 .emotion-swiper {
 	margin: 0 32px;
 }
+
 #chooseCharacter2 .btn-box {
 	text-align: right;
 	margin-top: 32px;
 }
-#chooseCharacter2 .btn-box .btn-gradient{
+
+#chooseCharacter2 .btn-box .btn-gradient {
 	width: 170px;
 	text-align: center;
 }
@@ -3738,6 +3740,293 @@ filter-card__box {
 
 .editor-sec__bg-two.pb {
 	padding-bottom: 57px !important;
+}
+
+.character-creation .form-box input {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+	width: 100%;
+	border: 1px solid #D0D0D0;
+	border-radius: 5px;
+	height: 100%;
+	padding: 0 16px;
+	height: 50px;
+}
+
+.character-creation .form-label {
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+	margin-bottom: 16px;
+}
+
+.character-creation .form-box input::placeholder {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+}
+
+.character-creation .form-box .btn-gradient {
+	width: 289px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0;
+}
+
+.character-creation .form-box .btn-gradient img {
+	padding-right: 10px;
+}
+
+.character-creation .accordion .accordion-header {
+	cursor: pointer;
+}
+
+.character-creation .accordion .accordion-content {
+	display: none;
+}
+
+.character-creation .womman-img {
+	background: #EBF2FF;
+	border-radius: 5px;
+	margin-top: 32px;
+	padding: 13px 45px 10px 55px;
+}
+
+.boxes .blue-box {
+	width: 70px;
+	height: 95px;
+	background: #EBF2FF;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.boxes .blue-box.height {
+	height: 70px;
+}
+
+.boxes .blue-box.color-one {
+	background: #FFF5EB;
+}
+
+.boxes .blue-box.color-two {
+	background: #FEDCC1;
+}
+
+.boxes .blue-box.color-three {
+	background: #E9A873;
+}
+
+.boxes .blue-box.color-four {
+	background: #624A34;
+}
+
+.boxes .blue-box.color-five {
+	background: #fff;
+	border: 1px solid #D0D0D0;
+}
+
+.boxes .blue-box.color-six {
+	background: #333333;
+}
+
+.boxes .blue-box.color-seven {
+	background: #624A35;
+}
+
+.boxes .blue-box.color-eight {
+	background: #D9781E;
+}
+
+.boxes .blue-box.color-night {
+	background: #456DBB;
+}
+
+.boxes .blue-box.color-ten {
+	background: #E8568A;
+}
+
+.boxes .blue-box.color-ten1 {
+	background: #CD2020;
+}
+
+.boxes .blue-box.color-ten2 {
+	background: #19972D;
+}
+
+.boxes .blue-box.color-ten3 {
+	background: #581997;
+}
+
+
+.character-creation .accordion-header {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+}
+
+.boxes .blue-box .block-icon {
+	position: absolute;
+	top: 5px;
+	right: 7px;
+}
+
+.boxes .blue-box .block-icon img {
+	width: 18px;
+	height: 21px;
+}
+
+.boxes .blue-box-info {
+	background: #EBF2FF;
+	border-radius: 5px;
+	padding: 4px 3px;
+	margin-top: 4px;
+}
+
+.boxes .blue-box-info p {
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	text-align: center;
+	color: #456DBB;
+}
+
+.boxes .blue-box-info.opened p {
+	color: #686868;
+}
+
+.character-creation .accordion-header-box {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+	margin: 32px 0;
+	width: fit-content;
+}
+
+.character-creation .accordion-header-box img {
+	transition: all 0.3s linear;
+}
+
+.character-creation .accordion-header-box.active img {
+	transform: rotate(180deg);
+}
+
+.character-creation .accordion-box .swiper {
+	margin: 0 32px;
+}
+
+.character-creation .swiper-button-prev {
+	left: 0;
+	padding: 0;
+	width: auto;
+}
+
+.character-creation .swiper-button-next {
+	right: 0;
+	width: auto;
+}
+
+.character-creation .swiper-button-next:after {
+	color: #000;
+	font-size: 15px;
+}
+
+.character-creation .gender-buttons {
+	margin-top: 32px;
+	display: flex;
+	gap: 8px;
+	justify-content: end;
+}
+
+.character-creation .gender-buttons button.active {
+	background: #456DBB;
+	color: #fff;
+	font-weight: 700;
+}
+
+.character-creation .gender-buttons button {
+	width: 98px;
+	height: 43px;
+	background: #EBF2FF;
+	border-radius: 5px;
+	color: #333;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+#choosFace .modal-dialog {
+	max-width: 516px !important;
+}
+
+#choosFace .modal-dialog .boxes .blue-box {
+	width: 100%;
+}
+
+#choosFace .modal-content .swiper {
+	margin: 0 34px;
+}
+
+#choosFace .swiper-button-prev,
+#choosFace .swiper-button-next {
+	width: auto;
+}
+
+#choosFace .swiper-button-prev:after {
+	left: 0;
+}
+
+#choosFace .swiper-button-next::after {
+	color: #000;
+	font-size: 15px;
+}
+
+.catalog-sec .subscription-box {
+	background: #EBF2FF;
+	border-radius: 5px;
+	padding: 15px 16px;
+	margin: 64px 0 30px 0;
+}
+
+.catalog-sec .characters-box {
+	height: 270px;
+	background: #EBF2FF;
+	border-radius: 5px;
+	padding: 32px;
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.swiper-title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	text-align: center;
+	color: #333333;
+	margin-bottom: 24px;
+	text-align: left;
+}
+
+.catalog-sec .group-img {
+	margin: 0 0 0 auto;
+}
+
+.catalog-sec .characters-box p {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+	margin-top: 16px;
+}
+
+#choosFace .modal-swiper-box {
+	max-width: 217px;
 }
 
 /* ================================================================================================== */
