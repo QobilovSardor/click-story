@@ -2671,14 +2671,16 @@ input[type=number]::-webkit-outer-spin-button {
 	width: 70px;
 }
 
-.modal .search-box {
+.modal .search-box,
+.search-box-two .search-box {
 	width: 370px;
 	height: 49px;
 	margin: 0 auto;
 	position: relative;
 }
 
-.modal .search-box img {
+.modal .search-box img,
+.search-box-two .search-box img {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -2695,7 +2697,8 @@ input[type="search"]::-webkit-search-results-decoration {
 	display: none;
 }
 
-.modal .search-box input {
+.modal .search-box input,
+.search-box-two .search-box input {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
@@ -2708,7 +2711,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 }
 
-.attach-product .search-box input::placeholder {
+.attach-product .search-box input::placeholder,
+.search-box-two .search-box input::placeholder {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
@@ -3303,7 +3307,8 @@ filter-card__box {
 }
 
 #chooseCharacter .gender-box button,
-#chooseCharacter2 .gender-box button {
+#chooseCharacter2 .gender-box button,
+.search-box-two .gender-box button {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
@@ -3314,13 +3319,15 @@ filter-card__box {
 }
 
 #chooseCharacter .gender-box button:hover,
-#chooseCharacter2 .gender-box button:hover {
+#chooseCharacter2 .gender-box button:hover,
+.search-box-two .gender-box button:hover {
 	background: #456DBB;
 	color: #fff;
 }
 
 #chooseCharacter .gender-box button.active,
-#chooseCharacter2 .gender-box button.active {
+#chooseCharacter2 .gender-box button.active,
+.search-box-two .gender-box button.active {
 	font-weight: 700;
 	background: #456DBB;
 	color: #fff;
@@ -4028,7 +4035,30 @@ filter-card__box {
 #choosFace .modal-swiper-box {
 	max-width: 217px;
 }
+.directory-sec .big-box{
+	margin-bottom: 24px;
+}
+.directory-sec .blue-box {
+	background: #EBF2FF;
+	border-radius: 5px;
+	padding: 27px 5px 0 5px;
+}
 
+.directory-sec .blue-box img {
+	width: 100%;
+}
+
+.directory-sec .blue-box-info {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+	text-align: center;
+	margin-top: 8px;
+}
+.directory-sec .search-box-two{
+	margin-bottom: 64px;
+}
 /* ================================================================================================== */
 
 

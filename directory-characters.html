@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
@@ -12,8 +12,8 @@
 </head>
 
 <body>
-
 	<div class="wrapper">
+		<!-- header start -->
 		<header class="header">
 			<nav class="navbar navbar-expand-lg">
 				<div class="container align-items-center">
@@ -120,7 +120,7 @@
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="#!">Истории</a>
+								<a class="nav-link" aria-current="page" href="stories.html">Истории</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="authors.html">Авторы</a>
@@ -231,118 +231,286 @@
 				</div>
 			</nav>
 		</header>
+		<!-- header end -->
 
+		<!-- main start -->
 		<main>
-
-			<section class="editor-sec editor-finished">
+			<section class="directory-sec mt-64">
 				<div class="container">
-					<div class="title mt-64 mb-24">
-						<h1 class="title-md">Название истории</h1>
+					<div class="page-nav__link d-flex align-items-center mb-32">
+						<a href="index.html">Главная</a>
+						<svg class="page-nav__link-icon" width="4" height="8" viewBox="0 0 4 8" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M4 4L0 8V0L4 4Z" fill="#686868" />
+						</svg>
+						<a href="#!">Каталог</a>
+						<svg class="page-nav__link-icon" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4 4L0 8V0L4 4Z" fill="#686868" />
+						</svg>
+						<a href="#!">Персонажи</a>
 					</div>
+					<div class="title">
+						<h2 class="title-md">Персонажи</h2>
+					</div>
+
 					<div class="row">
-						<div class="col-lg-12 editor-sec__top d-flex align-items-center justify-content-between">
-							<p>Глава 1: Название главы</p>
-							<div class="d-flex gap-2">
-								<button class="btn-gradient">Опубликовать главу</button>
-								<button class="btn-gradient">Сохранить главу</button>
-							</div>
-						</div>
 						<div class="col-lg-12">
-							<div class="editor-sec__bg position-relative">
-								<div class="d-flex align-items-center gap-2 add-bg" data-bs-toggle="modal"
-									data-bs-target="#chooseBbackground">
-									<img src="images/icons/roundet-plus.svg" alt="" width="20px" height="20px">
-									<p>Добавить фон</p>
+							<div class="d-flex align-items-center search-box-two mt-32">
+								<div class="search-box m-0">
+									<input type="search" placeholder="Найти">
+									<img src="images/icons/search-icon.svg" alt="search-icon">
 								</div>
-								<div class="row justify-content-center">
-									<div class="col-lg-4">
-										<div class="upload-img" data-bs-toggle="modal" data-bs-target="#chooseCharacter">
-											<img src="images/icons/roundet-plus.svg" alt="">
-											<p class="upload-img__text">Добавить
-												персонажа</p>
-										</div>
-									</div>
-									<div class="col-lg-4">
-										<div class="upload-img" data-bs-toggle="modal" data-bs-target="#chooseCharacter">
-											<img src="images/icons/roundet-plus.svg" alt="">
-											<p class="upload-img__text">Добавить
-												персонажа</p>
-										</div>
-									</div>
-									<div class="transparent-bg">
-										<h3>Имя</h3>
-										<p>Текст |</p>
-									</div>
-								</div>
-								<div class="upload-img__mini d-flex flex-column justify-content-center align-items-center text-center" data-bs-toggle="modal" data-bs-target="#chooseCharacter2">
-									<div class="add-bg">
-										<img src="images/icons/roundet-plus.svg" alt="" width="20px" height="20px">
-										<p>Добавить
-											говорящего
-											персонажа</p>
-									</div>
+								<div class="gender-box ms-4 d-flex gap-2">
+									<button>Женщина</button>
+									<button class="active">Мужчина</button>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-12">
-							<div class="add-img">
-								<div class="add-img__box">
-									<div class="show-box">
-										<div class="add-img__box-bottom">
-											<p>1</p>
-										</div>
-									</div>
-									<div class="click-box">
-										<p>Дублировать</p>
-										<p>Удалить</p>
-									</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
 								</div>
-								<div class="add-img__box">
-									<div class="show-box">
-										<div class="add-img__box-bottom">
-											<p>2</p>
-										</div>
-									</div>
-									<div class="click-box">
-										<p>Дублировать</p>
-										<p>Удалить</p>
-									</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
 								</div>
-								<div class="add-img__box">
-									<div class="show-box">
-										<div class="add-img__box-bottom">
-											<p>3</p>
-										</div>
-									</div>
-									<div class="click-box">
-										<p>Дублировать</p>
-										<p>Удалить</p>
-									</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
 								</div>
-								<div class="add-img__box">
-									<div class="show-box">
-										<div class="add-img__box-bottom">
-											<p>4</p>
-										</div>
-									</div>
-									<div class="click-box">
-										<p>Дублировать</p>
-										<p>Удалить</p>
-									</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
 								</div>
-								<button class="plus-add-img__box">
-									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M9 9V5H11V9H15V11H11V15H9V11H5V9H9ZM10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20ZM10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z"
-											fill="#FFFFFF" />
-									</svg>
-								</button>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="big-box" data-bs-toggle="modal" data-bs-target="#cardCharacter">
+								<div class="blue-box">
+									<img src="images/anime-img.png" alt="">
+								</div>
+								<div class="blue-box-info">
+									<p>Ларриэль</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
+		<!-- main end -->
 
 		<footer class="footer">
 			<div class="container">
@@ -512,386 +680,7 @@
 		</footer>
 	</div>
 
-
 	<!-- modal start -->
-	<div class="modal fade" id="chooseBbackground" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content position-relative">
-				<div class="modal-header flex-column align-items-start p-0 border-0">
-					<h5 class="modal-title mb-0" id="exampleModalLabel">Выберите фон</h5>
-					<div class="filter-card mb-32">
-						<div class="filter-card__box active">Фентези</div>
-						<div class="filter-card__box">Природа</div>
-						<div class="filter-card__box">Ресторан</div>
-						<div class="filter-card__box">Кафе</div>
-						<div class="filter-card__box">Улица</div>
-						<div class="filter-card__box">Комната</div>
-						<div class="filter-card__box">Спальня</div>
-						<div class="filter-card__box">Балкон</div>
-						<div class="filter-card__box">Ванная</div>
-						<div class="filter-card__box">Школа</div>
-						<div class="filter-card__box">Офис</div>
-						<div class="filter-card__box">Парк</div>
-						<div class="filter-card__box">Зима</div>
-						<div class="filter-card__box">Лето</div>
-						<div class="filter-card__box">Осень</div>
-						<div class="filter-card__box">Весна</div>
-					</div>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-						<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-							stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-							<path stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-						</svg>
-					</button>
-				</div>
-				<div class="modal-body p-0">
-					<div class="photo-galery d-flex flex-wrap gap-2">
-						<div class="photo-galery__box">
-							<img src="images/cinema.png" alt="" width="270px" height="138px">
-							<div class="photo-galery__box-bottom text-center mt-2">
-								<p>В коллекции</p>
-							</div>
-						</div>
-						<div class="photo-galery__box">
-							<img src="images/nature2.png" alt="" width="270px" height="138px">
-							<div class="photo-galery__box-bottom text-center mt-2">
-								<p>В коллекции</p>
-							</div>
-						</div>
-						<div class="photo-galery__box">
-							<img src="images/nature3.png" alt="" width="270px" height="138px">
-							<div class="photo-galery__box-bottom text-center mt-2">
-								<p>В коллекции</p>
-							</div>
-						</div>
-						<div class="photo-galery__box">
-							<img src="images/nature1.png" alt="" width="270px" height="138px">
-							<div class="photo-galery__box-bottom text-center mt-2">
-								<p>В коллекции</p>
-							</div>
-						</div>
-						<div class="photo-galery__box" data-bs-toggle="modal" data-bs-target="#chooseBbackground2">
-							<div class="position-relative img-box">
-								<img src="images/gallery1.png" alt="" width="270px" height="138px">
-								<div class="position-absolute block-img">
-									<svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M3 7V6C3 2.68629 5.68629 0 9 0C12.3137 0 15 2.68629 15 6V7H17C17.5523 7 18 7.44772 18 8V20C18 20.5523 17.5523 21 17 21H1C0.44772 21 0 20.5523 0 20V8C0 7.44772 0.44772 7 1 7H3ZM16 9H2V19H16V9ZM8 14.7324C7.4022 14.3866 7 13.7403 7 13C7 11.8954 7.8954 11 9 11C10.1046 11 11 11.8954 11 13C11 13.7403 10.5978 14.3866 10 14.7324V17H8V14.7324ZM5 7H13V6C13 3.79086 11.2091 2 9 2C6.79086 2 5 3.79086 5 6V7Z"
-											fill="#fff" />
-									</svg>
-								</div>
-								<div class="check-img">
-									<img src="images/icons/check-icon.svg" alt="">
-								</div>
-							</div>
-							<div class="photo-galery__box-bottom text-center mt-2">
-								<img src="images/icons/crystal-icon.svg" alt="">
-								<p>50</p>
-							</div>
-						</div>
-						<div class="photo-galery__box" data-bs-toggle="modal" data-bs-target="#chooseBbackground2">
-							<div class="position-relative img-box">
-								<img src="images/gallery2.png" alt="" width="270px" height="138px">
-								<div class="position-absolute block-img">
-									<svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M3 7V6C3 2.68629 5.68629 0 9 0C12.3137 0 15 2.68629 15 6V7H17C17.5523 7 18 7.44772 18 8V20C18 20.5523 17.5523 21 17 21H1C0.44772 21 0 20.5523 0 20V8C0 7.44772 0.44772 7 1 7H3ZM16 9H2V19H16V9ZM8 14.7324C7.4022 14.3866 7 13.7403 7 13C7 11.8954 7.8954 11 9 11C10.1046 11 11 11.8954 11 13C11 13.7403 10.5978 14.3866 10 14.7324V17H8V14.7324ZM5 7H13V6C13 3.79086 11.2091 2 9 2C6.79086 2 5 3.79086 5 6V7Z"
-											fill="#fff" />
-									</svg>
-								</div>
-								<div class="check-img">
-									<img src="images/icons/check-icon.svg" alt="">
-								</div>
-							</div>
-							<div class="photo-galery__box-bottom text-center mt-2">
-								<img src="images/icons/crystal-icon.svg" alt="">
-								<p>50</p>
-							</div>
-						</div>
-						<div class="photo-galery__box" data-bs-toggle="modal" data-bs-target="#chooseBbackground2">
-							<div class="position-relative img-box">
-								<img src="images/gallery3.png" alt="" width="270px" height="138px">
-								<div class="position-absolute block-img">
-									<svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M3 7V6C3 2.68629 5.68629 0 9 0C12.3137 0 15 2.68629 15 6V7H17C17.5523 7 18 7.44772 18 8V20C18 20.5523 17.5523 21 17 21H1C0.44772 21 0 20.5523 0 20V8C0 7.44772 0.44772 7 1 7H3ZM16 9H2V19H16V9ZM8 14.7324C7.4022 14.3866 7 13.7403 7 13C7 11.8954 7.8954 11 9 11C10.1046 11 11 11.8954 11 13C11 13.7403 10.5978 14.3866 10 14.7324V17H8V14.7324ZM5 7H13V6C13 3.79086 11.2091 2 9 2C6.79086 2 5 3.79086 5 6V7Z"
-											fill="#fff" />
-									</svg>
-								</div>
-								<div class="check-img">
-									<img src="images/icons/check-icon.svg" alt="">
-								</div>
-							</div>
-							<div class="photo-galery__box-bottom text-center mt-2">
-								<img src="images/icons/crystal-icon.svg" alt="">
-								<p>50</p>
-							</div>
-						</div>
-						<div class="photo-galery__box" data-bs-toggle="modal" data-bs-target="#chooseBbackground2">
-							<div class="position-relative img-box">
-								<img src="images/gallery4.png" alt="" width="270px" height="138px">
-								<div class="position-absolute block-img">
-									<svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M3 7V6C3 2.68629 5.68629 0 9 0C12.3137 0 15 2.68629 15 6V7H17C17.5523 7 18 7.44772 18 8V20C18 20.5523 17.5523 21 17 21H1C0.44772 21 0 20.5523 0 20V8C0 7.44772 0.44772 7 1 7H3ZM16 9H2V19H16V9ZM8 14.7324C7.4022 14.3866 7 13.7403 7 13C7 11.8954 7.8954 11 9 11C10.1046 11 11 11.8954 11 13C11 13.7403 10.5978 14.3866 10 14.7324V17H8V14.7324ZM5 7H13V6C13 3.79086 11.2091 2 9 2C6.79086 2 5 3.79086 5 6V7Z"
-											fill="#fff" />
-									</svg>
-								</div>
-								<div class="check-img">
-									<img src="images/icons/check-icon.svg" alt="">
-								</div>
-							</div>
-							<div class="photo-galery__box-bottom text-center mt-2">
-								<img src="images/icons/crystal-icon.svg" alt="">
-								<p>50</p>
-							</div>
-						</div>
-						<div class="photo-galery__box" data-bs-toggle="modal" data-bs-target="#chooseBbackground2">
-							<div class="position-relative img-box">
-								<img src="images/gallery4.png" alt="" width="270px" height="138px">
-								<div class="position-absolute block-img">
-									<svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M3 7V6C3 2.68629 5.68629 0 9 0C12.3137 0 15 2.68629 15 6V7H17C17.5523 7 18 7.44772 18 8V20C18 20.5523 17.5523 21 17 21H1C0.44772 21 0 20.5523 0 20V8C0 7.44772 0.44772 7 1 7H3ZM16 9H2V19H16V9ZM8 14.7324C7.4022 14.3866 7 13.7403 7 13C7 11.8954 7.8954 11 9 11C10.1046 11 11 11.8954 11 13C11 13.7403 10.5978 14.3866 10 14.7324V17H8V14.7324ZM5 7H13V6C13 3.79086 11.2091 2 9 2C6.79086 2 5 3.79086 5 6V7Z"
-											fill="#fff" />
-									</svg>
-								</div>
-								<div class="check-img">
-									<img src="images/icons/check-icon.svg" alt="">
-								</div>
-							</div>
-							<div class="photo-galery__box-bottom text-center mt-2">
-								<img src="images/icons/crystal-icon.svg" alt="">
-								<p>50</p>
-							</div>
-						</div>
-						<div class="photo-galery__box" data-bs-toggle="modal" data-bs-target="#chooseBbackground2">
-							<div class="position-relative img-box active">
-								<img src="images/gallery6.png" alt="" width="270px" height="138px">
-								<div class="position-absolute block-img">
-									<svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M3 7V6C3 2.68629 5.68629 0 9 0C12.3137 0 15 2.68629 15 6V7H17C17.5523 7 18 7.44772 18 8V20C18 20.5523 17.5523 21 17 21H1C0.44772 21 0 20.5523 0 20V8C0 7.44772 0.44772 7 1 7H3ZM16 9H2V19H16V9ZM8 14.7324C7.4022 14.3866 7 13.7403 7 13C7 11.8954 7.8954 11 9 11C10.1046 11 11 11.8954 11 13C11 13.7403 10.5978 14.3866 10 14.7324V17H8V14.7324ZM5 7H13V6C13 3.79086 11.2091 2 9 2C6.79086 2 5 3.79086 5 6V7Z"
-											fill="#fff" />
-									</svg>
-								</div>
-								<div class="check-img">
-									<img src="images/icons/check-icon.svg" alt="">
-								</div>
-							</div>
-							<div class="photo-galery__box-bottom text-center mt-2">
-								<img src="images/icons/crystal-icon.svg" alt="">
-								<p>50</p>
-							</div>
-						</div>
-						<div class="photo-galery__box" data-bs-toggle="modal" data-bs-target="#chooseBbackground2">
-							<div class="position-relative img-box">
-								<img src="images/nature3.png" alt="" width="270px" height="138px">
-								<div class="position-absolute block-img">
-									<svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M3 7V6C3 2.68629 5.68629 0 9 0C12.3137 0 15 2.68629 15 6V7H17C17.5523 7 18 7.44772 18 8V20C18 20.5523 17.5523 21 17 21H1C0.44772 21 0 20.5523 0 20V8C0 7.44772 0.44772 7 1 7H3ZM16 9H2V19H16V9ZM8 14.7324C7.4022 14.3866 7 13.7403 7 13C7 11.8954 7.8954 11 9 11C10.1046 11 11 11.8954 11 13C11 13.7403 10.5978 14.3866 10 14.7324V17H8V14.7324ZM5 7H13V6C13 3.79086 11.2091 2 9 2C6.79086 2 5 3.79086 5 6V7Z"
-											fill="#fff" />
-									</svg>
-								</div>
-								<div class="check-img">
-									<img src="images/icons/check-icon.svg" alt="">
-								</div>
-							</div>
-							<div class="photo-galery__box-bottom text-center mt-2">
-								<img src="images/icons/crystal-icon.svg" alt="">
-								<p>50</p>
-							</div>
-						</div>
-						<div class="photo-galery__box" data-bs-toggle="modal" data-bs-target="#chooseBbackground2">
-							<div class="position-relative img-box">
-								<img src="images/gallery7.png" alt="" width="270px" height="138px">
-								<div class="position-absolute block-img">
-									<svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M3 7V6C3 2.68629 5.68629 0 9 0C12.3137 0 15 2.68629 15 6V7H17C17.5523 7 18 7.44772 18 8V20C18 20.5523 17.5523 21 17 21H1C0.44772 21 0 20.5523 0 20V8C0 7.44772 0.44772 7 1 7H3ZM16 9H2V19H16V9ZM8 14.7324C7.4022 14.3866 7 13.7403 7 13C7 11.8954 7.8954 11 9 11C10.1046 11 11 11.8954 11 13C11 13.7403 10.5978 14.3866 10 14.7324V17H8V14.7324ZM5 7H13V6C13 3.79086 11.2091 2 9 2C6.79086 2 5 3.79086 5 6V7Z"
-											fill="#fff" />
-									</svg>
-								</div>
-								<div class="check-img">
-									<img src="images/icons/check-icon.svg" alt="">
-								</div>
-							</div>
-							<div class="photo-galery__box-bottom text-center mt-2">
-								<img src="images/icons/crystal-icon.svg" alt="">
-								<p>50</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="chooseBbackground2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content position-relative">
-				<div class="modal-header flex-column align-items-start p-0 border-0">
-					<h5 class="modal-title" id="exampleModalLabel">Драконья лощина</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-						<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-							stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-							<path stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-						</svg>
-					</button>
-				</div>
-				<div class="modal-body p-0">
-					<img src="images/gallery6.png" alt="" width="100%">
-					<div class="d-flex align-items-center justify-content-between mt-24">
-						<p>Все дополнительные визуальные элементы доступны по подписке.
-							<a href="#!" class="subscribe-text">Оформить подписку</a>
-						</p>
-						<div class="d-flex modal-body__btns">
-							<button class="btn-gradient">Купить фон за 50 кварцев</button>
-							<button class="btn-gradient">Выбрать</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="chooseCharacter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content position-relative">
-				<div class="modal-header flex-column align-items-start p-0 border-0">
-					<h5 class="modal-title" id="exampleModalLabel">Выберите персоснажа</h5>
-					<div class="d-flex align-items-center search-box-two">
-						<div class="search-box m-0">
-							<input type="search" placeholder="Найти">
-							<img src="images/icons/search-icon.svg" alt="search-icon">
-						</div>
-						<div class="gender-box ms-4 d-flex gap-2">
-							<button class="active">Женщина</button>
-							<button>Мужчина</button>
-						</div>
-					</div>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-						<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-							stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-							<path stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-						</svg>
-					</button>
-				</div>
-				<div class="modal-body p-0">
-					<h4 class="mt-32">Персонажи из истории</h4>
-					<div class="character-cards text-center mt-24 d-flex gap-2">
-						<div class="character-card">
-							<div class="character-card__img blue-box">
-								<img src="images/angel-2.png" alt="">
-							</div>
-							<h4>Хлоя</h4>
-						</div>
-						<div class="character-card">
-							<div class="character-card__img orange-box">
-								<img src="images/anime-img4.png" alt="">
-							</div>
-							<h4>Амадия</h4>
-						</div>
-					</div>
-					<h4 class="mt-32">Персонажи из истории</h4>
-					<div class="character-cards text-center mt-24 d-flex gap-2">
-						<div class="character-card">
-							<div class="character-card__img blue-box">
-								<img src="images/angel-2.png" alt="">
-							</div>
-							<h4>Хлоя</h4>
-						</div>
-						<div class="character-card">
-							<div class="character-card__img orange-box">
-								<img src="images/anime-img4.png" alt="">
-							</div>
-							<h4>Амадия</h4>
-						</div>
-					</div>
-					<h4 class="mt-32">Персонажи из истории</h4>
-					<div class="character-cards text-center mt-24 d-flex gap-2">
-						<div class="character-card" data-bs-target="#cardCharacter" data-bs-toggle="modal">
-							<div class="character-card__img active">
-								<img class="character-img" src="images/modal-anime-img1.png" alt="">
-								<div class="check-icon">
-									<img src="images/icons/check-icon.svg" alt="" width="20px" height="20px">
-								</div>
-							</div>
-							<h4>Надин</h4>
-						</div>
-						<div class="character-card" data-bs-target="#cardCharacter" data-bs-toggle="modal">
-							<div class="character-card__img">
-								<img class="w-h" src="images/modal-anime-img2.png" alt="" width="100px" height="100px">
-							</div>
-							<h4>Света</h4>
-						</div>
-						<div class="character-card" data-bs-target="#cardCharacter" data-bs-toggle="modal">
-							<div class="character-card__img">
-								<img class="character-img" src="images/modal-anime-img1.png" alt="">
-								<div class="check-icon">
-									<img src="images/icons/check-icon.svg" alt="" width="20px" height="20px">
-								</div>
-							</div>
-							<h4>Надин</h4>
-						</div>
-						<div class="character-card" data-bs-target="#cardCharacter" data-bs-toggle="modal">
-							<div class="character-card__img">
-								<img class="w-h" src="images/modal-anime-img2.png" alt="" width="100px" height="100px">
-							</div>
-							<h4>Света</h4>
-						</div>
-						<div class="character-card" data-bs-target="#cardCharacter" data-bs-toggle="modal">
-							<div class="character-card__img">
-								<img class="character-img" src="images/modal-anime-img1.png" alt="">
-								<div class="check-icon">
-									<img src="images/icons/check-icon.svg" alt="" width="20px" height="20px">
-								</div>
-							</div>
-							<h4>Надин</h4>
-						</div>
-						<div class="character-card" data-bs-target="#cardCharacter" data-bs-toggle="modal">
-							<div class="character-card__img">
-								<img class="w-h" src="images/modal-anime-img2.png" alt="" width="100px" height="100px">
-							</div>
-							<h4>Света</h4>
-						</div>
-						<div class="character-card" data-bs-target="#cardCharacter" data-bs-toggle="modal">
-							<div class="character-card__img">
-								<img class="character-img" src="images/modal-anime-img1.png" alt="">
-								<div class="check-icon">
-									<img src="images/icons/check-icon.svg" alt="" width="20px" height="20px">
-								</div>
-							</div>
-							<h4>Надин</h4>
-						</div>
-						<div class="character-card" data-bs-target="#cardCharacter" data-bs-toggle="modal">
-							<div class="character-card__img">
-								<img class="w-h" src="images/modal-anime-img2.png" alt="" width="100px" height="100px">
-							</div>
-							<h4>Света</h4>
-						</div>
-						<div class="character-card" data-bs-target="#cardCharacter" data-bs-toggle="modal">
-							<div class="character-card__img">
-								<img class="character-img" src="images/modal-anime-img1.png" alt="">
-								<div class="check-icon">
-									<img src="images/icons/check-icon.svg" alt="" width="20px" height="20px">
-								</div>
-							</div>
-							<h4>Надин</h4>
-						</div>
-						<div class="character-card" data-bs-target="#cardCharacter" data-bs-toggle="modal">
-							<div class="character-card__img">
-								<img class="w-h" src="images/modal-anime-img2.png" alt="" width="100px" height="100px">
-							</div>
-							<h4>Света</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<div class="modal fade" id="cardCharacter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content position-relative">
@@ -1044,93 +833,6 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="modal fade" id="chooseCharacter2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content position-relative">
-				<div class="modal-header flex-column align-items-start p-0 border-0">
-					<h5 class="modal-title mb-0" id="exampleModalLabel">Выберите персоснажа</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-						<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-							stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-							<path stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-						</svg>
-					</button>
-				</div>
-				<div class="modal-body p-0">
-					<h4 class="mt-32">Персонажи из истории</h4>
-					<div class="character-cards text-center mt-24 d-flex gap-2">
-						<div class="character-card">
-							<div class="character-card__img blue-box active">
-								<img class="opacity-100" src="images/angel-2.png" alt="">
-								<div class="check-icon">
-									<img src="images/icons/check-icon.svg" alt="">
-								</div>
-							</div>
-							<h4>Хлоя</h4>
-						</div>
-						<div class="character-card">
-							<div class="character-card__img orange-box">
-								<img src="images/anime-img4.png" alt="">
-							</div>
-							<h4>Амадия</h4>
-						</div>
-					</div>
-
-					<div class="character-cards text-center mt-24 d-flex gap-2">
-						<div class="character-card">
-							<div class="character-card__img-big blue-box">
-								<img src="images/big-angel2.png" alt="">
-							</div>
-						</div>
-					</div>
-					
-					<h4 class="mt-32 mb-24">Эмоция</h4>
-					<div class="position-relative">
-						<div class="swiper emotion-swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="card-emoji">
-										<img src="images/icons/emotion1.svg" alt="">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="card-emoji">
-										<img src="images/icons/emotion2.svg" alt="">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="card-emoji">
-										<img src="images/icons/emotion3.svg" alt="">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="card-emoji">
-										<img src="images/icons/emotion4.svg" alt="">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="card-emoji">
-										<img src="images/icons/emotion5.svg" alt="">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="card-emoji">
-										<img src="images/icons/emotion6.svg" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-button-prev prev1"></div>
-						<div class="swiper-button-next next1"></div>
-					</div>
-					<div class="btn-box">
-						<a href="#!" class="btn-gradient">Выбрать</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<!-- modal end -->
 
 	<script src="js/jquery-3.3.1.min.js"></script>
@@ -1138,7 +840,6 @@
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/isotope.pkgd.min.js"></script>
-
 </body>
 
 </html>
