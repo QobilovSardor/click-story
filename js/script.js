@@ -361,6 +361,23 @@ try {
 			nextEl: '.next1',
 			prevEl: '.prev1',
 		},
+		breakpoints: {
+			0: {
+				slidesPerView: 2,
+			},
+			480: {
+				slidesPerView: 4,
+			},
+			768: {
+				slidesPerView: 6,
+			},
+			992: {
+				slidesPerView: 6,
+			},
+			1920: {
+				slidesPerView: 6,
+			}
+		}
 	});
 } catch (error) {
 	
@@ -375,6 +392,23 @@ try {
 			nextEl: '.next2',
 			prevEl: '.prev2',
 		},
+		breakpoints: {
+			0: {
+				slidesPerView: 2,
+			},
+			480: {
+				slidesPerView: 4,
+			},
+			768: {
+				slidesPerView: 6,
+			},
+			992: {
+				slidesPerView: 6,
+			},
+			1920: {
+				slidesPerView: 6,
+			}
+		}
 	});
 } catch (error) {
 	
