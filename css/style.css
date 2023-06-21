@@ -3997,7 +3997,8 @@ filter-card__box {
 	line-height: 17px;
 }
 
-#choosFace .modal-dialog {
+#choosFace .modal-dialog,
+#choosFace2 .modal-dialog {
 	max-width: 516px !important;
 }
 
@@ -4005,20 +4006,25 @@ filter-card__box {
 	width: 100%;
 }
 
-#choosFace .modal-content .swiper {
+#choosFace .modal-content .swiper,
+#choosFace2 .modal-content .swiper {
 	margin: 0 34px;
 }
 
 #choosFace .swiper-button-prev,
-#choosFace .swiper-button-next {
+#choosFace .swiper-button-next,
+#choosFace2 .swiper-button-prev,
+#choosFace2 .swiper-button-next {
 	width: auto;
 }
 
-#choosFace .swiper-button-prev:after {
+#choosFace .swiper-button-prev:after,
+#choosFace2 .swiper-button-prev:after {
 	left: 0;
 }
 
-#choosFace .swiper-button-next::after {
+#choosFace .swiper-button-next::after,
+#choosFace2 .swiper-button-next::after {
 	color: #000;
 	font-size: 15px;
 }
@@ -4062,7 +4068,8 @@ filter-card__box {
 	margin-top: 16px;
 }
 
-#choosFace .modal-swiper-box {
+#choosFace .modal-swiper-box,
+#choosFace2 .modal-swiper-box {
 	max-width: 217px;
 }
 
@@ -4314,7 +4321,7 @@ filter-card__box {
 }
 
 .catalog-two .blue-box-two {
-	width: 170px;
+	width: 100%;
 	height: 230px;
 	background: #EBF2FF;
 	border-radius: 5px;
@@ -4329,7 +4336,7 @@ filter-card__box {
 }
 
 .catalog-two .accordion-itemm.colors .blue-box {
-	width: 170px;
+	width: 100%;
 	height: 170px;
 	background: #BBF3CA;
 }
@@ -4653,6 +4660,10 @@ filter-card__box {
 @media (max-width: 568px) {
 	.admin-sec {
 		margin-top: 40px;
+	}
+
+	.catalog-two .search-box {
+		width: 100%;
 	}
 
 	.directory-sec .blue-box img {
