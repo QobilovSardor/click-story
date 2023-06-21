@@ -4459,7 +4459,11 @@ filter-card__box {
 
 /* ============================================ lk-pages-media start ======================================================*/
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+	.making-history .chapters-box__links {
+		flex-wrap: wrap;
+	}
+}
 
 
 @media (max-width: 768px) {
@@ -4470,6 +4474,22 @@ filter-card__box {
 
 	.admin-sec .title-box__right {
 		margin-top: 20px;
+	}
+
+	.making-history .title {
+		margin-bottom: 40px;
+	}
+
+	.making-history .making-history__form {
+		margin-top: 20px;
+	}
+
+	.making-history .making-history__form label {
+		margin: 20px 0 16px 0;
+	}
+
+	.change-bg-text {
+		margin-right: 10px;
 	}
 }
 
@@ -4531,6 +4551,16 @@ filter-card__box {
 
 	.modal .filter-card {
 		margin-top: 20px;
+	}
+
+	.box-card__footer {
+		flex-direction: column;
+		align-items: start !important;
+		gap: 1rem;
+		margin-top: 20px;
+	}
+	.making-history{
+		margin-top: 40px !important;
 	}
 }
 
