@@ -4441,6 +4441,7 @@ filter-card__box {
 
 #modalCardTwo .modal-dialog {
 	max-width: 213px;
+	margin: 0 auto;
 }
 
 #modalCardTwo .modal-title {
@@ -4547,6 +4548,12 @@ filter-card__box {
 	#chooseBbackground2 .mt-24 {
 		flex-wrap: wrap;
 		gap: 1rem;
+	}
+
+	.text-box {
+		right: -38px;
+		left: auto;
+		transform: translateX(0);
 	}
 }
 
