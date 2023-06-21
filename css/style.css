@@ -4473,7 +4473,15 @@ filter-card__box {
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
+	.admin-sec {
+		margin-top: 40px;
+	}
+
+	#attachProduct .modal-dialog {
+		max-width: 100%;
+	}
+
 	.admin-sec .title-box__right {
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -4495,6 +4503,34 @@ filter-card__box {
 
 	.admin-sec .user-sec__tabs {
 		margin-top: 30px;
+	}
+
+	.modal .search-box {
+		width: 100%;
+	}
+
+	.attach-product__big-box {
+		padding: 10px;
+	}
+
+	.create-news .title-text {
+		margin-top: 20px !important;
+	}
+
+	.create-news .title {
+		margin-top: 40px !important;
+	}
+
+	.modal .filter-card__box {
+		padding: 8px;
+	}
+
+	.modal .search-box {
+		height: 40px;
+	}
+
+	.modal .filter-card {
+		margin-top: 20px;
 	}
 }
 
