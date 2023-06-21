@@ -4586,6 +4586,7 @@ filter-card__box {
 
 	.modal .modal-title {
 		margin-bottom: 20px;
+		margin-top: 20px;
 	}
 
 	.editor-sec .transparent-bg {
@@ -4720,6 +4721,7 @@ filter-card__box {
 		right: 53px;
 		left: auto;
 	}
+
 	.making-history .col-lg-12.d-flex {
 		flex-direction: column;
 		gap: 1rem;
