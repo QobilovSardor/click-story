@@ -3935,6 +3935,7 @@ filter-card__box {
 .directory-faces .accordion-header-box.active img {
 	transform: rotate(180deg);
 }
+
 .character-creation .accordion-box .swiper {
 	margin: 0 32px;
 }
@@ -4208,9 +4209,79 @@ filter-card__box {
 	line-height: 140%;
 	color: #686868;
 }
-.directory-faces .subscription-box{
+
+.directory-faces .subscription-box {
 	margin-top: 32px;
 }
+
+.catalog-costumes .big-box {
+	margin-bottom: 32px;
+}
+
+.outfit-card .modal-dialog {
+	max-width: 335px;
+	text-align: center;
+}
+
+.outfit-card .modal-dialog .modal-content {
+	padding: 32px;
+}
+
+.outfit-card .blue-box {
+	background: #EBF2FF;
+	border-radius: 5px;
+	padding: 19px 18px 15px 18px;
+	text-align: center;
+	width: 270px;
+	height: 370px;
+}
+
+.outfit-card .blue-box img {
+	width: 100%;
+}
+
+.outfit-card .modal-body .gender-box {
+	background: #456DBB;
+	box-shadow: 0px 4px 10px #CEE0FF;
+	border-radius: 5px;
+	padding: 8px;
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	color: #FFFFFF;
+	margin-top: 24px;
+}
+
+.outfit-card .modal-body p {
+	font-size: 16px;
+	line-height: 140%;
+	text-align: center;
+	color: #333333;
+	margin: 24px 0;
+}
+
+.outfit-card .modal-body p>a {
+	color: #456DBB;
+	border-bottom: 1px solid #456DBB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ================================================================================================== */
 
