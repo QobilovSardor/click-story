@@ -3209,6 +3209,7 @@ filter-card__box {
 	position: absolute;
 	top: 75px;
 	left: 0;
+	z-index: 10;
 	display: none;
 }
 
@@ -4463,6 +4464,11 @@ filter-card__box {
 	.making-history .chapters-box__links {
 		flex-wrap: wrap;
 	}
+
+	.editor-sec .editor-sec__top {
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
 }
 
 
@@ -4490,6 +4496,18 @@ filter-card__box {
 
 	.change-bg-text {
 		margin-right: 10px;
+	}
+
+	.editor-sec .upload-img {
+		height: 300px;
+	}
+
+	.editor-sec .transparent-bg {
+		bottom: 10px;
+	}
+
+	.title.mt-64 {
+		margin-top: 40px !important;
 	}
 }
 
@@ -4559,8 +4577,21 @@ filter-card__box {
 		gap: 1rem;
 		margin-top: 20px;
 	}
-	.making-history{
+
+	.making-history {
 		margin-top: 40px !important;
+	}
+
+	.editor-sec .add-img {
+		flex-wrap: wrap;
+	}
+
+	.editor-sec .editor-sec__bg {
+		padding: 20px;
+	}
+
+	.editor-sec .transparent-bg {
+		padding: 20px;
 	}
 }
 
