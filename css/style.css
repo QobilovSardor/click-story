@@ -4110,7 +4110,7 @@ filter-card__box {
 	font-size: 14px;
 	line-height: 17px;
 	color: #333333;
-	padding: 10px;
+	padding: 9.4px;
 	border: 1px solid #D0D0D0;
 	border-radius: 5px;
 	cursor: pointer;
@@ -4482,6 +4482,11 @@ filter-card__box {
 
 
 /* ============================================ lk-pages-media start ======================================================*/
+@media (max-width: 1400px) {
+	.catalog-bg-sec .geners {
+		flex-wrap: wrap;
+	}
+}
 
 @media (max-width: 1200px) {
 	#chooseCharacter .modal-dialog {
@@ -4636,13 +4641,20 @@ filter-card__box {
 	.admin-sec {
 		margin-top: 40px;
 	}
-.directory-sec .blue-box img{
-	height: 100%;
-	width: auto;
-}
-.directory-sec .blue-box{
-	text-align: center;
-}
+
+	.directory-sec .blue-box img {
+		height: 100%;
+		width: auto;
+	}
+
+	.catalog-bg-sec .geners {
+		margin-bottom: 32px;
+	}
+
+	.directory-sec .blue-box {
+		text-align: center;
+	}
+
 	.catalog-sec .characters-box {
 		padding: 20px;
 	}
