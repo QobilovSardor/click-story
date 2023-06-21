@@ -4360,10 +4360,12 @@ filter-card__box {
 	cursor: pointer;
 	transition: all 0.2s linear;
 }
+
 .authors-sec__two .cinema-box:hover,
-.stories-two .cinema-box:hover{
+.stories-two .cinema-box:hover {
 	background: #456DBB;
 }
+
 .authors-sec__two .cinema-box h6,
 .stories-two .cinema-box h6 {
 	font-weight: 700;
@@ -4422,9 +4424,34 @@ filter-card__box {
 	margin-left: 16px;
 }
 
+#modalCardOne .modal-title {
+	color: #333;
+}
 
+#modalCardOne .btn-gradient.w {
+	width: 284px;
+	margin-right: 16px;
+}
 
+#modalCardTwo .modal-dialog {
+	max-width: 213px;
+}
 
+#modalCardTwo .modal-title {
+	font-size: 16px;
+	color: #333;
+	margin: 0;
+}
+
+#modalCardTwo span {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 140%;
+	text-align: center;
+	color: #456DBB;
+	margin: 16px 0;
+	display: block;
+}
 
 
 /* ================================================================================================== */

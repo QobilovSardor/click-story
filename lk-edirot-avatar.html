@@ -1038,7 +1038,7 @@
 						<p>Все дополнительные визуальные элементы доступны по подписке.
 							<a href="#!">Оформить подписку</a>
 						</p>
-						<a href="#!" class="btn-gradient">Выбрать персонажа</a>
+						<a href="#!" class="btn-gradient" data-bs-toggle="modal" data-bs-target="#modalCardOne">Выбрать персонажа</a>
 					</div>
 				</div>
 			</div>
@@ -1126,6 +1126,41 @@
 					</div>
 					<div class="btn-box">
 						<a href="#!" class="btn-gradient">Выбрать</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalCardOne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content position-relative">
+				<h2 class="modal-title text-center">Сохранить черновик и перейти к созданию персонажа?</h2>
+				<div class="modal-header flex-column align-items-start p-0 border-0">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+							stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+							<path stroke="#333" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body p-0">
+					<div class="btns d-flex">
+						<button class="btn-gradient w" data-bs-target="#modalCardTwo" data-bs-toggle="modal">Да, перейти к
+							созданию</button>
+						<button class="btn-gradient">Нет</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalCardTwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content position-relative">
+				<h2 class="modal-title text-center">Сиреневое платье</h2>
+				<div class="modal-body p-0">
+					<span>100 кварцев</span>
+					<div class="btns d-flex">
+						<button class="btn-gradient w-100 m-0">Купить</button>
 					</div>
 				</div>
 			</div>
