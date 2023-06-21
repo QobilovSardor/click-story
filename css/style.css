@@ -4457,6 +4457,75 @@ filter-card__box {
 /* ================================================================================================== */
 
 
+/* ============================================ lk-pages-media start ======================================================*/
+
+@media (max-width: 992px) {}
+
+
+@media (max-width: 768px) {
+	.admin-sec .title-box {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.admin-sec .title-box__right {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.admin-sec .title-box__right {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.admin-sec .title-box .btn-gradient {
+		width: 100%;
+		text-align: center;
+	}
+
+	.ui-datepicker {
+		top: 37% !important;
+	}
+
+	.admin-sec .online-users {
+		margin-top: 25px;
+	}
+
+	.admin-sec .user-sec__tabs {
+		margin-top: 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================ lk-pages-media end ====================================================== */
+
+
 
 
 /*@media only screen and (max-width: 480px){}*/
