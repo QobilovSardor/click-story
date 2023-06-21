@@ -4489,6 +4489,24 @@ filter-card__box {
 	white-space: nowrap;
 }
 
+.project-rules .info-nav {
+	list-style: disc;
+	margin-left: 14px;
+	margin-top: 32px;
+}
+
+.project-rules .info-nav li {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #333333;
+	margin-bottom: 25px;
+}
+
+.project-rules .info-nav li:last-child {
+	margin-bottom: 0;
+}
+
 /* ================================================================================================== */
 
 
@@ -4660,6 +4678,18 @@ filter-card__box {
 @media (max-width: 568px) {
 	.admin-sec {
 		margin-top: 40px;
+	}
+
+	.project-rules .info-nav li {
+		margin-bottom: 15px;
+	}
+
+	.stories-two .user-boxes {
+		align-items: center;
+	}
+
+	.user-sec .tab-content p {
+		margin-top: 10px;
 	}
 
 	.catalog-two .search-box {
