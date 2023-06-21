@@ -4350,14 +4350,22 @@ filter-card__box {
 	margin: 45px 0 60px 0 !important;
 }
 
-.authors-sec__two .cinema-box {
+.authors-sec__two .cinema-box,
+.stories-two .cinema-box {
 	padding: 12px 18px;
 	background: #333333;
 	border-radius: 5px;
 	height: 41px;
+	display: inline-block;
+	cursor: pointer;
+	transition: all 0.2s linear;
 }
-
-.authors-sec__two .cinema-box h6 {
+.authors-sec__two .cinema-box:hover,
+.stories-two .cinema-box:hover{
+	background: #456DBB;
+}
+.authors-sec__two .cinema-box h6,
+.stories-two .cinema-box h6 {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 17px;
@@ -4373,9 +4381,11 @@ filter-card__box {
 .age-modal .modal-dialog {
 	max-width: 469px;
 }
-#ageModal2 .modal-dialog{
+
+#ageModal2 .modal-dialog {
 	max-width: 434px;
 }
+
 .age-modal p {
 	font-size: 14px;
 	line-height: 17px;
@@ -4395,6 +4405,22 @@ filter-card__box {
 	color: #fff !important;
 }
 
+.stories-two .user-boxes {
+	gap: 36px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.stories-two .delete-btn {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #456DBB;
+	padding: 0;
+	border-bottom: 1px solid #456DBB;
+	margin-left: 16px;
+}
 
 
 
