@@ -4307,42 +4307,93 @@ filter-card__box {
 .catalog-two .big-box {
 	margin-bottom: 32px;
 }
+
 .catalog-two {
 	padding-bottom: 190px;
 }
+
 .catalog-two .accordion-itemm.colors .blue-box {
 	width: 170px;
 	height: 170px;
 	background: #BBF3CA;
 }
+
 .catalog-two .accordion-itemm.colors .blue-box-2 {
 	background: #369CFF;
 }
-.catalog-two .accordion-itemm.colors .color-one{
+
+.catalog-two .accordion-itemm.colors .color-one {
 	background: #ABDA47;
 }
+
 .catalog-two .accordion-itemm.colors .color-two {
 	background: #43BE64;
 }
+
 .catalog-two .accordion-itemm.colors .color-three {
 	background: #369CFF;
 }
+
 .catalog-two .accordion-itemm.colors .color-four {
 	background: #FAC359;
 }
+
 .catalog-two .accordion-itemm.colors .color-five {
 	background: #8B1B95;
 }
+
 .catalog-two .accordion-itemm.colors .color-six {
 	background: #FC4242;
 }
+
 .catalog-two .search-box {
 	margin: 45px 0 60px 0 !important;
 }
 
+.authors-sec__two .cinema-box {
+	padding: 12px 18px;
+	background: #333333;
+	border-radius: 5px;
+	height: 41px;
+}
 
+.authors-sec__two .cinema-box h6 {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+}
 
+.authors-sec__two .cinema-big__box {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
 
+.age-modal .modal-dialog {
+	max-width: 469px;
+}
+#ageModal2 .modal-dialog{
+	max-width: 434px;
+}
+.age-modal p {
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	color: #333333;
+	font-weight: 400;
+	margin-top: 32px;
+}
+
+.age-modal p>span {
+	font-weight: 700;
+}
+
+.age-modal .modal-dialog .btn-gradient {
+	background: #333333;
+	box-shadow: 0px 4px 10px #CEE0FF;
+	color: #fff !important;
+}
 
 
 

@@ -142,7 +142,6 @@ $(function () {
 		let closeBtn = e.querySelectorAll('.subscribers-close');
 		$(openBoxBtn).on("click", function () {
 			$(subscribersBox).slideToggle();
-			console.log('salom');
 		})
 		$(closeBtn).on("click", function () {
 			$(subscribersBox).slideUp();
@@ -185,7 +184,6 @@ $(function () {
 	$('.cinema-big__box').each(function (i, e) {
 		let btn = e.querySelector('.cinema-box__hide-btn');
 		let topCol = e.querySelectorAll('.top-col');
-		console.log(btn);
 		$(btn).on("click", function () {
 			$(topCol).slideToggle();
 			$(this).toggleClass('rotate')
