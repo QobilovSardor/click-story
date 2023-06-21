@@ -3821,8 +3821,12 @@ filter-card__box {
 	padding: 13px 45px 10px 55px;
 }
 
+.character-creation .womman-img img {
+	width: 100%;
+}
+
 .boxes .blue-box {
-	width: 70px;
+	width: 100%;
 	height: 95px;
 	background: #EBF2FF;
 	border-radius: 5px;
@@ -4490,6 +4494,19 @@ filter-card__box {
 		gap: 1rem;
 	}
 
+	.character-creation .womman-img {
+		height: 400px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.character-creation .womman-img img {
+		height: 100%;
+		width: 30%;
+	}
+
 	#cardCharacter .card-character,
 	#cardCharacter2 .card-character {
 		flex-wrap: wrap;
@@ -4529,6 +4546,7 @@ filter-card__box {
 		left: auto;
 		right: 53px;
 	}
+
 	#chooseCharacter .search-box-two {
 		flex-wrap: wrap;
 	}
@@ -4536,7 +4554,8 @@ filter-card__box {
 	.admin-sec .title-box__right {
 		margin-top: 20px;
 	}
-		#chooseCharacter .search-box-two .gender-box {
+
+	#chooseCharacter .search-box-two .gender-box {
 		margin-left: 0 !important;
 		margin-top: 20px;
 	}
@@ -4589,6 +4608,10 @@ filter-card__box {
 		width: 150px;
 		height: 150px;
 	}
+
+	.character-creation .form-box .btn-gradient {
+		margin-top: 20px;
+	}
 }
 
 @media (max-width: 568px) {
@@ -4603,6 +4626,10 @@ filter-card__box {
 	.modal .modal-title {
 		margin-bottom: 20px;
 		margin-top: 20px;
+	}
+
+	.character-creation .womman-img {
+		height: 250px;
 	}
 
 	.editor-sec .transparent-bg {

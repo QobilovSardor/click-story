@@ -380,7 +380,7 @@ try {
 		}
 	});
 } catch (error) {
-	
+
 }
 
 try {
@@ -411,7 +411,7 @@ try {
 		}
 	});
 } catch (error) {
-	
+
 }
 
 try {
@@ -442,7 +442,7 @@ try {
 		}
 	});
 } catch (error) {
-	
+
 }
 
 try {
@@ -454,6 +454,26 @@ try {
 			nextEl: '.next1',
 			prevEl: '.prev1',
 		},
+		breakpoints: {
+			0: {
+				slidesPerView: 3,
+			},
+			480: {
+				slidesPerView: 4,
+			},
+			768: {
+				slidesPerView: 5,
+			},
+			992: {
+				slidesPerView: 6,
+			},
+			1400: {
+				slidesPerView: 6,
+			},
+			1920: {
+				slidesPerView: 9,
+			}
+		},
 	});
 	const boxSwiper3 = new Swiper('.box-swiper3', {
 		slidesPerView: 9,
@@ -463,6 +483,26 @@ try {
 			nextEl: '.next3',
 			prevEl: '.prev3',
 		},
+		breakpoints: {
+			0: {
+				slidesPerView: 3,
+			},
+			480: {
+				slidesPerView: 4,
+			},
+			768: {
+				slidesPerView: 5,
+			},
+			992: {
+				slidesPerView: 6,
+			},
+			1400: {
+				slidesPerView: 6,
+			},
+			1920: {
+				slidesPerView: 9,
+			}
+		},
 	});
 	const boxSwiper4 = new Swiper('.box-swiper4', {
 		slidesPerView: 9,
@@ -470,6 +510,26 @@ try {
 		navigation: {
 			nextEl: '.next4',
 			prevEl: '.prev4',
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 3,
+			},
+			480: {
+				slidesPerView: 4,
+			},
+			768: {
+				slidesPerView: 5,
+			},
+			992: {
+				slidesPerView: 6,
+			},
+			1400: {
+				slidesPerView: 6,
+			},
+			1920: {
+				slidesPerView: 9,
+			}
 		},
 		grid: {
 			rows: 2,
@@ -488,6 +548,26 @@ try {
 			rows: 2,
 			fill: true,
 		},
+		breakpoints: {
+			0: {
+				slidesPerView: 3,
+			},
+			480: {
+				slidesPerView: 4,
+			},
+			768: {
+				slidesPerView: 5,
+			},
+			992: {
+				slidesPerView: 6,
+			},
+			1400: {
+				slidesPerView: 6,
+			},
+			1920: {
+				slidesPerView: 9,
+			}
+		},
 		speed: 300,
 	});
 	const boxSwiper6 = new Swiper('.box-swiper6', {
@@ -500,6 +580,26 @@ try {
 		grid: {
 			rows: 2,
 			fill: true,
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 3,
+			},
+			480: {
+				slidesPerView: 4,
+			},
+			768: {
+				slidesPerView: 5,
+			},
+			992: {
+				slidesPerView: 6,
+			},
+			1400: {
+				slidesPerView: 6,
+			},
+			1920: {
+				slidesPerView: 9,
+			}
 		},
 		speed: 300,
 	});
@@ -546,7 +646,7 @@ try {
 		loop: true,
 		speed: 300,
 	});
-	
+
 	const boxSwiper2 = new Swiper('.box-swiper2', {
 		slidesPerView: 9,
 		spaceBetween: 8,
@@ -558,10 +658,30 @@ try {
 			rows: 2,
 			fill: true,
 		},
+		breakpoints: {
+			0: {
+				slidesPerView: 3,
+			},
+			480: {
+				slidesPerView: 4,
+			},
+			768: {
+				slidesPerView: 5,
+			},
+			992: {
+				slidesPerView: 6,
+			},
+			1400: {
+				slidesPerView: 6,
+			},
+			1920: {
+				slidesPerView: 9,
+			}
+		},
 		speed: 300,
 	});
 
-	
+
 } catch (error) {
 	console.log(error);
 }
