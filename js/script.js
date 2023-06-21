@@ -614,6 +614,20 @@ try {
 			rows: 2,
 			fill: true,
 		},
+		breakpoints: {
+			0: {
+				slidesPerView: 3,
+				rows: 2,
+			},
+			480: {
+				slidesPerView: 4,
+				rows: 2,
+			},
+			768: {
+				slidesPerView: 5,
+				rows: 2,
+			},
+		},
 		speed: 300,
 	});
 	const modalSwiper2 = new Swiper('.modal-swiper2', {
@@ -622,6 +636,23 @@ try {
 		navigation: {
 			nextEl: '.next7',
 			prevEl: '.prev7',
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 3,
+				rows: 2,
+			},
+			480: {
+				slidesPerView: 4,
+				rows: 2,
+			},
+			768: {
+				slidesPerView: 5,
+				rows: 2,
+			},
+			1920: {
+				slidesPerView: 5,
+			}
 		},
 		loop: true,
 		speed: 300,
@@ -635,6 +666,23 @@ try {
 		},
 		loop: true,
 		speed: 300,
+		breakpoints: {
+			0: {
+				slidesPerView: 3,
+				rows: 2,
+			},
+			480: {
+				slidesPerView: 4,
+				rows: 2,
+			},
+			768: {
+				slidesPerView: 5,
+				rows: 2,
+			},
+			1920: {
+				slidesPerView: 5,
+			}
+		},
 	});
 	const modalSwiper4 = new Swiper('.modal-swiper4', {
 		slidesPerView: 2,

@@ -4036,6 +4036,7 @@ filter-card__box {
 	border-radius: 5px;
 	padding: 32px;
 	display: flex;
+	overflow: hidden;
 	margin-bottom: 30px;
 }
 
@@ -4469,6 +4470,14 @@ filter-card__box {
 	flex-wrap: wrap;
 }
 
+.bottom-img {
+	margin: auto 0 0 auto !important;
+}
+
+.subscription-box .btn-gradient {
+	white-space: nowrap;
+}
+
 /* ================================================================================================== */
 
 
@@ -4529,6 +4538,11 @@ filter-card__box {
 		width: 24px;
 		height: 24px;
 	}
+
+	.catalog-sec .characters-box {
+		flex-direction: column;
+		height: 295px;
+	}
 }
 
 
@@ -4545,6 +4559,10 @@ filter-card__box {
 	.upload-img__mini {
 		left: auto;
 		right: 53px;
+	}
+
+	.catalog-sec .bg-block {
+		margin-bottom: 20px;
 	}
 
 	#chooseCharacter .search-box-two {
@@ -4618,6 +4636,16 @@ filter-card__box {
 	.admin-sec {
 		margin-top: 40px;
 	}
+.directory-sec .blue-box img{
+	height: 100%;
+	width: auto;
+}
+.directory-sec .blue-box{
+	text-align: center;
+}
+	.catalog-sec .characters-box {
+		padding: 20px;
+	}
 
 	#attachProduct .modal-dialog {
 		max-width: 100%;
@@ -4626,6 +4654,12 @@ filter-card__box {
 	.modal .modal-title {
 		margin-bottom: 20px;
 		margin-top: 20px;
+	}
+
+	.subscription-box {
+		flex-wrap: wrap;
+		gap: 1rem;
+		margin-top: 10px;
 	}
 
 	.character-creation .womman-img {
