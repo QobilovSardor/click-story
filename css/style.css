@@ -4477,6 +4477,10 @@ filter-card__box {
 		flex-wrap: wrap;
 	}
 
+	.editor-sec__bg-two .upload-img .big-img2 {
+		height: 100%;
+	}
+
 	.editor-sec .editor-sec__top {
 		flex-wrap: wrap;
 		gap: 1rem;
@@ -4519,6 +4523,11 @@ filter-card__box {
 
 	.making-history .title {
 		margin-bottom: 40px;
+	}
+
+	.editor-sec__bg-two .upload-img .big-img2 {
+		padding: 0;
+		width: 100%;
 	}
 
 	.making-history .making-history__form {
@@ -4575,6 +4584,10 @@ filter-card__box {
 		margin-bottom: 20px;
 	}
 
+	.editor-sec .transparent-bg {
+		height: 100px;
+	}
+
 	.modal-body__btns {
 		flex-wrap: wrap;
 		width: 100%;
@@ -4588,6 +4601,10 @@ filter-card__box {
 		flex-wrap: wrap;
 		justify-content: space-between;
 		width: 100%;
+	}
+
+	.editor-sec__bg-two .upload-img .big-img2 {
+		height: 90%;
 	}
 
 	.admin-sec .title-box .btn-gradient {
@@ -4714,6 +4731,7 @@ filter-card__box {
 		font-size: 14px;
 	}
 }
+
 
 
 
