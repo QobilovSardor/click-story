@@ -4521,7 +4521,23 @@ filter-card__box {
 		align-items: start;
 	}
 
+	.editor-finished .transparent-bg {
+		padding-left: 20px;
+	}
+
+	.upload-img__mini {
+		left: auto;
+		right: 53px;
+	}
+	#chooseCharacter .search-box-two {
+		flex-wrap: wrap;
+	}
+
 	.admin-sec .title-box__right {
+		margin-top: 20px;
+	}
+		#chooseCharacter .search-box-two .gender-box {
+		margin-left: 0 !important;
 		margin-top: 20px;
 	}
 
