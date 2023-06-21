@@ -4555,6 +4555,11 @@ filter-card__box {
 		left: auto;
 		transform: translateX(0);
 	}
+
+	.upload-img__mini {
+		width: 150px;
+		height: 150px;
+	}
 }
 
 @media (max-width: 568px) {
@@ -4689,11 +4694,24 @@ filter-card__box {
 	#chooseCharacter2 .emotion-swiper {
 		margin: 0 20px;
 	}
+
+	.upload-img__mini {
+		right: 53px;
+		left: auto;
+	}
 }
 
 @media (max-width: 480px) {
 	#chooseBbackground .photo-galery .photo-galery__box {
 		width: 100%;
+	}
+
+	.plus-add-img__box {
+		margin: 0 auto;
+	}
+
+	.editor-sec .add-bg p {
+		font-size: 14px;
 	}
 }
 

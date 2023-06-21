@@ -363,7 +363,7 @@ try {
 		},
 		breakpoints: {
 			0: {
-				slidesPerView: 2,
+				slidesPerView: 3,
 			},
 			480: {
 				slidesPerView: 4,
@@ -394,7 +394,7 @@ try {
 		},
 		breakpoints: {
 			0: {
-				slidesPerView: 2,
+				slidesPerView: 3,
 			},
 			480: {
 				slidesPerView: 4,
@@ -423,6 +423,23 @@ try {
 			nextEl: '.next3',
 			prevEl: '.prev3',
 		},
+		breakpoints: {
+			0: {
+				slidesPerView: 3,
+			},
+			480: {
+				slidesPerView: 4,
+			},
+			768: {
+				slidesPerView: 5,
+			},
+			992: {
+				slidesPerView: 6,
+			},
+			1920: {
+				slidesPerView: 6,
+			}
+		}
 	});
 } catch (error) {
 	
