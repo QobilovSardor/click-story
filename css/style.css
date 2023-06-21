@@ -4190,11 +4190,15 @@ filter-card__box {
 }
 
 .directory-faces .blue-box {
-	width: 170px;
+	width: 100%;
 	height: 170px;
 	background: #EBF2FF;
 	border-radius: 5px;
 	position: relative;
+}
+
+.directory-faces .big-box {
+	margin-bottom: 20px;
 }
 
 .directory-faces .accordion-header {
@@ -4497,6 +4501,15 @@ filter-card__box {
 @media (max-width: 992px) {
 	.making-history .chapters-box__links {
 		flex-wrap: wrap;
+	}
+
+	.outfit-card .blue-box {
+		height: 270px;
+	}
+
+	.outfit-card .blue-box img {
+		height: 100%;
+		width: 70%;
 	}
 
 	.editor-sec__bg-two .upload-img .big-img2 {
